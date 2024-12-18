@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#main {
+  position: relative;
+  background-color: #000;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+}
+
+#contact-main {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+.balls,
+.balls1,
+.balls2 {
+  max-width: 100%;
+}
+
+.balls {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  width: 152px;
+  height: 152px;
+  background-color: #663fbd;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.balls1 {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  width: 152px;
+  height: 152px;
+  background-color: #663fbd;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.balls2 {
+  position: absolute;
+  top: 0%;
+  left: 85%;
+  width: 152px;
+  height: 152px;
+  background-color: #663fbd;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.formsub {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  background-color: #11111180;
+  border-radius: 50px;
+  backdrop-filter: blur(260px);
+  padding: 40px 60px;
+  display: flex;
+  gap: 50px;
+}
+
+.form-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.formlogo {
+  width: 230px;
+}
+
+.formlogo img {
+  width: 100%;
+}
+
+.cont-des {
+  margin-top: 20px;
+  color: white;
+}
+
+.cont-des h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cont-des p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.contact-detailes {
+  margin: 30px 0px;
+}
+
+.icon-text {
+  display: flex;
+}
+
+.icon-text i {
+  font-size: 18px;
+  color: #7dfa03;
+}
+
+.icon-text a {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+  
+.icon-text a:hover {
+  text-decoration: none;
+  color: lawngreen;
+}
+.social h3 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.social-box a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.social-box i {
+  font-size: 25px;
+  padding: 10px;
+  background-color: #5e5dcb;
+  border-radius: 50%;
+  color: white;
+}
+
+.contact-form {
+  width: 60%;
+  background-color: #5f5dcb7a;
+  backdrop-filter: blur(50%);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 30px 50px;
+  height: 100%;
+}
+
+.contact-form h2 {
+  font-size: 34px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.contact-form h2 span {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.input-area input,
+.input-area select,
+.input-area textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: #ffffff33;
+  font-size: 15px;
+  color: white;
+  font-weight: 100;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-select select option {
+  background-color: #ffffff33;
+  color: black;
+}
+
+.custom-select::after {
+  content: "\25BC";
+  position: absolute;
+  right: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10px;
+  color: #7dfa03;
+}
+
+::placeholder {
+  font-size: 15px;
+  color: white;
+  font-weight: lighter;
+  font-family: "Poppins", sans-serif;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+.submit-btn input {
+  width: 100%;
+  padding: 10px;
+  background-color: #7dfa03;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ----------footer css-----------  */
+#footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#footer-top {
+  margin: 50px 280px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #141414;
+  padding: 50px;
+  border-radius: 16px;
+}
+#footer-top h1 {
+  color: white;
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 900;
+}
+#footer-top button {
+  color: #000;
+  background-color: lawngreen;
+  border: none;
+  height: 63px;
+  width: 225px;
+  border-radius: 16px;
+  font-size: 20px;
+  border: 2px solid lawngreen;
+  transition: all ease 0.5s;
+}
+#footer-top button:hover {
+  color: lawngreen;
+  background-color: transparent;
+}
+#footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 80px;
+}
+.box {
+  width: 25%;
+  height: 350px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border-radius: 16px;
+  padding: 20px;
+}
+.address h1 {
+  color: white;
+  font-family: var(--text-font);
+}
+.underline {
+  display: inline-block;
+  width: 55%;
+  border-bottom: 2px solid lawngreen;
+  padding-bottom: 10px;
+}
+.address p {
+  color: white;
+  font-family: var(--text-font);
+  font-size: 15px;
+  font-weight: 100;
+}
+.address a {
+  color: white;
+  font-family: var(--text-font);
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+.address a:hover {
+  color: lawngreen;
+  text-decoration: none;
+}
+.address i {
+  color: lawngreen;
+}
+.useful h1 {
+  color: white;
+  font-family: var(--text-font);
+}
+.useful a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 18px;
+  line-height: 30px;
+  transition: all esae 0.3s;
+}
+.useful a:hover {
+  color: lawngreen;
+  text-decoration: none;
+}
+.services h1 {
+  color: white;
+  font-family: var(--text-font);
+}
+.services a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--text-font);
+  font-size: 18px;
+  line-height: 40px;
+  transition: all ease 0.3s;
+}
+.services a:hover {
+  color: lawngreen;
+  text-decoration: none;
+}
+.services i {
+  display: none;
+  transition: all ease 0.3s;
+}
+
+.services a:hover i {
+  color: lawngreen;
+  display: inline-block;
+}
+.useful i {
+  display: none;
+  transition: all ease 0.3s;
+}
+
+.useful a:hover i {
+  color: lawngreen;
+  display: inline-block;
+}
+#icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.icon-box {
+  width: 80px;
+  height: 60px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgb(65, 63, 63);
+  transition: all ease 0.5s;
+}
+.icon-box a {
+  color: lawngreen;
+  font-size: 30px;
+  text-decoration: none;
+}
+.icon-box:hover a {
+  text-decoration: none;
+  color: #000;
+}
+.icon-box:hover {
+  background-color: lawngreen;
+  border: none;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#newsletter-email {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.newsletter input {
+  font-family: var(--text-font);
+  color: lawngreen;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: 2px solid lawngreen;
+  background-color: transparent;
+  border-radius: 16px;
+  width: 80%;
+}
+.newsletter button {
+  border: none;
+  border-radius: 16px;
+  background-color: lawngreen;
+  padding: 20px;
+  font-family: var(--text-font);
+  font-weight: 600;
+  border: 2px solid lawngreen;
+  transition: all ease 0.5s;
+}
+.newsletter button:hover {
+  background-color: transparent;
+  color: lawngreen;
+  border: 2px solid lawngreen;
+}
+.newletter-top {
+  background-color: #151515;
+  padding: 10px;
+}
+.newsletter h1 {
+  color: white;
+  font-family: var(--text-font);
+}
+.newsletter p {
+  color: white;
+  font-family: var(--text-font);
+}
+#footer-end {
+  border-top: 2px solid rgb(77, 75, 75);
+}
+#footer-end p {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+#footer-start {
+  border-bottom: 2px solid rgb(77, 75, 75);
+}
+
+@media (max-width: 1200px) {
+  .cont-des p {
+    font-size: 14px;
+  }
+  .formlogo {
+    width: 150px;
+  }
+  .icon-text a h3,
+  .icon-text i {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .formsub {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .form-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cont-des h1 {
+    font-size: 28px;
+  }
+  .cont-des p {
+    font-size: 12px;
+  }
+  .contact-form h2 {
+    font-size: 28px;
+  }
+  .contact-form h2 span {
+    font-size: 32px;
+  }
+  .input-area input,
+  .input-area select,
+  .input-area textarea {
+    font-size: 14px;
+  }
+  .submit-btn input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .balls2 {
+    left: 0%;
+  }
+  .formlogo {
+    width: 120px;
+  }
+  .cont-des h1 {
+    font-size: 24px;
+  }
+  .cont-des p {
+    font-size: 10px;
+  }
+  .icon-text i {
+    font-size: 12px;
+  }
+  .icon-text a h3 {
+    font-size: 12px;
+  }
+  .social h3 {
+    font-size: 24px;
+  }
+  .social-box i {
+    font-size: 20px;
+    padding: 8px;
+  }
+  .contact-form h2 {
+    font-size: 24px;
+  }
+  .contact-form h2 span {
+    font-size: 28px;
+  }
+  .submit-btn input {
+    font-size: 16px;
+  }
+}
+@media (max-width: 530px) {
+  #contact-main {
+    margin: 10px;
+  }
+  .contact-form {
+    padding: 10px;
+  }
+}
