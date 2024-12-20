@@ -1335,13 +1335,13 @@ gsap.to(".page7-cir-inner",{
      scrub: 3,
    },
  });
- gsap.from("#page11 .services", {
+ gsap.from("#page11 .service", {
    y: 120,
    opacity: 0,
    stagger: 0.5,
    duration: 0.5,
    scrollTrigger: {
-     trigger: ".services",
+     trigger: ".service",
      scroller: "#main",
      start: "top 80%",
      end: "top -10%",
