@@ -1,9 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: Croparo;
+  src: url("/font/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: Orion Sans;
+  src: url("/font/Raleway-Regular.ttf");
+}
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+:root {
+  --heading-font: Croparo;
+  --text-font: Orion Sans;
 }
 #main {
   position: relative;
@@ -12,7 +23,6 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Poppins", sans-serif;
   background-color: #000;
 }
 
@@ -99,11 +109,13 @@ body {
 .cont-des h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  font-family: var(--heading-font);
 }
 
 .cont-des p {
   font-size: 18px;
   text-align: justify;
+  font-family: var(--text-font);
 }
 
 .contact-detailes {
@@ -121,6 +133,7 @@ body {
 
 .icon-text a {
   font-size: 18px;
+  font-family: var(--text-font);
   color: white;
   font-weight: 500;
   text-decoration: none;
@@ -136,9 +149,14 @@ body {
   font-size: 30px;
   color: white;
   margin-bottom: 30px;
+  font-family: var(--heading-font);
 }
 
 .social-box a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+.social-box a:hover {
   margin-right: 20px;
   text-decoration: none;
 }
@@ -149,6 +167,13 @@ body {
   background-color: #5e5dcb;
   border-radius: 50%;
   color: white;
+  border: 1px solid #5e5dcb;
+  transition: all ease 0.5s;
+}
+.social-box i:hover{
+  background-color: transparent;
+  color: lawngreen;
+  border: 1px solid lawngreen;
 }
 
 .contact-form {
@@ -166,11 +191,13 @@ body {
   color: white;
   margin-bottom: 20px;
   font-weight: 400;
+  font-family: var(--heading-font);
 }
 
 .contact-form h2 span {
   font-size: 38px;
   font-weight: 600;
+
 }
 
 .contact-form form {
@@ -194,7 +221,7 @@ body {
   color: white;
   font-weight: 100;
   font-weight: lighter;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--text-font);
 }
 
 .custom-select {
@@ -213,8 +240,8 @@ body {
 }
 
 .custom-select select option {
-  background-color: #ffffff33;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .custom-select::after {
@@ -232,7 +259,7 @@ body {
   font-size: 15px;
   color: white;
   font-weight: lighter;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--text-font);
 }
 
 .submit-btn {
@@ -242,11 +269,17 @@ body {
 .submit-btn input {
   width: 100%;
   padding: 10px;
-  background-color: #7dfa03;
-  border: none;
+  background-color: lawngreen;
+  border: 1px solid lawngreen;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 600;
+  transition: all ease 0.5s;
+}
+.submit-btn input:hover{
+  background-color: #000;
+  color: lawngreen;
+  border:1px solid lawngreen;
 }
 
 /* ----------footer css-----------  */

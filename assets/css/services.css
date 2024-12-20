@@ -35,34 +35,37 @@ body {
 }
 
 #page1{
-    height: 100vh;
+    height: auto;
     width: 100vw;
     position: relative;
 }
 
 #page1>video{
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: cover;
+    opacity:0.5;
+    z-index: -1;
 }
 
 .bottom-page1{
     position: absolute;
-    bottom: 5%;
+    bottom: 20%;
     height: 35vh;
     width: 50vw;
-    left: 10%;
+    left: 3%;
+    z-index: 1;
 }
 .bottom-page1>h1{
     font-family: var(--heading-font);
     font-size: 4rem;
     font-weight: 100;
-    line-height: 1;
+    line-height: 1.2;
     background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff , #7CFC00 ); 
     background-clip: text; 
      -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px white;
+    /* -webkit-text-stroke: 0.5px white; */
 }
 .heading-1{
     color: transparent;
@@ -358,126 +361,41 @@ body {
     font-weight: 700;
     letter-spacing: 0.2rem;
 }
-#page9{
-    display: flex;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-}
-.left9{
-    height: 100%;
-    width: 40%;
-    position: relative;
-    font-family: var(--heading-font);
-}
-.left9>h1>video{
-    position: absolute;
-    bottom: 3.8vw;
-}
-.left9>h1{
-    position: absolute;
-    top: 40%;
-    right: 5%;
-    transform: translateY(-50%);
-    font-size: 5vw;
-    font-weight: 100;
-    color: #fff;
-    line-height: 1;
-}
-/* what is codecobble effect  */
-#page9 a {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-}
 
-#page9 a::before,
-#page9 a::after {
- content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-#page9 a::before {
-  background-color: white;
-  height: 2px;
-  bottom: 0;
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-#page9 a::after {
-  content: attr(data-replace);
-  height: 100%;
-  top: 0;
-  transform-origin: 100% 50%;
-  transform: translate3d(200%, 0, 0);
-  transition: transform .5s cubic-bezier(0.76, 0, 0.24, 1);
-  -webkit-text-stroke: 1px transparent;
-  background-image: linear-gradient(to left, #6b34e2, #fff , #7CFC00 ); 
- background-clip: text; 
- -webkit-background-clip: text; 
- -webkit-text-fill-color: transparent;
-}
-
-#page9 a:hover::before {
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
-}
-#page9 a:hover::after {
-  transform: translate3d(0, 0, 0);
-}
-
-#page9 a span {
-  display: inline-block;
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-#page9 a:hover span {
-  transform: translate3d(-200%, 0, 0);
-  
-}
-
-#page9 a {
-  text-decoration: none;
-  color: transparent;
-  -webkit-text-stroke: 1px  lawngreen;
-  vertical-align: top;
-}
-.right9{
-    height: 100%;
-    width: 60%;
-    position: relative;
-}
-.right9-center{
-    height: 50%;
-    width: 85%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-size: cover;
-    left: 5%;
-    border-radius: 50px;
-}
-.right9-center video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 20px;
-}
 #page10{
     position: relative;
     /* height: 100vh; */
     width: 100vw;
     background-color: #000;
 }
+#page10-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    position: relative;
+    padding: 5vw 15vw;
+}
+#page10-top>h1{
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    font-weight: 100;
+    position: relative;
+    padding: 5px 0px;
+    background-image: linear-gradient(to left, #6b34e2, #fff , #7CFC00 ); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
 .right10{
     height: 100%;
-    width: 60%;
+    width: 100%;
     position: relative;
-    left: 25%;
+    padding: 0vw 15vw;
+    align-items: center;
+    justify-content: center;
+    
 }
 .right10-inner{
     display: flex;
@@ -522,7 +440,7 @@ body {
 .right10-inner>p{
     margin-top: 2vw;
     font-size: 1.4rem;
-    width: 80%;
+    width: 100%;
     font-family: var(--text-font);
     line-height: 1.5vw;
     color: #cfd9df;
@@ -533,118 +451,123 @@ body {
 
 #page11{
     position: relative;
+    height: auto;
     width: 100vw;
     background-color: #000;
-    font-family: a;
-    padding-top: 2vw;
-    padding-bottom: 5vw;
-    
 }
-#page11>h1{
+#page11-top{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    font-size: 4vw;
-    font-weight: 800;
-    font-family: var(--heading-font);
-    text-transform: uppercase;
-    letter-spacing: -3px;
-    transition: all ease 0.3s;
-    background-image: linear-gradient(to left, #6b34e2,#6b34e2,#6b34e2, #fff , #7CFC00,lawngreen,lawngreen ); 
-    background-clip: text; 
-    -webkit-background-clip: text; 
-     -webkit-text-fill-color: transparent;       
-}
-#page11>h1:hover{
-    letter-spacing: 2px;
-}
-
-.page11-inner{
-    display: flex;
-    top: 18%;
+    padding: 5vw 15vw;
+    width: 100vw;
     position: relative;
-    margin-bottom: 20px;
-    height: 24%;
-    width: 100%;
 }
-.left11{
-    position: relative;
-    top: 5vw;
-    height: 100%;
-    width: 40%;
-    left: 15%;
-    overflow: hidden;    
-}
-.left11>img{
-    height: 50%;
-    width: 50%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.right11{
-    padding-top: 2vw;
-    padding-right: 10vw;
-    color: white;
-    left: 45%;
-    top: 35%;
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 40%;
-    border-radius:  0 0 20px 20px;
-    transition: all ease 0.5s;
-    border: 0; 
-  border-top: 2px solid; 
-  border-image: linear-gradient(to right, lawngreen,white,#6b34e2);
-  border-image-slice: 1; 
-}
-.right11:hover h4{
-    color: white;
-}
-.right11{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.right11 i{
-    color: #000;
-    font-size: 1vw;
-    background-color: lawngreen;
-    border-radius: 50%;
-}
-
-.right11:hover{
-    background-image: linear-gradient(to top,#000000c2,#000);
-    border: 1px solid lawngreen;
-    cursor: pointer;
-}
-.right11>h4{
-    font-weight: 600;
-    font-size: 1rem;
-    font-family: var(--text-font);
-    line-height: 1.3vw;
-    color: white;
-    transition: all ease 0.3s;
-    padding-left: 1vw;
-}
-
-.right11>h1{
-    font-size: 1.5vw;
-    line-height: 2vw;
+#page11-top>h1{
+    font-size: 4rem;
     font-family: var(--heading-font);
     font-weight: 100;
-    padding-left: 1vw;
-    background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff , #7CFC00 ); 
- background-clip: text; 
- -webkit-background-clip: text; 
- -webkit-text-fill-color: transparent;
+    position: relative;
+    padding: 5px 0px;
+    background-image: linear-gradient(to left, #6b34e2, #fff , #7CFC00 ); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
+#page11-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    gap: 50px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0vw 5vw;
+    gap: 50px;
+}
+.services-even{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0vw 5vw;
+    gap: 50px;
+}
+.servive-image{
+  position: relative;
+    height: 20vw;
+    margin: 2vw;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 30%;    
+}
+.service-image>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;  
+  transition: all ease 0.3s;
+}
+.service-image>img:hover{
+  transform: scale(1.1);
+}
+.service-detail{
+  color: white;
+  width: 60%;
+  overflow: hidden;
+  padding: 10px;
+}
+.service-detail>h1{
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    position: relative;
+    padding: 5px 0px;
+    color: white;
+}
+.service-detail>p{
+    font-size: 1.4rem;
+    width: 100%;
+    font-family: var(--text-font);
+    line-height: 1.5vw;
+    color: #cfd9df;
+    text-align: justify;
+    padding: 10px;
+}
+
+.service .service-detail a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    margin-left: 70%;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+.services-even .service-detail a{
+    margin-left: 0%;
+}
+.service .service-detail a:hover{
+    color: lawngreen;
+    border: 1px solid lawngreen;
+    text-decoration: none;
+
+}
+
+
 
 
 #page12{
     position: relative;
-    height: 100vh;
+    height: 70vh;
     width: 100vw;
     background-color: #000;
 }

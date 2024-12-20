@@ -157,6 +157,8 @@ body {
 
 #page1 .bgvideo {
   position: absolute;
+  opacity: 0.5;
+
 }
 
 #page1 p {
@@ -166,7 +168,11 @@ body {
   margin-top: 3vh;
   font-size: 4vw;
   transition: all ease 0.5s;
-  color: white;
+  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff , #7CFC00 ); 
+    background-clip: text; 
+     -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
   z-index: 9;
 }
 

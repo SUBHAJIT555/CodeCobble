@@ -307,31 +307,31 @@ function videosolutionText(){
 }
 videosolutionText();
 
-function page5TextAnimation(){
-  var clutter = "";
+// function page5TextAnimation(){
+//   var clutter = "";
 
-  document
-    .querySelector(".right5 p")
-    .textContent.split("")
-    .forEach(function (dets) {
-      clutter += `<span>${dets}</span>`;
+//   document
+//     .querySelector(".right5 p")
+//     .textContent.split("")
+//     .forEach(function (dets) {
+//       clutter += `<span>${dets}</span>`;
 
-      document.querySelector(".right5>p").innerHTML = clutter;
-    });
+//       document.querySelector(".right5>p").innerHTML = clutter;
+//     });
 
-  gsap.to(".right5>p>span", {
-    scrollTrigger: {
-      trigger: `.right5>p>span`,
-      start: `top -170%`,
-      end: `bottom 100%`,
-      scroller: `#main`,
-      scrub: 0.1,
-    },
-    stagger: 1,
-    color: `white`,
-  });
-}
-page5TextAnimation();
+//   gsap.to(".right5>p>span", {
+//     scrollTrigger: {
+//       trigger: `.right5>p>span`,
+//       start: `top -170%`,
+//       end: `bottom 100%`,
+//       scroller: `#main`,
+//       scrub: 0.1,
+//     },
+//     stagger: 1,
+//     color: `white`,
+//   });
+// }
+// page5TextAnimation();
 
 
 
@@ -349,6 +349,7 @@ var tl = gsap.timeline({
 tl.to("#page1>h1", {
   top: `-50%`,
 });
+
 
 var tl1 = gsap.timeline({
   scrollTrigger: {
@@ -1333,6 +1334,11 @@ elements.map((element) => {
 });
 
 // --------------------------------------------------------------------------
+
+
+
+
+
 
 
 
