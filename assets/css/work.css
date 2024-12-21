@@ -544,7 +544,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  border-top: 2px solid rgb(77, 75, 75);
 }
 #page5 .page5-video {
   position: absolute;
