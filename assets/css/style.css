@@ -76,39 +76,22 @@ body {
   position: relative;
   height: 100vh;
   padding: 20px;
+  overflow: hidden;
 }
-
-#herobg{
+#hero-video{
   position: absolute;
-  width: 200px;
-  height: 400px;
-  background-color: lawngreen;
-  filter: blur(200px);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.5;
 }
-#herobg2{
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: lawngreen;
-  filter: blur(100px);
-  animation: slide 5s infinite linear;
-}
-@keyframes slide {
-  0%,100% {
-    transform: translateY(0); /* Start and end in original position */
-  }
-  50% {
-    transform: translateX(-100px); /* Float upward slightly */
-  }
-  
-}
-
 
 #hero-heading{
   padding-top: 1rem;
-  background-color: #000;
+  background-color:transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,8 +117,8 @@ body {
   text-align: center;
 }
 .collection{
-  height: 90vh;
-  background-color: #000;
+  height: 100vh;
+  /* background-color: #000; */
   display: flex;
   justify-content: center;
   padding-top: 70px;
@@ -146,7 +129,7 @@ body {
   padding:50px 0;
   height: 550px;
   width: 500px;
-  background: rgba(94, 93, 203, 0.5019607843137255);
+  background: rgba(51, 52, 66, 0.905);
   background-image: url(/assets/Noise1.svg);
   border-radius: 20px;
   backdrop-filter: blur(10.2px);
@@ -203,8 +186,9 @@ body {
 .swiper-slide-active {
   filter: blur(0); 
   transform: scale(1.1); 
-                
+         
 }
+
 /*------------------------------ Hero end------------------------------  */
 #page-videosolution{
   position: relative;
@@ -1877,3 +1861,4 @@ svg.squiggle path {
   font-family: var(--text-font);
 }
 
+/* .............  */
