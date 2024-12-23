@@ -97,6 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   
+  
 }
 #hero-heading h1{
   background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff , #7CFC00 ); 
@@ -106,6 +107,8 @@ body {
   font-size: 3rem;
   font-family: var(--heading-font);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #hero-heading h3{
   color: white;
@@ -129,11 +132,13 @@ body {
   padding:50px 0;
   height: 550px;
   width: 500px;
-  background: rgba(51, 52, 66, 0.905);
-  background-image: url(/assets/Noise1.svg);
-  border-radius: 20px;
-  backdrop-filter: blur(10.2px);
-  -webkit-backdrop-filter: blur(20px);
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.31);
   overflow: hidden;
 }
 
@@ -144,20 +149,22 @@ body {
 .text-content{
   height: 50%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
 }
 .text-content h3{
   font-size: 2rem;
-  font-weight: 500;
-  font-family: var(--text-font);
+  /* font-weight: 500; */
+  font-family: var(--heading-font);
   color: white;
 }
 .text-content p{
   max-width: 22rem;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   text-align: center;
   font-family: var(--text-font);
   color: white;
@@ -601,20 +608,20 @@ body {
 #page6 > h3 {
   font-size: 3rem;
   font-family: var(--heading-font);
-  color: white;
+  background-image: linear-gradient(to left, #6b34e2, #fff , #7CFC00 ); 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
   z-index: 9;
 }
 #page6 > h1 {
   margin-bottom: 1.5vw;
   width: 70%;
-  font-size: 2rem;
+  font-size: 2rem;  
   font-family: var(--heading-font);
   padding-bottom: 2rem;
   border-bottom: 1px solid white;
-  background-image: linear-gradient(to left, #6b34e2, #fff , #7CFC00 ); 
- background-clip: text; 
- -webkit-background-clip: text; 
- -webkit-text-fill-color: transparent;
+ color: white;
 }
 #page6 > p {
   font-size: 1.5rem;

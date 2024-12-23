@@ -49,16 +49,26 @@ var faqs = document.getElementsByClassName("paragraphfaq");
 
 for (let i = 0; i < arrows.length; i++) {
   arrows[i].addEventListener("click", function () {
+    // Close all other sections
+    for (let j = 0; j < faqs.length; j++) {
+      if (j !== i) {
+        faqs[j].classList.remove("faqtoggle");
+        arrows[j].style.transform = "rotate(0deg)"; // Reset rotation
+      }
+    }
+
+    // Toggle the clicked section
     faqs[i].classList.toggle("faqtoggle");
 
-    // Toggle rotation based on current state
-    if (arrows[i].style.transform === "rotate(585deg)") {
-      arrows[i].style.transform = "rotate(0deg)";
-    } else {
+    // Toggle rotation based on the current state
+    if (faqs[i].classList.contains("faqtoggle")) {
       arrows[i].style.transform = "rotate(585deg)";
+    } else {
+      arrows[i].style.transform = "rotate(0deg)";
     }
   });
 }
+
 // ---------- FAQ section animation End ------------
 
 function locomotive() {
