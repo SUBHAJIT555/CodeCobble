@@ -530,7 +530,7 @@ function page2Animation() {
       trigger: ".heading",
       scroller: "#main",
       start: "top 60%",
-      end: "top 80%",
+      end: "top 90%",
       scrub: 3,
 
     },
@@ -544,9 +544,8 @@ function page2Animation() {
       trigger: ".sub-heading",
       scroller: "#main",
       start: "top 70%",
-      end: "top 60%",
+      end: "top 90%",
       scrub: 3,
-
     },
   });
   gsap.from("#page2 #right", {
@@ -555,10 +554,10 @@ function page2Animation() {
     stagger: 2,
     duration: 4,
     scrollTrigger: {
-      trigger: "img",
+      trigger: "#right",
       scroller: "#main",
       start: "top 60%",
-      end: "top 80%",
+      end: "top 90%",
       scrub: 3,
     },
   });
