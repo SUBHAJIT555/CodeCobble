@@ -157,7 +157,7 @@ body {
 
 #page1 .bgvideo {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.6;
 
 }
 
@@ -172,7 +172,7 @@ body {
     background-clip: text; 
      -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
-
+  -webkit-text-stroke: 1px black;
   z-index: 9;
 }
 
