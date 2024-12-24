@@ -39,8 +39,6 @@ function loco() {
 }
 loco();
 
-
-
 gsap.to("#page>video", {
   scrollTrigger: {
     trigger: `#page>video`,
@@ -59,7 +57,7 @@ gsap.to("#page", {
     start: `top top`,
     end: `bottom top`,
     scroller: `#main`,
-    pin: true,
+    // pin: true,
   },
 });
 
@@ -74,8 +72,7 @@ gsap.to("#page-bottom", {
   opacity: 0,
 });
 
-// -------- canvas for video solution ----- 
-
+// -------- canvas for video solution -----
 
 function canvas2() {
   const canvas = document.querySelector("#page-videosolution>canvas");
@@ -653,12 +650,7 @@ function canvas2() {
 }
 canvas2();
 
-
-
-
-
-
-function videosolutionText(){
+function videosolutionText() {
   var clutter = "";
 
   document
@@ -684,11 +676,6 @@ function videosolutionText(){
 }
 videosolutionText();
 
-
-
-
-
-
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: `#page1`,
@@ -702,7 +689,6 @@ var tl = gsap.timeline({
 tl.to("#page1>h1", {
   top: `-50%`,
 });
-
 
 var tl1 = gsap.timeline({
   scrollTrigger: {
@@ -732,16 +718,14 @@ tl2.to("#page4>#center-page4", {
   top: `-50%`,
 });
 
+// -------------- canvas for hero section -----
 
-// -------------- canvas for hero section ----- 
-
-function canvas(){
+function canvas() {
   const canvas = document.querySelector("#page7>canvas");
   const context = canvas.getContext("2d");
 
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-
 
   window.addEventListener("resize", function () {
     canvas.width = window.innerWidth;
@@ -1166,10 +1150,6 @@ gsap.to("#page23>img", {
   },
   opacity: 1,
 });
-
-
-
-
 
 $(document).ready(function () {
   $("html,body").addClass("overflow");
@@ -1674,17 +1654,4 @@ elements.map((element) => {
   };
 });
 
-
-
-
 // --------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
