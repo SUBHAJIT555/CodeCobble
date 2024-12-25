@@ -489,24 +489,26 @@ body {
 .experties-heading {
   position: absolute;
   width: 100%;
-  top: -16%;
+  top: -20%;
   display: flex;
   justify-content: center;
   text-align: center;
 }
 .experties-heading h1 {
-  background-color: lawngreen;
+  background-color: #000;
   border-radius: 10px;
+  
+  border: 2px solid rgba(255, 255, 255, 0.31);
   padding: 10px;
   width: 20%;
-  color: #000;
+  color: #fff;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 400;
 }
 .experties-left {
   display: flex;
   width: 50%;
-  border-right: 2px solid lawngreen;
+  border-right: 1px solid lawngreen;
   padding: 0px 20px;
   align-items: center;
   gap: 30px;
@@ -523,7 +525,7 @@ body {
 .right-wrapper {
   width: 100%;
   padding: 20px 80px;
-  background-color: #2e2e2e;
+  background-color: #1a1a1a;
   border: 1px solid rgba(255, 255, 255, 0.31);
   border-radius: 15px;
 }
@@ -561,14 +563,14 @@ body {
   flex-direction: row-reverse;
 }
 .right-even {
-  border-right: 2px solid lawngreen;
+  border-right: 1px solid lawngreen;
 }
 #page7-bottom-wrapper {
   width: 100%;
   height: 100%;
 }
 .last {
-  border-bottom: 2px solid lawngreen;
+  border-bottom: 1px solid lawngreen;
 }
 #page8 {
   position: relative;
