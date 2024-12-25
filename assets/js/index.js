@@ -1098,7 +1098,7 @@ function canvas() {
       scrub: 0.5,
       trigger: `#page7`,
       start: `top top`,
-      end: `600% top`,
+      end: `700% top`,
       scroller: `#main`,
     },
     onUpdate: render,
@@ -1135,7 +1135,7 @@ function canvas() {
     pin: true,
     scroller: `#main`,
     start: `top top`,
-    end: `600% top`,
+    end: `700% top`,
   });
 }
 canvas();
