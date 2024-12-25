@@ -1025,6 +1025,14 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
   }
+
+  #page7-top h1 {
+    font-size: 40px;
+  }
+  #page7-top p {
+    font-size: 20px;
+  }
+
   #process-content {
     height: 100%;
   }
@@ -1271,6 +1279,13 @@ body {
     padding: 5px;
   }
 
+  #page7-top h1 {
+    font-size: 30px;
+  }
+  #page7-top p {
+    font-size: 18px;
+  }
+
   #page7-bottom-wrapper {
     display: flex;
     flex-direction: column;
@@ -1281,13 +1296,19 @@ body {
   .experties {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
   }
   .experties-left {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .experties-left,
+  .experties-right {
     padding: 10px;
   }
+
   .experties-right {
     display: flex;
     flex-direction: column;
@@ -1311,9 +1332,9 @@ body {
     width: 40%;
   }
   .experties-heading {
+    top: -12%;
     position: absolute;
     width: 100%;
-    top: -12%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -1392,6 +1413,27 @@ body {
     height: 400px;
     font-size: 12px;
     border-radius: 20px 20px 10px 10px;
+  }
+
+  .experties {
+    margin-top: 50px;
+  }
+
+  .experties-heading {
+    top: -8%;
+  }
+
+  .experties-heading h1 {
+    font-size: 16px;
+  }
+
+  #page4-bottom #values {
+    width: 100%;
+  }
+
+  #page6-bottom #process {
+    width: 100%;
+    height: auto;
   }
 
   #footer-top {
