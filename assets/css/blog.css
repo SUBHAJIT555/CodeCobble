@@ -182,6 +182,7 @@ body {
 
 #page1 video {
   position: relative;
+  /* height: 90vh; */
   width: 100%;
   border-radius: 30px;
   padding: 4vw;
@@ -418,8 +419,8 @@ body {
 }
 
 #fixed-image {
-  height: 25vw;
-  width: 18vw;
+  height: 500px;
+  width: 300px;
   border-radius: 20px;
   position: fixed;
   z-index: 99;
@@ -428,14 +429,16 @@ body {
   display: none;
 }
 #page4 {
-  /* height: 70vh; */
+  position: relative;
+  height: auto;
   width: 100%;
   background-color: #000;
-  padding: 10vw 2vw;
+  padding: 7vw 2vw;
   color: white;
 }
 #page5 {
-  /* height: 100vh; */
+  position: relative;
+  height: auto;
   width: 100%;
 }
 /* ----------footer css-----------  */
@@ -444,43 +447,42 @@ body {
   width: 100%;
   height: auto;
 }
-#footer-top{
-  margin:50px 280px;
+#footer-top {
+  margin: 50px 280px;
   display: flex;
   justify-content: space-between;
   background-color: #141414;
   padding: 50px;
   border-radius: 16px;
+  align-items: center;
 }
-#footer-top h1{
+#footer-top h1 {
   color: white;
   font-family: var(--heading-font);
   font-size: 40px;
   font-weight: 900;
-  
 }
-#footer-top button{
+#footer-top button {
   color: #000;
   background-color: lawngreen;
   border: none;
-  height: 63px;
-  width: 225px;
+  padding: 20px 40px;
   border-radius: 16px;
   font-size: 20px;
-  border: 2px solid lawngreen;
+  border: 1px solid lawngreen;
   transition: all ease 0.5s;
 }
-#footer-top button:hover{
+#footer-top button:hover {
   color: lawngreen;
   background-color: transparent;
 }
-#footer-bottom{
+#footer-bottom {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   padding: 20px 80px;
 }
-.box{
+.box {
   width: 25%;
   height: 350px;
   background-color: #141414;
@@ -490,180 +492,187 @@ body {
   border-radius: 16px;
   padding: 20px;
 }
-.address h1{
+.address h1 {
   color: white;
   font-family: var(--text-font);
-
 }
-.underline{
+.underline {
   display: inline-block;
   width: 55%;
-  border-bottom: 2px solid lawngreen;
+  border-bottom: 1px solid lawngreen;
   padding-bottom: 10px;
 }
-.address p{
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.address p {
   color: white;
   font-family: var(--text-font);
-  font-size: 15px;
-  font-weight: 100;
+  font-size: 16px;
+  text-align: left;
+  line-height: 20px;
 }
-.address a{
+.address a {
   color: white;
   font-family: var(--text-font);
   text-decoration: none;
   transition: all ease 0.3s;
 }
-.address a:hover{
+.address a:hover {
   color: lawngreen;
-  text-decoration: none ;
+  text-decoration: none;
 }
-.address i{
+.address i {
   color: lawngreen;
 }
-.useful h1{
+.useful h1 {
   color: white;
   font-family: var(--text-font);
+  /* margin-bottom: 10px; */
 }
-.useful a{
+.useful a {
   text-decoration: none;
   color: white;
   font-family: var(--text-font);
   font-size: 18px;
   line-height: 30px;
-  transition: all esae 0.3s;
+  transition: all ease 0.5s;
 }
-.useful a:hover{
+.useful a:hover {
   color: lawngreen;
   text-decoration: none;
 }
-.services h1{
+.services h1 {
   color: white;
   font-family: var(--text-font);
-
+  /* margin-bottom: 10px; */
 }
-.services a{
+.services a {
   text-decoration: none;
   color: white;
   font-family: var(--text-font);
   font-size: 18px;
-  line-height: 40px;
-  transition: all ease 0.3s;
+  line-height: 35px;
+  transition: all ease 0.5s;
 }
-.services a:hover{
+.services a:hover {
   color: lawngreen;
   text-decoration: none;
 }
-.services i{
+.services i {
   display: none;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
 }
 
-.services a:hover i{
+.services a:hover i {
   color: lawngreen;
   display: inline-block;
 }
-.useful i{
+.useful i {
   display: none;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
 }
 
-.useful a:hover i{
+.useful a:hover i {
   color: lawngreen;
   display: inline-block;
 }
-#icons{
+#icons {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  margin-left: 10px;
 }
-.icon-box{
-  width: 80px;
-  height: 60px;
+.icon-box {
+  /* width: 80px;
+  height: 60px; */
   background-color: #151515;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  padding: 20px;
+  padding: 15px;
   border: 1px solid rgb(65, 63, 63);
   transition: all ease 0.5s;
 }
-.icon-box a{
+.icon-box a {
   color: lawngreen;
   font-size: 30px;
   text-decoration: none;
 }
-.icon-box:hover a{
+.icon-box:hover a {
   text-decoration: none;
   color: #000;
 }
-.icon-box:hover{
+.icon-box:hover {
   background-color: lawngreen;
   border: none;
 }
-.newsletter{
+.newsletter {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
-#newsletter-email{
+#newsletter-email {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.newsletter input{
+.newsletter input {
   font-family: var(--text-font);
   color: lawngreen;
   font-size: 18px;
   padding: 15px 30px;
-  border: 2px solid lawngreen;
+  border: 1px solid lawngreen;
   background-color: transparent;
   border-radius: 16px;
   width: 80%;
 }
-.newsletter button{
+.newsletter button {
   border: none;
   border-radius: 16px;
   background-color: lawngreen;
   padding: 20px;
   font-family: var(--text-font);
   font-weight: 600;
-  border: 2px solid lawngreen;
+  border: 1px solid lawngreen;
   transition: all ease 0.5s;
 }
-.newsletter button:hover{
+.newsletter button:hover {
   background-color: transparent;
-  color:lawngreen;
-  border: 2px solid lawngreen;
+  color: lawngreen;
+  border: 1px solid lawngreen;
 }
-.newletter-top{
+.newletter-top {
   background-color: #151515;
   padding: 10px;
 }
-.newsletter h1{
+.newsletter h1 {
   color: white;
   font-family: var(--text-font);
-  
+  margin-bottom: 10px;
 }
-.newsletter p{
+.newsletter p {
   color: white;
   font-family: var(--text-font);
-
+  margin-bottom: 20px;
+  text-align: left;
+  line-height: 22px;
 }
-#footer-end{
+#footer-end {
+  font-family: var(--text-font);
   border-top: 2px solid rgb(77, 75, 75);
 }
-#footer-end p{
-  color: white;
+#footer-end p {
+  color: rgb(159, 157, 157);
   text-align: center;
   padding: 20px;
 }
-#footer-start{
+#footer-start {
   border-bottom: 2px solid rgb(77, 75, 75);
 }
-
 
 .swiper {
   width: 100%;
@@ -976,3 +985,8 @@ body {
     font-size: 5vw;
   }
 }
+
+
+
+
+

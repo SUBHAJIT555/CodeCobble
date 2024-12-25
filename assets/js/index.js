@@ -38,6 +38,25 @@ function loco() {
   ScrollTrigger.refresh();
 }
 loco();
+function page1() {
+  var tl = gsap.timeline();
+
+  tl.from("#hero-heading h1", {
+    x: -300,
+    opacity: 0,
+    duration: 1,
+    stagger: 3,
+  });
+  
+  tl.from("#hero-heading h3", {
+    x: 300,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.5,
+  });
+
+}
+page1();
 
 gsap.to("#page>video", {
   scrollTrigger: {
@@ -57,7 +76,7 @@ gsap.to("#page", {
     start: `top top`,
     end: `bottom top`,
     scroller: `#main`,
-    // pin: true,
+    pin: true,
   },
 });
 
