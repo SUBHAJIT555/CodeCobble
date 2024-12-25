@@ -602,11 +602,11 @@ function canvas2() {
     snap: "frame",
     ease: `none`,
     scrollTrigger: {
-      scrub: 0.5,
+      scrub: 4,
       trigger: `#page-videosolution`,
       //   set start end according to preference
       start: `top top`,
-      end: `800% top`,
+      end: `200% top`,
       scroller: `#main`,
     },
     onUpdate: render,
@@ -645,7 +645,7 @@ function canvas2() {
     scroller: `#main`,
     //   set start end according to preference
     start: `top top`,
-    end: `800% top`,
+    end: `200% top`,
   });
 }
 canvas2();
