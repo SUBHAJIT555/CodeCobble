@@ -87,12 +87,13 @@ body {
 }
 
 #hero-heading {
-  padding-top: 1rem;
+  padding: 1rem 5rem;
   background-color: transparent;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
+  gap: 300px;
 }
 #hero-heading h1 {
   background-image: linear-gradient(to left, #6b34e2, #6b34e2, #fff, #7cfc00);
@@ -104,6 +105,16 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+  text-align: left;
+}
+#hero-heading h1 span{
+  color: transparent;
+  background-image: linear-gradient(to left, #000, #000, #000, #000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px white;
+  font-size: 4.5rem
 }
 #hero-heading h3 {
   color: white;
@@ -112,7 +123,7 @@ body {
   font-weight: 300;
   width: 50%;
   text-transform: capitalize;
-  text-align: center;
+  text-align: left;
 }
 .collection {
   height: 100vh;
@@ -1351,8 +1362,8 @@ svg.squiggle path {
   margin: 100px 300px;
   border-radius: 50px;
   padding: 20px 0;
-  background-color: #222020;
-  background-image: url(/assets/Noise.svg);
+  /* background-color: #292828; */
+  /* background-image: url(/assets/Noise.svg); */
 }
 
 .circular-bar {
@@ -1363,19 +1374,53 @@ svg.squiggle path {
 
 .circle {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: conic-gradient(lawngreen 0% 75%, #000 75% 100%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+.circle-chart__circle--negative {
+  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+}
 
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.circle:nth-child(1) {
+  background: conic-gradient(lawngreen 0% 75%, #7e7ee0 25% 100%);
+}
+
+.circle:nth-child(2) {
+  background: conic-gradient(lawngreen 0% 60%, #7e7ee0 25% 100%);
+}
+.circle:nth-child(3) {
+  background: conic-gradient(lawngreen 0% 66%, #7e7ee0 25% 100%);
+}
 .inner-circle {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   background-color: #000;
   display: flex;

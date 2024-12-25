@@ -17,7 +17,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/Noise.svg");
+  /* background-image: url("/assets/Noise.svg"); */
 
   background-position: center;
   background-size: cover;
@@ -42,13 +42,13 @@ body {
   margin-bottom: 80px;
 }
 #gola {
-  position: absolute;
+  position: fixed;
   width: 70%;
   top: 0;
   height: 20%;
   background-color: lawngreen;
   filter: blur(400px);
-  z-index: -1;
+  z-index: 1;
 }
 #page1-top {
   display: flex;
@@ -311,7 +311,8 @@ body {
   width: 30%;
   height: 350px;
   padding-bottom: 20px;
-  background-color: #4a4973;
+  background-color: #2e2e2e;
+  border: 1px solid rgba(255, 255, 255, 0.31);
   border-radius: 20px;
 }
 
@@ -522,7 +523,8 @@ body {
 .right-wrapper {
   width: 100%;
   padding: 20px 80px;
-  background-color: #5e5dcb66;
+  background-color: #2e2e2e;
+  border: 1px solid rgba(255, 255, 255, 0.31);
   border-radius: 15px;
 }
 .experties-right-icons {
@@ -532,7 +534,7 @@ body {
   gap: 25px;
 }
 .experties-right-icons img {
-  width: 70px;
+  width: 50px;
 }
 .experties-right-icon-title {
   display: flex;
