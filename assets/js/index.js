@@ -1098,7 +1098,7 @@ function canvas() {
       scrub: 0.5,
       trigger: `#page7`,
       start: `top top`,
-      end: `600% top`,
+      end: `300% top`,
       scroller: `#main`,
     },
     onUpdate: render,
