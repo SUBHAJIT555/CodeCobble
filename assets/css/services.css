@@ -559,9 +559,10 @@ body {
   background-color: #000;
 }
 .page12-inner {
-  position: absolute;
-  top: 20%;
+  /* position: absolute;
+  top: 20%; */
   /* left: 30%; */
+  margin: 8rem 0 0;
   text-align: center;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -650,6 +651,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 #footer-top {
   margin: 50px 280px;
   display: flex;
@@ -657,7 +659,9 @@ body {
   background-color: #141414;
   padding: 50px;
   border-radius: 16px;
+  align-items: center;
 }
+
 #footer-top h1 {
   color: white;
   font-family: var(--heading-font);
@@ -668,13 +672,13 @@ body {
   color: #000;
   background-color: lawngreen;
   border: none;
-  height: 63px;
-  width: 225px;
+  padding: 20px 40px;
   border-radius: 16px;
   font-size: 20px;
-  border: 2px solid lawngreen;
+  border: 1px solid lawngreen;
   transition: all ease 0.5s;
 }
+
 #footer-top button:hover {
   color: lawngreen;
   background-color: transparent;
@@ -949,6 +953,14 @@ body {
     margin: 10px 0 0 0;
   }
 
+  #page12 {
+    height: auto;
+  }
+
+  .page12-inner {
+    margin-top: 5rem;
+  }
+
   .page12-inner > h1 {
     font-size: 4rem;
   }
@@ -957,5 +969,173 @@ body {
     margin-top: 2rem;
     line-height: 2.5rem;
     font-size: 1.5rem;
+  }
+
+  #page14 {
+    margin-top: 50px;
+  }
+
+  #footer-top {
+    margin: 50px 50px;
+  }
+
+  #footer-bottom {
+    padding: 20px 20px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 48%;
+  }
+
+  .icon-box {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer-top h1 {
+    font-size: 2rem;
+  }
+
+  #footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+  }
+  .box {
+    width: 80%;
+    padding: 0 60px;
+    margin: auto;
+  }
+  #footer #icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer-top {
+    margin: 50px 20px;
+    padding: 20px;
+  }
+  #footer-top h1 {
+    font-size: 0.938;
+  }
+  #footer-top button {
+    height: 40px;
+    width: 130px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+  #footer-bottom {
+    padding: 20px 20px;
+  }
+  #footer-bottom .box {
+    width: 80%;
+    padding: 0 15px;
+  }
+  #footer-bottom .box {
+    margin: auto;
+  }
+  #footer-bottom .box h1 {
+    font-size: 2rem;
+  }
+  #footer-bottom .box p {
+    font-size: 1.5rem;
+  }
+  #footer-bottom .box a {
+    font-size: 1.5rem;
+  }
+  #footer-bottom .box i {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #footer-top {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+  }
+  #footer-top h1 {
+    font-size: 1.8rem;
+  }
+
+  .address {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .address h1 {
+    font-size: 1.2rem;
+  }
+  .address p {
+    font-size: 0.8rem;
+  }
+  .address p:nth-child(2) {
+    display: none;
+  }
+  .useful {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .useful a {
+    line-height: 20px;
+  }
+  .useful a:nth-child(10) {
+    margin-bottom: 10px;
+  }
+  .services {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .services a {
+    line-height: 23px;
+  }
+  .services a:nth-child(8) {
+    margin-bottom: 10px;
+  }
+
+  .newsletter {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .newsletter p:nth-child(2) {
+    display: none;
+  }
+  #newsletter-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #newsletter-email input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 2px 10px;
+  }
+  #newsletter-email button {
+    width: 50%;
+    margin: auto;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  #icons {
+    margin-bottom: 10px;
   }
 }
