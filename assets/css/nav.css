@@ -14,7 +14,7 @@
 }
 
 .mainnav {
-  position: relative;
+  width: 100%;
 }
 
 .hamburger {
@@ -249,6 +249,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Optional: Change as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: For aesthetics */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -289,6 +298,7 @@
     .hamburger{
     padding: 0px 20px;
   }
+
   .listmain li a {
     font-size: 30px;
   }

@@ -2044,9 +2044,11 @@ svg.squiggle path {
 
 
 
-.wrapper {
+/* .wrapper {
   position: relative;
   margin-bottom: 30px;
+  display: flex;
+  
 }
 .btn-button {
   background: #504f4fca;
@@ -2077,7 +2079,7 @@ svg.squiggle path {
 }
 .btn-pupil {
   background: #000;
-  border: 0.8rem solid rgb(156, 207, 255);
+  border: 0.8rem solid lawngreen;
   border-radius: 10rem;
   padding: 0.7rem;
   transition: all 200ms ease-out;
@@ -2162,4 +2164,4 @@ svg.squiggle path {
               transparent 36% 64%,
               #000 65% 100%);
   }
-}
+} */
