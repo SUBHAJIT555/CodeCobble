@@ -1140,6 +1140,11 @@ body {
     font-size: 1.8rem;
   }
   .service-detail > p {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .service .service-detail a {
     font-size: 1.5rem;
   }
 
@@ -1201,53 +1206,53 @@ body {
   }
 
   #page2 > h2 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   #page2 > h1 {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
 
   #page4 > h3 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   #page4 > h1 {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
 
   #page6 > h3 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   #page6 > h1 {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
 
   #page10-top > h1 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
 
   .right10-inner > h1 {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
   .right10-inner > p {
-    font-size: 1.2rem; /* Reduced from 1.5rem */
+    font-size: 1.3rem; /* Reduced from 1.5rem */
   }
 
   #page11-top > h1 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
 
   .service-detail > h1 {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
   .service-detail > p {
-    font-size: 1.2rem; /* Reduced from 1.5rem */
+    font-size: 1.3rem; /* Reduced from 1.5rem */
   }
 
   .page12-inner > h1 {
-    font-size: 2rem; /* Reduced from 2.5rem */
+    font-size: 2.2rem; /* Reduced from 2.5rem */
   }
   .page12-inner > p {
-    font-size: 1.5rem; /* Reduced from 1.8rem */
+    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
 
   #footer-top {
