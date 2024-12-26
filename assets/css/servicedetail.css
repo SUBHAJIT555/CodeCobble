@@ -34,33 +34,35 @@ body {
   --heading-font: Croparo;
   --text-font: Raleway;
 }
+
 #hero {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  /* background-color: #000; */
 }
 #hero1 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  /* background-color: #000; */
 }
 #hero2 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  /* background-color: #000; */
 }
 #hero3 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #000;
+  /* background-color: #000; */
 }
 canvas {
+  opacity: 0.5;
   position: relative;
-  z-index: 9;
+  z-index: -1;
   max-width: 100vw;
   max-height: 100vh;
 }
@@ -81,16 +83,22 @@ canvas {
   animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
+  color: lawngreen;
+  /* background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  z-index: 9;
+
 }
+
 #loop > h1 > span {
-  background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
+  /* background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: transparent;
+  -webkit-text-stroke: 1px  lawngreen;
   font-weight: 500;
 }
 
@@ -102,7 +110,28 @@ canvas {
     transform: translateX(-100%);
   }
 }
-
+#hero1{
+  z-index: 999;
+  background-color: transparent;
+}
+#hero2{
+  z-index: 999;
+  background-color: transparent;
+}
+#hero3{
+  z-index: 999;
+  background-color: transparent;
+}
+#hero1 > #right-text{
+  /* background-color: #2625254f; */
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  line-height: 2rem; */
+  
+}
 #hero > h3 {
   position: absolute;
   top: 55%;
@@ -110,6 +139,7 @@ canvas {
   font-weight: 400;
   color: white;
   left: 5%;
+  
 }
 #hero > h4 {
   position: absolute;
@@ -124,6 +154,8 @@ canvas {
   top: 30%;
   left: 10%;
   color: white;
+  
+  
 }
 #hero1 > #right-text > h3 {
   font-weight: 400;
@@ -132,10 +164,11 @@ canvas {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--heading-font);
+  margin-bottom: 6px;
 }
 #hero1 > #right-text > h1 {
-  line-height: 1.5;
-  font-size: 50px;
+  /* line-height: 1.5; */
+  font-size: 40px;
   font-family: var(--text-font);
 }
 #hero1 > #left-text {

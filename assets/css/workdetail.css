@@ -126,7 +126,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
-  width: 20%;
+  width: 100%;
   padding: 3px;
   font-size: 25px;
   border-radius: 10px;
@@ -135,8 +135,43 @@ body {
 }
 .box-title a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen; */
+  color: white;
+}
+
+.page3-box-title a{
+  color: lawngreen;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+  padding: 3px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 0.5px solid transparent;
+  transition: all ease 0.5s;
+}
+.page3-box-title a:hover{
+  text-decoration: none;
+  /* background-color: lawngreen; */
+  color: white;
+}
+.page3-box-even a{
+  color: lawngreen;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: transparent;
+  width: 100%;
+  padding: 3px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 0.5px solid transparent;
+  transition: all ease 0.5s;
+}
+.page3-box-even a:hover{
+  text-decoration: none;
+  /* background-color: lawngreen; */
+  color: white;
 }
 .box-emptyspace {
   height: 100px;
@@ -275,7 +310,16 @@ body {
   color: #000;
 }
 
-#page3 {
+#page1 a{
+  width: 100%;
+}
+#page3 a{
+  width: 100%;
+}
+#page3 a{
+  width: 100%;
+}
+#page3{
   position: relative;
   background-color: #000;
   width: 100%;
@@ -342,8 +386,8 @@ body {
 }
 .page3-box-title a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen; */
+  color: white;
 }
 .page3-box-emptyspace {
   height: 100px;
@@ -727,8 +771,21 @@ body {
   #page1 {
     height: auto;
   }
-  .workbox {
-    height: 500px;
+  #page1 a{
+    font-size: 16px;
+    width: 100%;
+  }
+  #page2 a{
+    font-size: 16px;
+  }
+  #page3 a{
+    font-size: 16px;
+  }
+  #page4 a{
+    font-size: 16px;
+  }
+  .workbox{
+    height: auto;
   }
   .box-title h1 {
     font-size: 30px;
@@ -820,10 +877,10 @@ body {
     height: auto;
   }
 
-  .workbox {
-    height: 500px;
-  }
-  .box-title h1 {
+  .workbox{
+    height: auto;
+  } 
+  .box-title h1{
     font-size: 25px;
   }
   .box-title p {
@@ -1093,7 +1150,19 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .workbox {
+  #page1 a{
+    font-size: 12px;
+  }
+  #page2 a{
+    font-size: 12px;
+  }
+  #page3 a{
+    font-size: 12px;
+  }
+  #page4 a{
+    font-size: 12px;
+  }
+  .workbox{
     height: auto;
     width: 100%;
     padding: 0 50px 0 30px;
@@ -1209,7 +1278,8 @@ body {
     font-weight: 400;
     border-radius: 8px;
   }
-  .address {
+  
+  .address{
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1281,5 +1351,9 @@ body {
   }
   #icons {
     margin-bottom: 10px;
+  }
+  
+  #footer-end p{
+    font-size: 1rem;
   }
 }
