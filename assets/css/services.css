@@ -7,6 +7,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #000;
 }
 #main {
   position: relative;
@@ -536,7 +537,7 @@ body {
   color: white;
   text-decoration: none;
   font-family: var(--text-font);
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   margin-left: 70%;
   border: 1px solid white;
   padding: 5px 10px;
@@ -870,40 +871,50 @@ body {
 
 @media screen and (max-width: 1024px) {
   .bottom-page1 {
-    width: 80%;
+    width: 60%;
   }
   .bottom-page1 > h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
+  }
+
+  #page2 {
+    margin-top: 50px;
+    height: auto;
   }
 
   #page2 > h2 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
   #page2 > h1 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
+  #page4 {
+    margin-top: 50px;
+    height: auto;
+  }
+
   #page4 > h3 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   #page4 > h1 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
   #page6 > h3 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   #page6 > h1 {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     text-align: center;
   }
 
   #page10-top > h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .right10 {
@@ -916,17 +927,17 @@ body {
   }
 
   .right10-inner > h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   .right10-inner > p {
     line-height: normal;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin-top: 0;
   }
 
   #page11-top > h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .service {
@@ -940,13 +951,13 @@ body {
     width: 85%;
   }
   .service-detail > h1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
   .service-detail > p {
     line-height: normal;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 
   .service .service-detail a {
@@ -962,13 +973,13 @@ body {
   }
 
   .page12-inner > h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .page12-inner > p {
     margin-top: 2rem;
-    line-height: 2.5rem;
-    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-size: 2.2rem;
   }
 
   #page14 {
@@ -994,6 +1005,66 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .bottom-page1 {
+    bottom: 0;
+    width: 70%;
+    top: 20%;
+  }
+
+  .bottom-page1 > h1 {
+    font-size: 3rem;
+  }
+
+  #page2 > h2 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+  #page2 > h1 {
+    font-size: 2.1rem; /* Reduced from 2.4rem */
+  }
+
+  #page4 > h3 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+  #page4 > h1 {
+    font-size: 2.1rem; /* Reduced from 2.4rem */
+  }
+
+  #page6 > h3 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+  #page6 > h1 {
+    font-size: 2.1rem; /* Reduced from 2.4rem */
+  }
+
+  #page10-top > h1 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+
+  .right10-inner > h1 {
+    font-size: 2.2rem; /* Reduced from 2.5rem */
+  }
+  .right10-inner > p {
+    font-size: 1.8rem; /* Reduced from 2rem */
+  }
+
+  #page11-top > h1 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+
+  .service-detail > h1 {
+    font-size: 2.2rem; /* Reduced from 2.5rem */
+  }
+  .service-detail > p {
+    font-size: 1.8rem; /* Reduced from 2rem */
+  }
+
+  .page12-inner > h1 {
+    font-size: 3rem; /* Reduced from 3.5rem */
+  }
+  .page12-inner > p {
+    font-size: 2rem; /* Reduced from 2.2rem */
+  }
+
   #footer-top h1 {
     font-size: 2rem;
   }
@@ -1017,6 +1088,68 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .bottom-page1 {
+    width: 80%;
+  }
+
+  .bottom-page1 > h1 {
+    font-size: 2.5rem;
+  }
+
+  #page2 {
+    margin-top: 30px;
+  }
+
+  #page2 > h2 {
+    font-size: 2.5rem;
+  }
+  #page2 > h1 {
+    font-size: 1.8rem;
+  }
+
+  #page4 > h3 {
+    font-size: 2.5rem;
+  }
+  #page4 > h1 {
+    font-size: 1.8rem;
+  }
+
+  #page6 > h3 {
+    font-size: 2.5rem;
+  }
+  #page6 > h1 {
+    font-size: 1.8rem;
+  }
+
+  #page10-top > h1 {
+    font-size: 2.5rem;
+  }
+
+  .right10-inner > h1 {
+    font-size: 1.8rem;
+  }
+  .right10-inner > p {
+    font-size: 1.5rem;
+  }
+
+  #page11-top > h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-detail > h1 {
+    font-size: 1.8rem;
+  }
+  .service-detail > p {
+    font-size: 1.5rem;
+  }
+
+  .page12-inner > h1 {
+    font-size: 2.5rem;
+  }
+  .page12-inner > p {
+    font-size: 1.8rem;
+  }
+
   #footer-top {
     margin: 50px 20px;
     padding: 20px;
@@ -1025,11 +1158,10 @@ body {
     font-size: 0.938;
   }
   #footer-top button {
-    height: 40px;
-    width: 130px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
+    padding: 10px 20px;
   }
   #footer-bottom {
     padding: 20px 20px;
@@ -1056,6 +1188,68 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  .bottom-page1 {
+    top: 15%;
+  }
+
+  .bottom-page1 > h1 {
+    font-size: 2rem;
+  }
+
+  #page2 {
+    margin-top: 20px;
+  }
+
+  #page2 > h2 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+  #page2 > h1 {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+
+  #page4 > h3 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+  #page4 > h1 {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+
+  #page6 > h3 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+  #page6 > h1 {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+
+  #page10-top > h1 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+
+  .right10-inner > h1 {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+  .right10-inner > p {
+    font-size: 1.2rem; /* Reduced from 1.5rem */
+  }
+
+  #page11-top > h1 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+
+  .service-detail > h1 {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+  .service-detail > p {
+    font-size: 1.2rem; /* Reduced from 1.5rem */
+  }
+
+  .page12-inner > h1 {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+  .page12-inner > p {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+  }
+
   #footer-top {
     flex-direction: column;
     gap: 20px;
