@@ -1028,6 +1028,7 @@ body {
   #footer-bottom .box i {
     font-size: 2rem;
   }
+  
 }
 
 
@@ -1099,7 +1100,7 @@ body {
     /* padding: 0 30px; */
   }
   #page2-right-image img{
-    height: 300px;
+    height: 100%;
   }
   #page2-right-content h1{
     font-size: 20px;
@@ -1191,6 +1192,32 @@ body {
   }
   .address p:nth-child(2){
     display: none;
+  }
+  .useful{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .useful a{
+    line-height: 20px;
+  }
+  .useful a:nth-child(10){
+    margin-bottom: 10px;
+  }
+  .services{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  .services a{
+    line-height: 23px;
+  }
+  .services a:nth-child(8){
+    margin-bottom: 10px;
   }
   
   .newsletter{
