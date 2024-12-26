@@ -14,7 +14,7 @@
 }
 
 .mainnav {
-  position: relative;
+  width: 100%;
 }
 
 .hamburger {
@@ -250,6 +250,8 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .listmain li a {
@@ -289,6 +291,11 @@
     .hamburger{
     padding: 0px 20px;
   }
+  .hamburger img{
+    width: 80px;
+    padding-top: 10px;
+  }
+
   .listmain li a {
     font-size: 30px;
   }
