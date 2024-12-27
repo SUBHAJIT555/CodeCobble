@@ -33,6 +33,29 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- 
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style> -->
 
     <script
       src="https://code.jquery.com/jquery-2.2.0.min.js"
@@ -708,6 +731,79 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
         <div id="page8-top">
           <h1>OUR TEAM</h1>
         </div>
+
+        <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 1
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 2
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 3
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 4
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 5
+            </div>
+            <div
+              class="swiper-slide"
+              style="
+                background-color: wheat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              Slide 6
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+
         <div id="swiperdiv">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -953,62 +1049,89 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
 
     <script>
       // var swiper = new Swiper(".mySwiper", {
-      //   slidesPerView: 3, // Default for desktop
-      //   spaceBetween: 30,
+      //   // slidesPerView: 3, // Default for desktop
+      //   // spaceBetween: 30,
       //   loop: true,
       //   autoplay: {
       //     delay: 2500,
       //     disableOnInteraction: false,
       //   },
+      //   // pagination: {
+      //   //   el: ".swiper-pagination",
+      //   //   clickable: true,
+      //   // },
+      //   breakpoints: {
+      //     480: {
+      //       slidesPerView: 1, // For screens <= 480px
+      //       spaceBetween: 0, // Remove space between slides
+      //       width: null, // Let Swiper calculate width automatically
+      //       centeredSlides: true, // Center the active slide
+      //     },
+      //     768: {
+      //       slidesPerView: 1, // For screens <= 768px
+      //       spaceBetween: 20, // Adjust spacing
+      //     },
+      //     1024: {
+      //       slidesPerView: 2, // For screens <= 1024px
+      //       spaceBetween: 20, // Adjust spacing for medium screens
+      //     },
+      //     1880: {
+      //       slidesPerView: 3, // For screens > 1024px
+      //       spaceBetween: 30, // Default spacing for large screens
+      //     },
+      //   },
+      // });
+      var swiper = new Swiper(".mySwiper", {
+        // spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        spaceBetween: 30,
+        loop: true,
+        // slidesPerView: 3,
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 3, // Default for large screens
+      //   spaceBetween: 30, // Default spacing
+      //   loop: true,
       //   pagination: {
       //     el: ".swiper-pagination",
       //     clickable: true,
       //   },
       //   breakpoints: {
-      //     // Apply new settings for smaller screens
-      //     540: {
-      //       slidesPerView: 1, // For screens <= 540px
-      //       spaceBetween: 10, // Adjust space between slides for smaller screens
+      //     480: {
+      //       slidesPerView: 1, // For screens <= 480px
+      //       spaceBetween: 0, // Remove space between slides
+      //       width: null, // Let Swiper calculate width automatically
+      //       centeredSlides: true, // Center the active slide
+      //     },
+      //     768: {
+      //       slidesPerView: 1, // For screens <= 768px
+      //       spaceBetween: 20, // Adjust spacing
       //     },
       //     1024: {
-      //       slidesPerView: 3, // For screens <= 540px
-      //       spaceBetween: 10, // Adjust space between slides for smaller screens
+      //       slidesPerView: 2, // For screens <= 1024px
+      //       spaceBetween: 20, // Adjust spacing for medium screens
       //     },
       //     1880: {
-      //       slidesPerView: 3, // For screens <= 540px
-      //       spaceBetween: 10, // Adjust space between slides for smaller screens
+      //       slidesPerView: 3, // For screens > 1024px
+      //       spaceBetween: 30, // Default spacing for large screens
       //     },
       //   },
       // });
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3, // Default for large screens
-        spaceBetween: 30, // Default spacing
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          480: {
-            slidesPerView: 1, // For screens <= 480px
-            spaceBetween: 0, // Remove space between slides
-            width: null, // Let Swiper calculate width automatically
-            centeredSlides: true, // Center the active slide
-          },
-          768: {
-            slidesPerView: 1, // For screens <= 768px
-            spaceBetween: 20, // Adjust spacing
-          },
-          1024: {
-            slidesPerView: 2, // For screens <= 1024px
-            spaceBetween: 20, // Adjust spacing for medium screens
-          },
-          1880: {
-            slidesPerView: 3, // For screens > 1024px
-            spaceBetween: 30, // Default spacing for large screens
-          },
-        },
-      });
     </script>
   </body>
 </html>
