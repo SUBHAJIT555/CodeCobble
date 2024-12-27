@@ -653,87 +653,86 @@ gsap.from(".home__button", {
 });
 gsap.from(".home__img", { opacity: 0, duration: 1, delay: 1.3, y: 30 });
 
-// End Hero Animation
+// gsap.to(imageSeq, {
+//   frame: frameCount - 1,
+//   snap: "frame",
+//   ease: `none`,
+//   scrollTrigger: {
+//     scrub: 5,
+//     trigger: `#hero>canvas`,
+//     start: `top top`,
+//     end: `600% top`,
+//     scroller: `#main`,
+//   },
+//   onUpdate: render,
+// });
 
-gsap.to(imageSeq, {
-  frame: frameCount - 1,
-  snap: "frame",
-  ease: `none`,
-  scrollTrigger: {
-    scrub: 5,
-    trigger: `#hero>canvas`,
-    start: `top top`,
-    end: `600% top`,
-    scroller: `#main`,
-  },
-  onUpdate: render,
-});
+// images[1].onload = render;
 
-images[1].onload = render;
+// function render() {
+//   scaleImage(images[imageSeq.frame], context);
+// }
 
-function render() {
-  scaleImage(images[imageSeq.frame], context);
-}
+// function scaleImage(img, ctx) {
+//   var canvas = ctx.canvas;
+//   var hRatio = canvas.width / img.width;
+//   var vRatio = canvas.height / img.height;
+//   var ratio = Math.max(hRatio, vRatio);
+//   var centerShift_x = (canvas.width - img.width * ratio) / 2;
+//   var centerShift_y = (canvas.height - img.height * ratio) / 2;
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
+//   ctx.drawImage(
+//     img,
+//     0,
+//     0,
+//     img.width,
+//     img.height,
+//     centerShift_x,
+//     centerShift_y,
+//     img.width * ratio,
+//     img.height * ratio
+//   );
+// }
+// ScrollTrigger.create({
+//   trigger: "#hero>canvas",
+//   pin: true,
+//   // markers:true,
+//   scroller: `#main`,
+//   start: `top top`,
+//   end: `300% top`,
+// });
 
-function scaleImage(img, ctx) {
-  var canvas = ctx.canvas;
-  var hRatio = canvas.width / img.width;
-  var vRatio = canvas.height / img.height;
-  var ratio = Math.max(hRatio, vRatio);
-  var centerShift_x = (canvas.width - img.width * ratio) / 2;
-  var centerShift_y = (canvas.height - img.height * ratio) / 2;
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(
-    img,
-    0,
-    0,
-    img.width,
-    img.height,
-    centerShift_x,
-    centerShift_y,
-    img.width * ratio,
-    img.height * ratio
-  );
-}
-ScrollTrigger.create({
-  trigger: "#hero>canvas",
-  pin: true,
-  // markers:true,
-  scroller: `#main`,
-  start: `top top`,
-  end: `300% top`,
-});
-
-gsap.to("#hero1", {
-  scrollTrigger: {
-    trigger: `#hero1`,
-    start: `top top`,
-    end: `bottom top`,
-    // pin: true,
-    scroller: `#main`,
-  },
-});
-gsap.to("#hero2", {
-  scrollTrigger: {
-    trigger: `#hero2`,
-    start: `top top`,
-    end: `bottom top`,
-    // pin: true,
-    scroller: `#main`,
-  },
-});
-gsap.to("#hero3", {
-  scrollTrigger: {
-    trigger: `#hero3`,
-    start: `top top`,
-    end: `bottom top`,
-    // pin: true,
-    scroller: `#main`,
-  },
-});
+// gsap.to("#hero1", {
+//   scrollTrigger: {
+//     trigger: `#hero1`,
+//     start: `top top`,
+//     end: `bottom top`,
+//     // pin: true,
+//     scroller: `#main`,
+//   },
+// });
+// gsap.to("#hero2", {
+//   scrollTrigger: {
+//     trigger: `#hero2`,
+//     start: `top top`,
+//     end: `bottom top`,
+//     // pin: true,
+//     scroller: `#main`,
+//   },
+// });
+// gsap.to("#hero3", {
+//   scrollTrigger: {
+//     trigger: `#hero3`,
+//     start: `top top`,
+//     end: `bottom top`,
+//     // pin: true,
+//     scroller: `#main`,
+//   },
+// });
 
 // -------------------------------------
 function page2Animation() {
+  console.log("in page2Animation");
   gsap.from("#page2 .heading", {
     y: 200,
     // scale: 0.5,
