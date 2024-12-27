@@ -1199,6 +1199,7 @@ input:checked + label .description {
   border: 1px solid lawngreen;
   transition: all ease 0.5s;
 }
+
 #footer-top button:hover {
   color: lawngreen;
   background-color: transparent;
