@@ -27,7 +27,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  /* overflow-x: hidden; */
   background-color: #000;
 }
 :root {
@@ -39,25 +38,25 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-  /* background-color: #000; */
+
 }
 #hero1 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  /* background-color: #000; */
+
 }
 #hero2 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  /* background-color: #000; */
+
 }
 #hero3 {
   position: relative;
   height: 100vh;
   width: 100vw;
-  /* background-color: #000; */
+
 }
 canvas {
   opacity: 0.5;
@@ -84,19 +83,12 @@ canvas {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   color: lawngreen;
-  /* background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  
   z-index: 9;
 
 }
 
 #loop > h1 > span {
-  /* background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   color: transparent;
   -webkit-text-stroke: 1px  lawngreen;
   font-weight: 500;
@@ -123,13 +115,10 @@ canvas {
   background-color: transparent;
 }
 #hero1 > #right-text{
-  /* background-color: #2625254f; */
+  
   padding: 20px;
   border-radius: 10px;
-  /* background-color: transparent;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  line-height: 2rem; */
+  
   
 }
 #hero > h3 {
@@ -167,7 +156,7 @@ canvas {
   margin-bottom: 6px;
 }
 #hero1 > #right-text > h1 {
-  /* line-height: 1.5; */
+
   font-size: 40px;
   font-family: var(--text-font);
 }
