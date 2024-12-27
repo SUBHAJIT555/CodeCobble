@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="/assets/css/servicedetail.css" />
     <link rel="stylesheet" href="/assets/css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/servicesHero.css" />
     <!-- ------------- locomotive-scroll CSS-----------------  -->
     <link
       rel="stylesheet"
@@ -132,12 +133,12 @@
       <section class="mainnav">
         <section class="hamburger">
           <div id="icon">
-            <a href="index.html"><img
-              class="logo-head"
-              src="/assets/img/Code Cobble-01.png"
-              alt=""
+            <a href="index.html"
+              ><img
+                class="logo-head"
+                src="/assets/img/Code Cobble-01.png"
+                alt=""
             /></a>
-            
           </div>
           <div id="ham">
             <svg
@@ -162,10 +163,18 @@
               <i class="ri-arrow-right-s-line opensub"></i>
             </ul>
             <ul class="submenuopen">
-              <li><a href="webdevelopmentservice.html">Website Development</a></li>
+              <li>
+                <a href="webdevelopmentservice.html">Website Development</a>
+              </li>
               <li><a href="appdevelopmentservice.html">App Development</a></li>
-              <li><a href="interactivegameservice.html">Interactive Game Development</a></li>
-              <li><a href="digitalmarketingservice.html">Digital Marketing</a></li>
+              <li>
+                <a href="interactivegameservice.html"
+                  >Interactive Game Development</a
+                >
+              </li>
+              <li>
+                <a href="digitalmarketingservice.html">Digital Marketing</a>
+              </li>
               <li><a href="uiuxservice.html">UI/UX Design</a></li>
               <li><a href="graphicservice.html">2D Graphic Services</a></li>
               <li><a href="videoservice.html">3D &Video Solutions</a></li>
@@ -175,7 +184,9 @@
               <i class="ri-arrow-right-s-line opensub"></i>
             </ul>
             <ul class="submenuopen">
-              <li><a href="websitedevelopmentwork.html">Website Development</a></li>
+              <li>
+                <a href="websitedevelopmentwork.html">Website Development</a>
+              </li>
               <!-- <li><a href="">App Development</a></li> -->
               <li><a href="interactivegameswork.html">Interactive Games</a></li>
               <!-- <li><a href="#">Digital Marketing</a></li> -->
@@ -193,34 +204,84 @@
             </div>
             <div class="navcontact">
               <div class="navmin">
-                
-                <a href="tel:+971 56 499 1268"><i class="ri-phone-line"></i> &nbsp;+971 56 499 1268</a>
+                <a href="tel:+971 56 499 1268"
+                  ><i class="ri-phone-line"></i> &nbsp;+971 56 499 1268</a
+                >
               </div>
               <div class="navmin">
-                
-                <a href="mailto:info@codecobble.com"><i class="ri-mail-open-line"></i> &nbsp;info@codecobble.com</a>
+                <a href="mailto:info@codecobble.com"
+                  ><i class="ri-mail-open-line"></i>
+                  &nbsp;info@codecobble.com</a
+                >
               </div>
               <div class="navmin">
-                
                 <a href="https://maps.app.goo.gl/heXGBLuGxDhin2yq7"
-                  ><i class="ri-map-pin-line"></i> &nbsp;Code Cobble, 1st Floor, <br> Office No-111, Al Makteb building,
-                  Al quoz - 3, Dubai, UAE.</a
+                  ><i class="ri-map-pin-line"></i> &nbsp;Code Cobble, 1st Floor,
+                  <br />
+                  Office No-111, Al Makteb building, Al quoz - 3, Dubai, UAE.</a
                 >
               </div>
             </div>
             <div class="navsocialpar">
-             
               <div class="navsocial">
-                <a href="https://www.facebook.com/people/CodeCobble/61561493550705/"><i class="ri-facebook-line"></i></a>
-                <a href="https://www.instagram.com/codecobble/"><i class="ri-instagram-line"></i></a>
-                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"><i class="ri-linkedin-line"></i></a>
+                <a
+                  href="https://www.facebook.com/people/CodeCobble/61561493550705/"
+                  ><i class="ri-facebook-line"></i
+                ></a>
+                <a href="https://www.instagram.com/codecobble/"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"
+                  ><i class="ri-linkedin-line"></i
+                ></a>
               </div>
             </div>
           </div>
         </nav>
       </section>
       <!-- --------------------- nav menu end ------------------------------  -->
-      <div id="hero">
+
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__img">
+            <img
+              src="assets/img/img1.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img src="assets/img/img2.png" alt="" data-speed="2" class="move" />
+            <img src="assets/img/img3.png" alt="" data-speed="2" class="move" />
+            <img
+              src="assets/img/img4.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img
+              src="assets/img/img5.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img src="assets/img/img6.png" alt="" data-speed="2" class="move" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Coffee<br />
+              Drink 3D
+            </h1>
+            <p class="home__description">
+              Let's help discover the best coffee drink <br />
+              of the week.
+            </p>
+            <a href="#" class="home__button">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div id="hero">
         <div id="loop">
           <h1>
             <b>APP </b>DEVELOPMENT&nbsp;<b>&nbsp; . SERVICE . &nbsp;</b>
@@ -311,22 +372,32 @@
             WEBSITES
           </h1>
         </div>
-      </div>
+      </div> -->
 
       <div id="page2">
         <div id="left">
           <div class="heading">
             <h1>Top App Development</h1>
             <h1>Services in Dubai –</h1>
-            <h1>Transforming Ideas into Powerful Mobile Applications
-            </h1>
+            <h1>Transforming Ideas into Powerful Mobile Applications</h1>
           </div>
           <div class="sub-heading">
             <p>
-              At CodeCobble, we specialize in crafting mobile applications that are not just functional but also intuitive and engaging. Our team of expert developers and designers work closely with you to understand your vision, ensuring every feature and design element aligns perfectly with your goals. Whether it's for iOS, Android, or cross-platform, we leverage the latest tools and technologies to bring your ideas to life.
+              At CodeCobble, we specialize in crafting mobile applications that
+              are not just functional but also intuitive and engaging. Our team
+              of expert developers and designers work closely with you to
+              understand your vision, ensuring every feature and design element
+              aligns perfectly with your goals. Whether it's for iOS, Android,
+              or cross-platform, we leverage the latest tools and technologies
+              to bring your ideas to life.
             </p>
             <p>
-              From conceptualization to deployment, we prioritize quality, performance, and user satisfaction. Our apps are built to deliver seamless experiences, enhance customer retention, and provide measurable business value. Partner with CodeCobble to unlock the full potential of mobile technology and elevate your business in the digital era.
+              From conceptualization to deployment, we prioritize quality,
+              performance, and user satisfaction. Our apps are built to deliver
+              seamless experiences, enhance customer retention, and provide
+              measurable business value. Partner with CodeCobble to unlock the
+              full potential of mobile technology and elevate your business in
+              the digital era.
             </p>
 
             <div class="button">
@@ -350,56 +421,74 @@
               <i class="ri-shopping-cart-2-line"></i>&nbsp;E-Commerce and Retail
             </h1>
             <p>
-              From user-friendly shopping apps to robust inventory management solutions, we help online retailers create seamless shopping experiences that boost conversions.
+              From user-friendly shopping apps to robust inventory management
+              solutions, we help online retailers create seamless shopping
+              experiences that boost conversions.
             </p>
           </div>
           <div class="presence">
             <h1><i class="ri-first-aid-kit-line"></i>&nbsp;Healthcare</h1>
             <p>
-              We design secure and reliable healthcare apps that improve patient engagement, streamline appointment bookings, and ensure compliance with healthcare regulations.
+              We design secure and reliable healthcare apps that improve patient
+              engagement, streamline appointment bookings, and ensure compliance
+              with healthcare regulations.
             </p>
           </div>
           <div class="presence">
-            <h1><i class="ri-calendar-event-line"></i>&nbsp;Event Management</h1>
+            <h1>
+              <i class="ri-calendar-event-line"></i>&nbsp;Event Management
+            </h1>
             <p>
-              Whether it’s managing events, ticketing, or attendee engagement, our apps make event planning and execution more efficient and interactive.
+              Whether it’s managing events, ticketing, or attendee engagement,
+              our apps make event planning and execution more efficient and
+              interactive.
             </p>
           </div>
           <div class="presence">
             <h1><i class="ri-book-3-line"></i>&nbsp;Education</h1>
             <p>
-              Our educational apps enable learning on the go, providing interactive experiences for students, teachers, and institutions.
+              Our educational apps enable learning on the go, providing
+              interactive experiences for students, teachers, and institutions.
             </p>
           </div>
           <div class="presence">
             <h1><i class="ri-music-2-line"></i>&nbsp;Entertainment & Media</h1>
             <p>
-              We create apps for streaming, gaming, and content sharing that captivate users and drive engagement.
+              We create apps for streaming, gaming, and content sharing that
+              captivate users and drive engagement.
             </p>
           </div>
           <div class="presence">
             <h1><i class="ri-community-line"></i>&nbsp;Real Estate</h1>
             <p>
-              From virtual property tours to lead management, our apps empower real estate businesses to connect better with their clients.
+              From virtual property tours to lead management, our apps empower
+              real estate businesses to connect better with their clients.
             </p>
           </div>
-          
         </div>
       </div>
       <div id="page4">
         <div id="left">
           <div id="page4-heading">
             <h1>
-              Why Choose CodeCobble <br> for Your App Development in UAE?
+              Why Choose CodeCobble <br />
+              for Your App Development in UAE?
             </h1>
           </div>
           <div id="page4-subheading">
             <p>
-              At CodeCobble, we combine innovation and expertise to deliver custom mobile app solutions that cater to your unique business needs. Whether you're looking to enhance customer engagement, streamline internal operations, or create a groundbreaking app idea, our team is here to transform your vision into reality.
-                <br><br>
-                Our app development process is rooted in creativity, cutting-edge technology, and meticulous attention to detail. From seamless user interfaces to robust back-end architecture, we ensure every aspect of your app is designed to offer an unparalleled experience for your users while driving measurable results for your business.
+              At CodeCobble, we combine innovation and expertise to deliver
+              custom mobile app solutions that cater to your unique business
+              needs. Whether you're looking to enhance customer engagement,
+              streamline internal operations, or create a groundbreaking app
+              idea, our team is here to transform your vision into reality.
+              <br /><br />
+              Our app development process is rooted in creativity, cutting-edge
+              technology, and meticulous attention to detail. From seamless user
+              interfaces to robust back-end architecture, we ensure every aspect
+              of your app is designed to offer an unparalleled experience for
+              your users while driving measurable results for your business.
             </p>
-            
           </div>
         </div>
         <div class="page4image" id="right">
@@ -418,83 +507,64 @@
         <div id="page5-section2">
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Custom Mobile App Development
             </h1>
             <p>
-              We build tailor-made apps for iOS, Android, and cross-platform, ensuring seamless functionality and exceptional design.
+              We build tailor-made apps for iOS, Android, and cross-platform,
+              ensuring seamless functionality and exceptional design.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;UI/UX Design
             </h1>
             <p>
-              Our design experts create intuitive and visually appealing interfaces that enhance user engagement and satisfaction.
+              Our design experts create intuitive and visually appealing
+              interfaces that enhance user engagement and satisfaction.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Enterprise App Solutions
             </h1>
             <p>
-              We develop scalable enterprise apps to streamline workflows, improve productivity, and facilitate collaboration.
+              We develop scalable enterprise apps to streamline workflows,
+              improve productivity, and facilitate collaboration.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;E-Commerce Applications
             </h1>
             <p>
-              From intuitive shopping experiences to secure payment gateways, our apps are built to drive online sales.
+              From intuitive shopping experiences to secure payment gateways,
+              our apps are built to drive online sales.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;On-Demand Applications
             </h1>
             <p>
-              Whether it’s ride-sharing, food delivery, or service booking, we specialize in creating reliable on-demand solutions.
+              Whether it’s ride-sharing, food delivery, or service booking, we
+              specialize in creating reliable on-demand solutions.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Maintenance and Support
             </h1>
             <p>
-              Beyond development, we ensure your app stays updated, secure, and optimized for peak performance.
+              Beyond development, we ensure your app stays updated, secure, and
+              optimized for peak performance.
             </p>
           </div>
-          
         </div>
       </div>
       <div id="page6">
@@ -564,62 +634,91 @@
           <div class="service">
             <div class="service-heading">
               <h1>Website Development</h1>
-              <a href="webdevelopmentservice.html"><i class="ri-arrow-right-up-line"></i></a>
-              
+              <a href="webdevelopmentservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              We craft responsive, visually captivating, and user-friendly websites tailored to your brand's unique identity. Our team ensures seamless functionality, enhanced performance, and an exceptional user experience to leave a lasting impression.
+              We craft responsive, visually captivating, and user-friendly
+              websites tailored to your brand's unique identity. Our team
+              ensures seamless functionality, enhanced performance, and an
+              exceptional user experience to leave a lasting impression.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>Interactive Game Development</h1>
-              <a href="interactivegameservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="interactivegameservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Transform your ideas into captivating interactive games that entertain, educate, and engage audiences. From kiosk games to immersive experiences, we blend creativity and technology to deliver unforgettable gameplay.
+              Transform your ideas into captivating interactive games that
+              entertain, educate, and engage audiences. From kiosk games to
+              immersive experiences, we blend creativity and technology to
+              deliver unforgettable gameplay.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>Digital Marketing</h1>
-              <a href="digitalmarketingservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="digitalmarketingservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Amplify your online presence with our tailored digital marketing solutions. From SEO and social media strategies to PPC campaigns and content marketing, we help you connect with your audience and drive measurable results.
+              Amplify your online presence with our tailored digital marketing
+              solutions. From SEO and social media strategies to PPC campaigns
+              and content marketing, we help you connect with your audience and
+              drive measurable results.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>UI/UX Designing</h1>
-              <a href="uiuxservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="uiuxservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Enhance user engagement with intuitive and visually stunning designs. We specialize in creating seamless interfaces and user journeys that resonate with your audience, combining aesthetics with functionality for the best results.
+              Enhance user engagement with intuitive and visually stunning
+              designs. We specialize in creating seamless interfaces and user
+              journeys that resonate with your audience, combining aesthetics
+              with functionality for the best results.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>3D & Video Solutions</h1>
-              <a href="videoservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="videoservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Bring your stories to life with professional video production and editing. From promotional videos to animation and event coverage, we deliver compelling visuals that captivate and communicate effectively.
+              Bring your stories to life with professional video production and
+              editing. From promotional videos to animation and event coverage,
+              we deliver compelling visuals that captivate and communicate
+              effectively.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>2D Graphic Services</h1>
-              <a href="graphicservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="graphicservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Elevate your brand with stunning 2D graphic designs. Whether it's illustrations, branding materials, or marketing visuals, we create designs that leave a strong impact and align with your brand's voice.
+              Elevate your brand with stunning 2D graphic designs. Whether it's
+              illustrations, branding materials, or marketing visuals, we create
+              designs that leave a strong impact and align with
+              your brand's voice.
             </p>
           </div>
         </div>
@@ -636,38 +735,41 @@
         <div id="page7-section2">
           <div id="faq">
             <div class="headingfaq">
-              <h2>What platforms do you develop apps for?              </h2>
+              <h2>What platforms do you develop apps for?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                We develop apps for iOS, Android, and cross-platform solutions using technologies like React Native and Flutter. Our goal is to deliver seamless performance across all platforms.
+                We develop apps for iOS, Android, and cross-platform solutions
+                using technologies like React Native and Flutter. Our goal is to
+                deliver seamless performance across all platforms.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>
-                How much time does it take to develop a mobile app?
-              </h2>
+              <h2>How much time does it take to develop a mobile app?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                The timeline for app development depends on the complexity and features of the app. On average, it can take anywhere from 4 to 12 weeks. A detailed project plan is provided during the consultation phase.
+                The timeline for app development depends on the complexity and
+                features of the app. On average, it can take anywhere from 4 to
+                12 weeks. A detailed project plan is provided during the
+                consultation phase.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>
-                Do you offer post-launch support and maintenance?
-              </h2>
+              <h2>Do you offer post-launch support and maintenance?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Yes, we provide ongoing support and maintenance to ensure your app remains updated, secure, and optimized for user satisfaction.
+                Yes, we provide ongoing support and maintenance to ensure your
+                app remains updated, secure, and optimized for user
+                satisfaction.
               </p>
             </div>
           </div>
@@ -678,58 +780,64 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                Absolutely! We can integrate various third-party APIs and services, such as payment gateways, social media platforms, analytics tools, and more, to enhance your app's functionality.
+                Absolutely! We can integrate various third-party APIs and
+                services, such as payment gateways, social media platforms,
+                analytics tools, and more, to enhance your app's functionality.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2> How much does app development cost?
-              </h2>
+              <h2>How much does app development cost?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                The cost of app development varies depending on the app's complexity, features, and platform. We offer customized pricing plans based on your specific requirements.
-              </p>
-            </div>
-          </div>
-          <div id="faq">
-            <div class="headingfaq">
-              <h2>Can you help with publishing the app to the App Store and Google Play?
-              </h2>
-              <i class="ri-add-fill iconfaq"></i>
-            </div>
-            <div class="paragraphfaq">
-              <p>
-                Yes, we handle the entire deployment process, including App Store and Google Play submissions, ensuring your app meets all guidelines for a smooth launch.
+                The cost of app development varies depending on the app's
+                complexity, features, and platform. We offer customized pricing
+                plans based on your specific requirements.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
               <h2>
-                Will I own the app’s source code?
-
+                Can you help with publishing the app to the App Store and Google
+                Play?
               </h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Yes, once the app is developed and the project is completed, you will have full ownership of the source code and intellectual property.
+                Yes, we handle the entire deployment process, including App
+                Store and Google Play submissions, ensuring your app meets all
+                guidelines for a smooth launch.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>
-                Can you upgrade an existing app?
-              </h2>
+              <h2>Will I own the app’s source code?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Yes, we can enhance and upgrade your existing app with new features, improved performance, and design enhancements to keep it competitive.
+                Yes, once the app is developed and the project is completed, you
+                will have full ownership of the source code and intellectual
+                property.
+              </p>
+            </div>
+          </div>
+          <div id="faq">
+            <div class="headingfaq">
+              <h2>Can you upgrade an existing app?</h2>
+              <i class="ri-add-fill iconfaq"></i>
+            </div>
+            <div class="paragraphfaq">
+              <p>
+                Yes, we can enhance and upgrade your existing app with new
+                features, improved performance, and design enhancements to keep
+                it competitive.
               </p>
             </div>
           </div>
@@ -748,26 +856,27 @@
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>How do you ensure data security and privacy in the apps?
-              </h2>
+              <h2>How do you ensure data security and privacy in the apps?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                We follow industry best practices and implement secure coding standards, data encryption, and compliance with relevant regulations like GDPR to ensure data security and privacy.
-
+                We follow industry best practices and implement secure coding
+                standards, data encryption, and compliance with relevant
+                regulations like GDPR to ensure data security and privacy.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>What industries do you specialize in for app development?
-              </h2>
+              <h2>What industries do you specialize in for app development?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                We cater to a variety of industries, including e-commerce, healthcare, education, entertainment, event management, and real estate, among others.
+                We cater to a variety of industries, including e-commerce,
+                healthcare, education, entertainment, event management, and real
+                estate, among others.
               </p>
             </div>
           </div>
@@ -843,7 +952,11 @@
           <div class="box address">
             <h1 class="underline">CodeCobble</h1>
             <p>
-              At Codecobbles, we’re passionate about turning ideas into reality. Whether it’s designing smart solutions or building seamless digital experiences, we’re here to help your business grow and succeed. Let’s work together to create something amazing and make your goals a reality.
+              At Codecobbles, we’re passionate about turning ideas into reality.
+              Whether it’s designing smart solutions or building seamless
+              digital experiences, we’re here to help your business grow and
+              succeed. Let’s work together to create something amazing and make
+              your goals a reality.
             </p>
             <p>
               <a href="tel:+971 56 499 1268"
@@ -858,27 +971,34 @@
             <p>
               <a href="https://maps.app.goo.gl/heXGBLuGxDhin2yq7">
                 <i class="ri-map-pin-2-fill"></i> Baharnani Advertising LLC,
-              <br />
-              &nbsp; &nbsp; &nbsp; Sheikh Zayed Road – Dubai
+                <br />
+                &nbsp; &nbsp; &nbsp; Sheikh Zayed Road – Dubai
               </a>
-              
             </p>
           </div>
           <div class="box useful">
             <h1>Useful Links</h1>
             <a href="index.html">Home <i class="ri-arrow-right-up-line"></i></a>
-            <a href="about.html">About Us <i class="ri-arrow-right-up-line"></i></a>
-            <a href="work.html">Our Works <i class="ri-arrow-right-up-line"></i></a>
-            <a href="services.html">Our Services <i class="ri-arrow-right-up-line"></i></a>
+            <a href="about.html"
+              >About Us <i class="ri-arrow-right-up-line"></i
+            ></a>
+            <a href="work.html"
+              >Our Works <i class="ri-arrow-right-up-line"></i
+            ></a>
+            <a href="services.html"
+              >Our Services <i class="ri-arrow-right-up-line"></i
+            ></a>
             <a href="blog.html">Blogs <i class="ri-arrow-right-up-line"></i></a>
-            <a href="contact.html">Contact Us <i class="ri-arrow-right-up-line"></i></a>
-            <a href="privacy-policy.html">Privacy Policy <i class="ri-arrow-right-up-line"></i></a>
+            <a href="contact.html"
+              >Contact Us <i class="ri-arrow-right-up-line"></i
+            ></a>
+            <a href="privacy-policy.html"
+              >Privacy Policy <i class="ri-arrow-right-up-line"></i
+            ></a>
             <a href="terms-and-conditions.html"
               >Terms & Condition <i class="ri-arrow-right-up-line"></i
             ></a>
-            <a href=""
-              >Cookie Policy <i class="ri-arrow-right-up-line"></i
-            ></a>
+            <a href="">Cookie Policy <i class="ri-arrow-right-up-line"></i></a>
           </div>
           <div class="box services">
             <h1>Our Services</h1>
@@ -908,7 +1028,10 @@
             <div class="newletter-top">
               <h1>Newsletter</h1>
               <p>
-                Thanks for being part of the Codecobbles family! We’re excited to share our journey with you—full of updates, helpful tips, and behind-the-scenes moments. Let’s stay connected and keep creating amazing things together!
+                Thanks for being part of the Codecobbles family! We’re excited
+                to share our journey with you—full of updates, helpful tips, and
+                behind-the-scenes moments. Let’s stay connected and keep
+                creating amazing things together!
               </p>
               <div id="newsletter-email">
                 <input type="mail" placeholder="Your Email" />
@@ -918,13 +1041,20 @@
 
             <div id="icons">
               <div class="icon-box">
-                <a href="https://www.facebook.com/people/CodeCobble/61561493550705/ "><i class="ri-facebook-fill"></i></a>
+                <a
+                  href="https://www.facebook.com/people/CodeCobble/61561493550705/ "
+                  ><i class="ri-facebook-fill"></i
+                ></a>
               </div>
               <div class="icon-box">
-                <a href="https://www.instagram.com/codecobble/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://www.instagram.com/codecobble/"
+                  ><i class="ri-instagram-fill"></i
+                ></a>
               </div>
               <div class="icon-box">
-                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
               </div>
             </div>
           </div>
