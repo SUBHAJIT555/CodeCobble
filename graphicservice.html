@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="/assets/css/servicedetail.css" />
     <link rel="stylesheet" href="/assets/css/nav.css" />
+    <link rel="stylesheet" href="/assets/css/servicesHero.css" />
     <!-- ------------- locomotive-scroll CSS-----------------  -->
     <link
       rel="stylesheet"
@@ -132,12 +133,12 @@
       <section class="mainnav">
         <section class="hamburger">
           <div id="icon">
-            <a href="index.html"><img
-              class="logo-head"
-              src="/assets/img/Code Cobble-01.png"
-              alt=""
+            <a href="index.html"
+              ><img
+                class="logo-head"
+                src="/assets/img/Code Cobble-01.png"
+                alt=""
             /></a>
-            
           </div>
           <div id="ham">
             <svg
@@ -162,10 +163,18 @@
               <i class="ri-arrow-right-s-line opensub"></i>
             </ul>
             <ul class="submenuopen">
-              <li><a href="webdevelopmentservice.html">Website Development</a></li>
+              <li>
+                <a href="webdevelopmentservice.html">Website Development</a>
+              </li>
               <li><a href="appdevelopmentservice.html">App Development</a></li>
-              <li><a href="interactivegameservice.html">Interactive Game Development</a></li>
-              <li><a href="digitalmarketingservice.html">Digital Marketing</a></li>
+              <li>
+                <a href="interactivegameservice.html"
+                  >Interactive Game Development</a
+                >
+              </li>
+              <li>
+                <a href="digitalmarketingservice.html">Digital Marketing</a>
+              </li>
               <li><a href="uiuxservice.html">UI/UX Design</a></li>
               <li><a href="graphicservice.html">2D Graphic Services</a></li>
               <li><a href="videoservice.html">3D &Video Solutions</a></li>
@@ -175,7 +184,9 @@
               <i class="ri-arrow-right-s-line opensub"></i>
             </ul>
             <ul class="submenuopen">
-              <li><a href="websitedevelopmentwork.html">Website Development</a></li>
+              <li>
+                <a href="websitedevelopmentwork.html">Website Development</a>
+              </li>
               <!-- <li><a href="">App Development</a></li> -->
               <li><a href="interactivegameswork.html">Interactive Games</a></li>
               <!-- <li><a href="#">Digital Marketing</a></li> -->
@@ -193,34 +204,83 @@
             </div>
             <div class="navcontact">
               <div class="navmin">
-                
-                <a href="tel:+971 56 499 1268"><i class="ri-phone-line"></i> &nbsp;+971 56 499 1268</a>
+                <a href="tel:+971 56 499 1268"
+                  ><i class="ri-phone-line"></i> &nbsp;+971 56 499 1268</a
+                >
               </div>
               <div class="navmin">
-                
-                <a href="mailto:info@codecobble.com"><i class="ri-mail-open-line"></i> &nbsp;info@codecobble.com</a>
+                <a href="mailto:info@codecobble.com"
+                  ><i class="ri-mail-open-line"></i>
+                  &nbsp;info@codecobble.com</a
+                >
               </div>
               <div class="navmin">
-                
                 <a href="https://maps.app.goo.gl/heXGBLuGxDhin2yq7"
-                  ><i class="ri-map-pin-line"></i> &nbsp;Code Cobble, 1st Floor, <br> Office No-111, Al Makteb building,
-                  Al quoz - 3, Dubai, UAE.</a
+                  ><i class="ri-map-pin-line"></i> &nbsp;Code Cobble, 1st Floor,
+                  <br />
+                  Office No-111, Al Makteb building, Al quoz - 3, Dubai, UAE.</a
                 >
               </div>
             </div>
             <div class="navsocialpar">
-             
               <div class="navsocial">
-                <a href="https://www.facebook.com/people/CodeCobble/61561493550705/"><i class="ri-facebook-line"></i></a>
-                <a href="https://www.instagram.com/codecobble/"><i class="ri-instagram-line"></i></a>
-                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"><i class="ri-linkedin-line"></i></a>
+                <a
+                  href="https://www.facebook.com/people/CodeCobble/61561493550705/"
+                  ><i class="ri-facebook-line"></i
+                ></a>
+                <a href="https://www.instagram.com/codecobble/"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"
+                  ><i class="ri-linkedin-line"></i
+                ></a>
               </div>
             </div>
           </div>
         </nav>
       </section>
       <!-- --------------------- nav menu end ------------------------------  -->
-      <div id="hero">
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__img">
+            <img
+              src="assets/img/img1.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img src="assets/img/img2.png" alt="" data-speed="2" class="move" />
+            <img src="assets/img/img3.png" alt="" data-speed="2" class="move" />
+            <img
+              src="assets/img/img4.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img
+              src="assets/img/img5.png"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img src="assets/img/img6.png" alt="" data-speed="2" class="move" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Coffee<br />
+              Drink 3D
+            </h1>
+            <p class="home__description">
+              Let's help discover the best coffee drink <br />
+              of the week.
+            </p>
+            <a href="#" class="home__button">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div id="hero">
         <div id="loop">
           <h1>
             <b>2D </b>GRAPHIC&nbsp;<b>&nbsp; . SERVICE . &nbsp;</b>
@@ -311,7 +371,7 @@
             WEBSITES
           </h1>
         </div>
-      </div>
+      </div> -->
 
       <div id="page2">
         <div id="left">
@@ -322,10 +382,24 @@
           </div>
           <div class="sub-heading">
             <p>
-              CodeCobble has earned its reputation as one of the leading 2D graphics service providers in the UAE, delivering exceptional designs that elevate brands and captivate audiences. Our commitment to innovation, creativity, and precision sets us apart in the competitive landscape. From eye-catching illustrations to sleek branding assets, we cater to businesses across various industries, ensuring every design reflects their unique vision and goals.
+              CodeCobble has earned its reputation as one of the leading 2D
+              graphics service providers in the UAE, delivering exceptional
+              designs that elevate brands and captivate audiences. Our
+              commitment to innovation, creativity, and precision sets us apart
+              in the competitive landscape. From eye-catching illustrations to
+              sleek branding assets, we cater to businesses across various
+              industries, ensuring every design reflects their unique vision and
+              goals.
             </p>
             <p>
-              Located in Dubai, CodeCobble combines local insights with global design trends to offer solutions that resonate in the UAE’s diverse and dynamic market. Our team of talented designers works closely with clients to transform ideas into impactful visuals, whether for advertising campaigns, corporate presentations, or digital platforms. With a portfolio that speaks for itself, CodeCobble continues to set benchmarks in 2D graphic design excellence across the region
+              Located in Dubai, CodeCobble combines local insights with global
+              design trends to offer solutions that resonate in the UAE’s
+              diverse and dynamic market. Our team of talented designers works
+              closely with clients to transform ideas into impactful visuals,
+              whether for advertising campaigns, corporate presentations, or
+              digital platforms. With a portfolio that speaks for itself,
+              CodeCobble continues to set benchmarks in 2D graphic design
+              excellence across the region
             </p>
 
             <div class="button">
@@ -349,56 +423,81 @@
               <i class="ri-store-2-line"></i>&nbsp;Advertising and Marketing
             </h1>
             <p>
-               From captivating social media graphics to impactful ad campaigns, we create visuals that drive engagement and brand recognition.
+              From captivating social media graphics to impactful ad campaigns,
+              we create visuals that drive engagement and brand recognition.
             </p>
           </div>
           <div class="presence">
-            <h1><i class="ri-music-2-line"></i>&nbsp;Entertainment and Media</h1>
+            <h1>
+              <i class="ri-music-2-line"></i>&nbsp;Entertainment and Media
+            </h1>
             <p>
-               Our designs bring life to animations, storyboards, and promotional materials for movies, TV shows, and digital content
+              Our designs bring life to animations, storyboards, and promotional
+              materials for movies, TV shows, and digital content
             </p>
           </div>
           <div class="presence">
-            <h1><i class="ri-shopping-cart-2-line"></i>&nbsp;Retail and E-Commerce</h1>
+            <h1>
+              <i class="ri-shopping-cart-2-line"></i>&nbsp;Retail and E-Commerce
+            </h1>
             <p>
-              We develop product visuals, banners, and branding materials that enhance online and offline shopping experiences.
+              We develop product visuals, banners, and branding materials that
+              enhance online and offline shopping experiences.
             </p>
           </div>
           <div class="presence">
-            <h1><i class="ri-book-3-line"></i>&nbsp;Education and E-Learning</h1>
+            <h1>
+              <i class="ri-book-3-line"></i>&nbsp;Education and E-Learning
+            </h1>
             <p>
-               CodeCobble’s 2D designs support e-learning platforms with interactive graphics, infographics, and course materials.
+              CodeCobble’s 2D designs support e-learning platforms with
+              interactive graphics, infographics, and course materials.
             </p>
           </div>
           <div class="presence">
             <h1><i class="ri-hotel-line"></i>&nbsp;Real Estate</h1>
             <p>
-               We provide detailed 2D floor plans, brochures, and promotional graphics to showcase properties effectively.
+              We provide detailed 2D floor plans, brochures, and promotional
+              graphics to showcase properties effectively.
             </p>
           </div>
           <div class="presence">
-            <h1><i class="ri-calendar-event-line"></i>&nbsp;Event Management</h1>
+            <h1>
+              <i class="ri-calendar-event-line"></i>&nbsp;Event Management
+            </h1>
             <p>
-               From event branding to promotional content, our graphics ensure your events make a bold statement.
+              From event branding to promotional content, our graphics ensure
+              your events make a bold statement.
             </p>
           </div>
-          
         </div>
       </div>
       <div id="page4">
         <div id="left">
           <div id="page4-heading">
             <h1>
-              Why Choose CodeCobble <br> for Your 2D Graphics Services in UAE?
+              Why Choose CodeCobble <br />
+              for Your 2D Graphics Services in UAE?
             </h1>
           </div>
           <div id="page4-subheading">
             <p>
-              At CodeCobble, we understand the power of visuals in capturing attention and communicating ideas effectively. Our 2D graphics services are tailored to bring your vision to life with stunning designs that leave a lasting impression. Whether it’s branding, digital illustrations, or marketing materials, we ensure that every design resonates with your target audience and aligns with your brand identity.
-                <br><br>
-            Our team of skilled designers combines creativity with cutting-edge tools to deliver graphics that are not just visually appealing but also purposeful. From concept to completion, we focus on delivering high-quality, customized solutions that meet your unique requirements. With CodeCobble, you can expect designs that tell your story, engage your audience, and set you apart from the competition.
+              At CodeCobble, we understand the power of visuals in capturing
+              attention and communicating ideas effectively. Our 2D graphics
+              services are tailored to bring your vision to life with stunning
+              designs that leave a lasting impression. Whether it’s branding,
+              digital illustrations, or marketing materials, we ensure that
+              every design resonates with your target audience and aligns with
+              your brand identity.
+              <br /><br />
+              Our team of skilled designers combines creativity with
+              cutting-edge tools to deliver graphics that are not just visually
+              appealing but also purposeful. From concept to completion, we
+              focus on delivering high-quality, customized solutions that meet
+              your unique requirements. With CodeCobble, you can expect designs
+              that tell your story, engage your audience, and set you apart from
+              the competition.
             </p>
-            
           </div>
         </div>
         <div class="page4image" id="right">
@@ -417,119 +516,120 @@
         <div id="page5-section2">
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Business Card
             </h1>
             <p>
-              At CodeCobble, we create stunning, custom business card designs that reflect your brand's identity with precision and creativity. Our tailored solutions ensure professional, high-quality graphics that leave a lasting impression. Let us help you elevate your brand with designs that stand out.
+              At CodeCobble, we create stunning, custom business card designs
+              that reflect your brand's identity with precision and creativity.
+              Our tailored solutions ensure professional, high-quality graphics
+              that leave a lasting impression. Let us help you elevate your
+              brand with designs that stand out.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Marketing Posters
             </h1>
             <p>
-              At CodeCobble, our 2D graphics team crafts eye-catching marketing posters tailored to your brand's message. We blend creativity and strategy to design visuals that captivate your audience and amplify your marketing campaigns. From concept to execution, we ensure your posters stand out in any medium.
+              At CodeCobble, our 2D graphics team crafts eye-catching marketing
+              posters tailored to your brand's message. We blend creativity and
+              strategy to design visuals that captivate your audience and
+              amplify your marketing campaigns. From concept to execution, we
+              ensure your posters stand out in any medium.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Product Branding
             </h1>
             <p>
-              Our 2D graphics expertise shines in Product Branding, where we craft visually compelling designs that elevate your brand's identity. From stunning logos to cohesive packaging, our creative solutions ensure your products stand out in the market. Trust us to bring your vision to life with artistry and precision.
+              Our 2D graphics expertise shines in Product Branding, where we
+              craft visually compelling designs that elevate your brand's
+              identity. From stunning logos to cohesive packaging, our creative
+              solutions ensure your products stand out in the market. Trust us
+              to bring your vision to life with artistry and precision.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Mockup Designing
             </h1>
             <p>
-              We specialize in creating captivating mockup designs that bring your ideas to life. Our 2D graphics team ensures precision and creativity, delivering visually stunning prototypes for websites, apps, and branding projects. With innovative design solutions, we help you visualize and refine your concepts effectively.
+              We specialize in creating captivating mockup designs that bring
+              your ideas to life. Our 2D graphics team ensures precision and
+              creativity, delivering visually stunning prototypes for websites,
+              apps, and branding projects. With innovative design solutions, we
+              help you visualize and refine your concepts effectively.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Vehicle Branding
             </h1>
             <p>
-              Our 2D graphics services include expert vehicle branding solutions. We craft visually striking designs tailored to transform vehicles into impactful marketing tools, ensuring your brand stands out on the move. Elevate your business visibility with our eye-catching and professional vehicle wraps.
+              Our 2D graphics services include expert vehicle branding
+              solutions. We craft visually striking designs tailored to
+              transform vehicles into impactful marketing tools, ensuring your
+              brand stands out on the move. Elevate your business visibility
+              with our eye-catching and professional vehicle wraps.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;T-shirt Designing
             </h1>
             <p>
-              Our expertise includes standout T-shirt designing services tailored to showcase your brand or event. We craft unique, eye-catching designs that resonate with your audience and elevate your merchandise. From conceptualization to final print-ready files, we deliver top-quality, creative solutions for all your T-shirt design needs.
+              Our expertise includes standout T-shirt designing services
+              tailored to showcase your brand or event. We craft unique,
+              eye-catching designs that resonate with your audience and elevate
+              your merchandise. From conceptualization to final print-ready
+              files, we deliver top-quality, creative solutions for all your
+              T-shirt design needs.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Delivery Uniform Designing
             </h1>
             <p>
-              We excel in 2D Graphics with expertise in designing professional and stylish delivery uniforms. Our designs seamlessly blend creativity and brand identity to ensure impactful and cohesive team apparel. We deliver customized solutions tailored to represent your brand with perfection.
+              We excel in 2D Graphics with expertise in designing professional
+              and stylish delivery uniforms. Our designs seamlessly blend
+              creativity and brand identity to ensure impactful and cohesive
+              team apparel. We deliver customized solutions tailored to
+              represent your brand with perfection.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Outdoor Branding Designing
             </h1>
             <p>
-              Our 2D Graphics services specialize in outdoor branding design that captivates audiences. From eye-catching billboards to vibrant banners, we create designs that leave a lasting impression. Let us help you transform your brand into a visual masterpiece for the outdoor world.
+              Our 2D Graphics services specialize in outdoor branding design
+              that captivates audiences. From eye-catching billboards to vibrant
+              banners, we create designs that leave a lasting impression. Let us
+              help you transform your brand into a visual masterpiece for the
+              outdoor world.
             </p>
           </div>
           <div class="topic">
             <h1>
-              <img
-                class="star"
-                src="/assets/technology/star.svg"
-                alt=""
-              />
+              <img class="star" src="/assets/technology/star.svg" alt="" />
               &nbsp;Rollup Banner Designing
             </h1>
             <p>
-              We specialize in eye-catching rollup banner designs that captivate your audience and elevate your brand presence. Our 2D graphics experts ensure striking visuals with clear messaging tailored to your requirements. Whether for events, exhibitions, or retail, we deliver banners that stand out.
+              We specialize in eye-catching rollup banner designs that captivate
+              your audience and elevate your brand presence. Our 2D graphics
+              experts ensure striking visuals with clear messaging tailored to
+              your requirements. Whether for events, exhibitions, or retail, we
+              deliver banners that stand out.
             </p>
           </div>
         </div>
@@ -577,7 +677,6 @@
             <img src="/assets/technology/DALL E logo.svg" alt="" />
             <h1>DallE</h1>
           </div>
-          
         </div>
       </div>
       <div id="page-otherservices">
@@ -590,66 +689,93 @@
           <div class="service">
             <div class="service-heading">
               <h1>Website Development</h1>
-              <a href="webdevelopmentservice.html"><i class="ri-arrow-right-up-line"></i></a>
-              
+              <a href="webdevelopmentservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              We craft responsive, visually captivating, and user-friendly websites tailored to your brand's unique identity. Our team ensures seamless functionality, enhanced performance, and an exceptional user experience to leave a lasting impression.
+              We craft responsive, visually captivating, and user-friendly
+              websites tailored to your brand's unique identity. Our team
+              ensures seamless functionality, enhanced performance, and an
+              exceptional user experience to leave a lasting impression.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>App Development</h1>
-              <a href="appdevelopmentservice.html"><i class="ri-arrow-right-up-line"></i></a>
-              
+              <a href="appdevelopmentservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              From concept to launch, we build cutting-edge mobile and web applications designed to engage users and drive business growth. Whether it's Android, iOS, or cross-platform, our apps are optimized for speed, scalability, and innovation.
+              From concept to launch, we build cutting-edge mobile and web
+              applications designed to engage users and drive business growth.
+              Whether it's Android, iOS, or cross-platform, our apps are
+              optimized for speed, scalability, and innovation.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>Interactive Game Development</h1>
-              <a href="interactivegameservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="interactivegameservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Transform your ideas into captivating interactive games that entertain, educate, and engage audiences. From kiosk games to immersive experiences, we blend creativity and technology to deliver unforgettable gameplay.
+              Transform your ideas into captivating interactive games that
+              entertain, educate, and engage audiences. From kiosk games to
+              immersive experiences, we blend creativity and technology to
+              deliver unforgettable gameplay.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>Digital Marketing</h1>
-              <a href="digitalmarketingservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="digitalmarketingservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Amplify your online presence with our tailored digital marketing solutions. From SEO and social media strategies to PPC campaigns and content marketing, we help you connect with your audience and drive measurable results.
+              Amplify your online presence with our tailored digital marketing
+              solutions. From SEO and social media strategies to PPC campaigns
+              and content marketing, we help you connect with your audience and
+              drive measurable results.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>UI/UX Designing</h1>
-              <a href="uiuxservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="uiuxservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Enhance user engagement with intuitive and visually stunning designs. We specialize in creating seamless interfaces and user journeys that resonate with your audience, combining aesthetics with functionality for the best results.
+              Enhance user engagement with intuitive and visually stunning
+              designs. We specialize in creating seamless interfaces and user
+              journeys that resonate with your audience, combining aesthetics
+              with functionality for the best results.
             </p>
           </div>
           <div class="service">
             <div class="service-heading">
               <h1>3D & Video Solutions</h1>
-              <a href="videoservice.html"><i class="ri-arrow-right-up-line"></i></a>
+              <a href="videoservice.html"
+                ><i class="ri-arrow-right-up-line"></i
+              ></a>
             </div>
 
             <p>
-              Bring your stories to life with professional video production and editing. From promotional videos to animation and event coverage, we deliver compelling visuals that captivate and communicate effectively.
+              Bring your stories to life with professional video production and
+              editing. From promotional videos to animation and event coverage,
+              we deliver compelling visuals that captivate and communicate
+              effectively.
             </p>
           </div>
-          
         </div>
       </div>
       <div id="page7">
@@ -669,7 +795,9 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                We offer a wide range of 2D graphic services, including illustrations, branding materials, infographics, animations, social media graphics, marketing assets, and more.
+                We offer a wide range of 2D graphic services, including
+                illustrations, branding materials, infographics, animations,
+                social media graphics, marketing assets, and more.
               </p>
             </div>
           </div>
@@ -682,7 +810,9 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                Our 2D graphic services cater to various industries, including advertising, education, retail, real estate, event management, and entertainment, among others.
+                Our 2D graphic services cater to various industries, including
+                advertising, education, retail, real estate, event management,
+                and entertainment, among others.
               </p>
             </div>
           </div>
@@ -695,29 +825,37 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                We start by understanding your brand, audience, and goals. Our designers create visuals that reflect your brand’s identity and communicate your message effectively.
+                We start by understanding your brand, audience, and goals. Our
+                designers create visuals that reflect your brand’s identity and
+                communicate your message effectively.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>Can you provide custom illustrations for specific projects?</h2>
+              <h2>
+                Can you provide custom illustrations for specific projects?
+              </h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Yes, we specialize in custom illustrations tailored to your project requirements, whether for marketing campaigns, educational content, or creative storytelling.
+                Yes, we specialize in custom illustrations tailored to your
+                project requirements, whether for marketing campaigns,
+                educational content, or creative storytelling.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2> How long does it take to complete a 2D graphic project?</h2>
+              <h2>How long does it take to complete a 2D graphic project?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-               The timeline varies based on the complexity and scope of the project. On average, most projects are completed within 1 to 3 weeks, with a detailed schedule provided upfront.
+                The timeline varies based on the complexity and scope of the
+                project. On average, most projects are completed within 1 to 3
+                weeks, with a detailed schedule provided upfront.
               </p>
             </div>
           </div>
@@ -728,33 +866,33 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                We use industry-leading tools such as Adobe Illustrator, Photoshop, and After Effects to create high-quality 2D graphics.
+                We use industry-leading tools such as Adobe Illustrator,
+                Photoshop, and After Effects to create high-quality 2D graphics.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>
-                Do you offer revisions for the designs?
-              </h2>
+              <h2>Do you offer revisions for the designs?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Yes, we offer multiple rounds of revisions to ensure the final design meets your expectations and aligns with your vision.
+                Yes, we offer multiple rounds of revisions to ensure the final
+                design meets your expectations and aligns with your vision.
               </p>
             </div>
           </div>
           <div id="faq">
             <div class="headingfaq">
-              <h2>
-                Can you create graphics for digital and print media?
-              </h2>
+              <h2>Can you create graphics for digital and print media?</h2>
               <i class="ri-add-fill iconfaq"></i>
             </div>
             <div class="paragraphfaq">
               <p>
-                Absolutely! We design graphics optimized for both digital platforms (websites, social media, apps) and print formats (brochures, posters, business cards).
+                Absolutely! We design graphics optimized for both digital
+                platforms (websites, social media, apps) and print formats
+                (brochures, posters, business cards).
               </p>
             </div>
           </div>
@@ -765,11 +903,12 @@
             </div>
             <div class="paragraphfaq">
               <p>
-                Our pricing depends on the project’s complexity and requirements. We offer competitive rates and can provide a customized quote based on your needs.
+                Our pricing depends on the project’s complexity and
+                requirements. We offer competitive rates and can provide a
+                customized quote based on your needs.
               </p>
             </div>
           </div>
-          
         </div>
       </div>
       <div id="page8">
@@ -893,9 +1032,7 @@
             <a href=""
               >UI/UX Designing <i class="ri-arrow-right-up-line"></i
             ></a>
-            <a href=""
-              >Video Solution <i class="ri-arrow-right-up-line"></i
-            ></a>
+            <a href="">Video Solution <i class="ri-arrow-right-up-line"></i></a>
             <a href=""
               >2D Graphic Services <i class="ri-arrow-right-up-line"></i
             ></a>
@@ -932,7 +1069,8 @@
           <p>© 2024 | CodeCobble Digital Agency | All Right Reserved</p>
         </div>
       </div>
-    </div><div id="footer">
+    </div>
+    <div id="footer">
       <div id="footer-start">
         <div id="footer-top">
           <h1>Let's Get In Touch</h1>
@@ -944,7 +1082,11 @@
         <div class="box address">
           <h1 class="underline">CodeCobble</h1>
           <p>
-            At Codecobbles, we’re passionate about turning ideas into reality. Whether it’s designing smart solutions or building seamless digital experiences, we’re here to help your business grow and succeed. Let’s work together to create something amazing and make your goals a reality.
+            At Codecobbles, we’re passionate about turning ideas into reality.
+            Whether it’s designing smart solutions or building seamless digital
+            experiences, we’re here to help your business grow and succeed.
+            Let’s work together to create something amazing and make your goals
+            a reality.
           </p>
           <p>
             <a href="tel:+971 56 499 1268"
@@ -959,27 +1101,34 @@
           <p>
             <a href="https://maps.app.goo.gl/heXGBLuGxDhin2yq7">
               <i class="ri-map-pin-2-fill"></i> Baharnani Advertising LLC,
-            <br />
-            &nbsp; &nbsp; &nbsp; Sheikh Zayed Road – Dubai
+              <br />
+              &nbsp; &nbsp; &nbsp; Sheikh Zayed Road – Dubai
             </a>
-            
           </p>
         </div>
         <div class="box useful">
           <h1>Useful Links</h1>
           <a href="index.html">Home <i class="ri-arrow-right-up-line"></i></a>
-          <a href="about.html">About Us <i class="ri-arrow-right-up-line"></i></a>
-          <a href="work.html">Our Works <i class="ri-arrow-right-up-line"></i></a>
-          <a href="services.html">Our Services <i class="ri-arrow-right-up-line"></i></a>
+          <a href="about.html"
+            >About Us <i class="ri-arrow-right-up-line"></i
+          ></a>
+          <a href="work.html"
+            >Our Works <i class="ri-arrow-right-up-line"></i
+          ></a>
+          <a href="services.html"
+            >Our Services <i class="ri-arrow-right-up-line"></i
+          ></a>
           <a href="blog.html">Blogs <i class="ri-arrow-right-up-line"></i></a>
-          <a href="contact.html">Contact Us <i class="ri-arrow-right-up-line"></i></a>
-          <a href="privacy-policy.html">Privacy Policy <i class="ri-arrow-right-up-line"></i></a>
+          <a href="contact.html"
+            >Contact Us <i class="ri-arrow-right-up-line"></i
+          ></a>
+          <a href="privacy-policy.html"
+            >Privacy Policy <i class="ri-arrow-right-up-line"></i
+          ></a>
           <a href="terms-and-conditions.html"
             >Terms & Condition <i class="ri-arrow-right-up-line"></i
           ></a>
-          <a href=""
-            >Cookie Policy <i class="ri-arrow-right-up-line"></i
-          ></a>
+          <a href="">Cookie Policy <i class="ri-arrow-right-up-line"></i></a>
         </div>
         <div class="box services">
           <h1>Our Services</h1>
@@ -1009,7 +1158,10 @@
           <div class="newletter-top">
             <h1>Newsletter</h1>
             <p>
-              Thanks for being part of the Codecobbles family! We’re excited to share our journey with you—full of updates, helpful tips, and behind-the-scenes moments. Let’s stay connected and keep creating amazing things together!
+              Thanks for being part of the Codecobbles family! We’re excited to
+              share our journey with you—full of updates, helpful tips, and
+              behind-the-scenes moments. Let’s stay connected and keep creating
+              amazing things together!
             </p>
             <div id="newsletter-email">
               <input type="mail" placeholder="Your Email" />
@@ -1019,13 +1171,20 @@
 
           <div id="icons">
             <div class="icon-box">
-              <a href="https://www.facebook.com/people/CodeCobble/61561493550705/ "><i class="ri-facebook-fill"></i></a>
+              <a
+                href="https://www.facebook.com/people/CodeCobble/61561493550705/ "
+                ><i class="ri-facebook-fill"></i
+              ></a>
             </div>
             <div class="icon-box">
-              <a href="https://www.instagram.com/codecobble/"><i class="ri-instagram-fill"></i></a>
+              <a href="https://www.instagram.com/codecobble/"
+                ><i class="ri-instagram-fill"></i
+              ></a>
             </div>
             <div class="icon-box">
-              <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.linkedin.com/in/code-cobbles-b256642bb/"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
             </div>
           </div>
         </div>
