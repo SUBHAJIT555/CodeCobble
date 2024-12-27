@@ -620,6 +620,9 @@ locomotive();
 //   images.push(img);
 // }
 
+
+// ----- hero section parrallax effect -----
+
 document.addEventListener("mousemove", move);
 function move(e) {
   this.querySelectorAll(".move").forEach((layer) => {
