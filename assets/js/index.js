@@ -38,6 +38,10 @@ function loco() {
   ScrollTrigger.refresh();
 }
 loco();
+
+
+
+
 function page1() {
   var tl = gsap.timeline();
 
@@ -1100,3 +1104,4 @@ elements.map((element) => {
 });
 
 // --------------------------------------------------------------------------
+
