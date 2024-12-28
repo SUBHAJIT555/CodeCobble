@@ -756,7 +756,7 @@ function page2Animation() {
     scrollTrigger: {
       trigger: ".sub-heading",
       scroller: "#main",
-      start: "top 70%",
+      start: "top 80%",
       end: "top 90%",
       scrub: 3,
     },
