@@ -9,6 +9,15 @@ body {
   width: 100%;
   background-color: #000;
 }
+#gola {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  height: 20%;
+  background-color: lawngreen;
+  filter: blur(300px);
+  z-index: 1;
+}
 #main {
   position: relative;
   overflow: hidden;
@@ -361,7 +370,7 @@ body {
 
 #page10 {
   position: relative;
-  /* height: 100vh; */
+  height: auto;
   width: 100vw;
   background-color: #000;
 }
@@ -372,10 +381,10 @@ body {
 
   width: 100vw;
   position: relative;
-  padding: 5vw 15vw;
+  padding: 2vw 15vw;
 }
 #page10-top > h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: var(--heading-font);
   font-weight: 100;
   position: relative;
@@ -384,6 +393,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 .right10 {
   height: 100%;
@@ -393,16 +403,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-.right10-inner {
+/* .right10-inner {
   display: flex;
   align-items: start;
   flex-direction: column;
   height: 20%;
   width: 100%;
   margin-bottom: 1vw;
-}
+} */
 .right10-inner > h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--heading-font);
   font-weight: 800;
   position: relative;
@@ -434,8 +444,8 @@ body {
   width: 0;
 }
 .right10-inner > p {
-  margin-top: 2vw;
-  font-size: 1.4rem;
+  /* margin-top: 2vw; */
+  font-size: 2rem;
   width: 100%;
   font-family: var(--text-font);
   line-height: 1.5vw;
@@ -449,6 +459,8 @@ body {
   height: auto;
   width: 100vw;
   background-color: #000;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(53, 52, 52);
 }
 #page11-top {
   display: flex;
@@ -459,7 +471,7 @@ body {
   position: relative;
 }
 #page11-top > h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: var(--heading-font);
   font-weight: 100;
   position: relative;
@@ -468,6 +480,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
 }
 #page11-bottom {
   display: flex;
@@ -475,7 +488,14 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 
-  gap: 50px;
+  gap: 80px;
+}
+#page11-bottom h1{
+  color: lawngreen;
+  font-size: 2.5rem;
+}
+#page11-bottom p{
+  font-size: 2rem;
 }
 .service {
   display: flex;
@@ -540,8 +560,8 @@ body {
   color: white;
   text-decoration: none;
   font-family: var(--text-font);
-  font-size: 1.9rem;
-  margin-left: 70%;
+  font-size: 1.8rem;
+  margin-left: 87%;
   border: 1px solid white;
   padding: 5px 10px;
   border-radius: 50px;
@@ -561,12 +581,11 @@ body {
   height: auto;
   width: 100vw;
   background-color: #000;
+  
 }
 .page12-inner {
-  /* position: absolute;
-  top: 20%; */
-  /* left: 30%; */
-  margin: 6rem 0 0;
+  
+  /* margin: 6rem 0 0; */
   text-align: center;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -577,10 +596,11 @@ body {
   font-family: var(--heading-font);
   -webkit-text-stroke: 1px white;
   color: transparent;
-  border-bottom: 1px solid white;
+
+  /* border-bottom: 1px solid white; */
 }
 .page12-inner > p {
-  margin-top: 5vw;
+  margin-top: 2rem;
   font-size: 2rem;
   font-family: var(--text-font);
   color: white;
@@ -666,10 +686,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 63%;
   padding: 40px;
   border-radius: 10px;
-  background-color: #262525;
+  background-color: #26252524;
+  border: 0.3px solid #262525;
   flex-wrap: wrap;
 }
 .cta h2 {
@@ -714,7 +735,8 @@ body {
   flex-direction: column;
   align-items: start;
   padding: 20px;
-  background-color: #262525;
+  /* background-color: #262525; */
+  /* border: 0.3px solid #262525; */
   border-radius: 10px;
   gap: 20px;
 }
@@ -742,6 +764,10 @@ body {
   font-size: 20px;
   font-weight: 500;
   line-height: 21px;
+}
+.address a{
+  font-family: var(--text-font);
+  font-size: 14px;
 }
 .foot-contact a:hover {
   color: #7cfc00;
@@ -810,22 +836,23 @@ body {
 }
 .social-icons-foot a {
   text-decoration: none;
-  background-color: #7cfc00;
+  background-color: #000;
+
   padding: 10px;
   border-radius: 10px;
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
 .social-icons-foot a:hover{
-  background-color: #262525;
+  background-color: lawngreen;
   text-decoration: none;
 }
 .social-icons-foot a:hover i{
-  color: lawngreen;
+  color: #000;
 }
 .social-icons-foot i {
-  color: #000000;
-  font-size: 40px;
+  color: lawngreen;
+  font-size: 30px;
   font-weight: 500;
 }
 .copyright {
@@ -833,7 +860,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #262525;
+  /* background-color: #262525; */
 }
 .copyright p {
   color: #ffffff;

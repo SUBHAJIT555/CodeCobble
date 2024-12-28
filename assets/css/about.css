@@ -43,11 +43,11 @@ body {
 }
 #gola {
   position: fixed;
-  width: 70%;
+  width: 50%;
   top: 0;
   height: 20%;
   background-color: lawngreen;
-  filter: blur(400px);
+  filter: blur(300px);
   z-index: 1;
 }
 #page1-top {
@@ -649,7 +649,6 @@ body {
 }
 
 /* ----------footer css-----------  */
-
 .footer {
   position: relative;
   background-color: #000;
@@ -666,10 +665,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 63%;
   padding: 40px;
   border-radius: 10px;
-  background-color: #262525;
+  background-color: #26252524;
+  border: 0.3px solid #262525;
   flex-wrap: wrap;
 }
 .cta h2 {
@@ -714,7 +714,8 @@ body {
   flex-direction: column;
   align-items: start;
   padding: 20px;
-  background-color: #262525;
+  /* background-color: #262525; */
+  /* border: 0.3px solid #262525; */
   border-radius: 10px;
   gap: 20px;
 }
@@ -743,9 +744,12 @@ body {
   font-weight: 500;
   line-height: 21px;
 }
+.address a{
+  font-family: var(--text-font);
+  font-size: 14px;
+}
 .foot-contact a:hover {
   color: #7cfc00;
-  
 }
 .footer-cards h2 {
   color: #ffffff;
@@ -811,22 +815,23 @@ body {
 }
 .social-icons-foot a {
   text-decoration: none;
-  background-color: #7cfc00;
+  background-color: #000;
+
   padding: 10px;
   border-radius: 10px;
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
 .social-icons-foot a:hover{
-  background-color: #262525;
+  background-color: lawngreen;
   text-decoration: none;
 }
 .social-icons-foot a:hover i{
-  color: lawngreen;
+  color: #000;
 }
 .social-icons-foot i {
-  color: #000000;
-  font-size: 40px;
+  color: lawngreen;
+  font-size: 30px;
   font-weight: 500;
 }
 .copyright {
@@ -834,7 +839,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #262525;
+  /* background-color: #262525; */
 }
 .copyright p {
   color: #ffffff;
@@ -920,7 +925,6 @@ body {
     font-size: 24px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   #page1-top h1 {

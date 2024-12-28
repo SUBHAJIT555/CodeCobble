@@ -1453,19 +1453,19 @@ gsap.to(".page7-cir-inner",{
      scrub: 3,
    },
  });
- gsap.from("#page10 .right10-inner", {
-   y: 120,
-   opacity: 0,
-   stagger: 0.5,
-   duration: 0.5,
-   scrollTrigger: {
-     trigger: ".right10-inner",
-     scroller: "#main",
-     start: "top 80%",
-     end: "top -10%",
-     scrub: 3,
-   },
- });
+//  gsap.from("#page10 .right10-inner", {
+//    y: 120,
+//    opacity: 0,
+//    stagger: 0.5,
+//    duration: 0.5,
+//    scrollTrigger: {
+//      trigger: ".right10-inner",
+//      scroller: "#main",
+//      start: "top 80%",
+//      end: "top -10%",
+//      scrub: 3,
+//    },
+//  });
  gsap.from("#page11 .service", {
    y: 120,
    opacity: 0,

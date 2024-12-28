@@ -1,22 +1,22 @@
 function loco() {
   gsap.registerPlugin(ScrollTrigger);
 
-  // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+  
 
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector("#main"),
     smooth: true,
   });
-  // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+ 
   locoScroll.on("scroll", ScrollTrigger.update);
 
-  // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+ 
   ScrollTrigger.scrollerProxy("#main", {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
         : locoScroll.scroll.instance.scroll.y;
-    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+    }, 
     getBoundingClientRect() {
       return {
         top: 0,
@@ -25,16 +25,16 @@ function loco() {
         height: window.innerHeight,
       };
     },
-    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+    
     pinType: document.querySelector("#main").style.transform
       ? "transform"
       : "fixed",
   });
 
-  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
+  
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  
   ScrollTrigger.refresh();
 }
 loco();
@@ -1105,3 +1105,109 @@ elements.map((element) => {
 
 // --------------------------------------------------------------------------
 
+
+
+// testimonial js  
+
+const slider = document.querySelector(".testimonial-slider");
+const testimonials = document.querySelectorAll(".testimonial");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+const dotsContainer = document.querySelector(".dots-container");
+
+let currentIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
+let autoSlideInterval;
+
+//* event listeners
+
+function initApp() {
+  slider.addEventListener("touchstart", handleTouchStart);
+  slider.addEventListener("touchend", handleTouchEnd);
+  slider.addEventListener("mouseover", stopAutoSlide);
+  slider.addEventListener("mouseleave", startAutoSlide);
+  nextBtn.addEventListener("click", nextTestimonial);
+  prevBtn.addEventListener("click", prevTestimonial);
+}
+
+//* auto slide
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextTestimonial, 5000); // 5s
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+//* touch navigation
+
+function handleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+  touchEndX = event.changedTouches[0].clientX;
+
+  handleTouchSwipe();
+}
+
+function handleTouchSwipe() {
+  const swipeThreshold = 50; // swipe sensitivity
+
+  if (touchStartX - touchEndX > swipeThreshold) {
+    nextTestimonial(); // swipe left
+  } else if (touchEndX - touchStartX > swipeThreshold) {
+    prevTestimonial(); // swipe right
+  }
+}
+
+//* dot navigation
+
+function renderDotButtons() {
+  for (let i = 0; i < testimonials.length; i++) {
+    const button = document.createElement("button");
+    button.classList.add("dot");
+    button.classList.toggle("active", i === currentIndex);
+    button.ariaLabel = `Jump to Testimonial ${i + 1}`;
+    button.addEventListener("click", () => showTestimonial(i));
+    dotsContainer.appendChild(button);
+  }
+}
+
+//* slide functions
+
+function showTestimonial(index) {
+  currentIndex = index;
+
+  // update slide position
+  testimonials.forEach((testimonial) => {
+    testimonial.style.transform = `translateX(${-index * 100}%)`;
+  });
+
+  // update active dot
+  const dots = document.querySelectorAll(".dot");
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === currentIndex);
+  });
+}
+
+function nextTestimonial() {
+  const nextIndex = (currentIndex + 1) % testimonials.length;
+  showTestimonial(nextIndex);
+}
+
+function prevTestimonial() {
+  const prevIndex =
+    (currentIndex - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(prevIndex);
+}
+
+//* initialize
+
+document.addEventListener("DOMContentLoaded", function () {
+  renderDotButtons();
+  startAutoSlide();
+  initApp();
+});
