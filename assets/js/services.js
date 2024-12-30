@@ -65,6 +65,15 @@ gsap.to("#page2>h1>span",{
     color:`white`
 })
 
+// Scroll-based corner animation
+ScrollTrigger.create({
+  trigger: "#page2",
+  start: "40%% bottom",
+  end: "top 70%",
+  scroller: "#main",
+  onEnter: () => document.querySelector("#page2").classList.add("scrolled"),
+  onLeaveBack: () => document.querySelector("#page2").classList.remove("scrolled"),
+});
 
 
 function canvas(){

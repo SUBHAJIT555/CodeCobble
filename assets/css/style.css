@@ -65,6 +65,7 @@ body {
   position: fixed;
   width: 30%;
   top: 0;
+  left: 20%;
   height: 20%;
   background-color: lawngreen;
   filter: blur(300px);
@@ -207,13 +208,33 @@ body {
   transition: filter 0.3s ease, transform 0.3s ease;
   filter: blur(5px);
 }
+.swiper-slide-active img {
+  transform: rotateY(30deg) scale(1.1); 
+  animation: wobble 1s ease-in-out;
+}
 
-
+/* Wobble Animation */
+@keyframes wobble {
+  0% {
+    transform: rotateY(30deg) scale(1.1);
+  }
+  25% {
+    transform: rotateY(25deg) scale(1.15) translateX(-5px);
+  }
+  50% {
+    transform: rotateY(30deg) scale(1.1);
+  }
+  75% {
+    transform: rotateY(35deg) scale(1.15) translateX(5px);
+  }
+  100% {
+    transform: rotateY(0deg) scale(1.1);
+  }
+}
 
 .swiper-slide-active {
   filter: blur(0);
   transform: scale(1.1);
-
 }
 
 /*------------------------------ Hero end------------------------------  */
@@ -227,7 +248,6 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* padding: 100px; */
   opacity: 1;
   z-index: 99;
 }
@@ -266,12 +286,12 @@ body {
 #third img {
   position: absolute;
   width: 300px;
-  animation: float 5s ease-in-out infinite; /* Applies the animation */
+  animation: float 5s ease-in-out infinite; 
 }
 
 #first img {
   right: 0%;
-  animation-delay: 0s; /* Staggered start for each image */
+  animation-delay: 0s;
 }
 
 #second img {
@@ -288,14 +308,14 @@ body {
   animation-delay: 4s;
 }
 
-/* Keyframes for floating effect */
+
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0); /* Start and end in original position */
+    transform: translateY(0); 
   }
   50% {
-    transform: translateY(-10px); /* Float upward slightly */
+    transform: translateY(-10px); 
   }
 }
 
@@ -312,12 +332,12 @@ body {
 #cobbles2third img {
   position: absolute;
   width: 200px;
-  animation: float 5s ease-in-out infinite; /* Applies the animation */
+  animation: float 5s ease-in-out infinite; 
 }
 
 #cobbles2first img {
   left: 15%;
-  animation-delay: 0s; /* Staggered start for each image */
+  animation-delay: 0s; 
 }
 
 #cobbles2second img {
@@ -335,14 +355,14 @@ body {
   animation-delay: 4s;
 }
 
-/* Keyframes for floating effect */
+
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0); /* Start and end in original position */
+    transform: translateY(0); 
   }
   50% {
-    transform: translateY(-10px); /* Float upward slightly */
+    transform: translateY(-10px); 
   }
 }
 
@@ -630,7 +650,7 @@ body {
   align-items: center;
   /* padding: 0 150px; */
   width: 100%;
-  gap: 50px;
+  gap: 70px;
 }
 #page6-top-left > h3 {
   font-size: 3rem;
@@ -671,18 +691,111 @@ body {
 
 #page7 {
   position: relative;
-  height: 100vh;
+  height: auto;
   width: 100vw;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  padding: 50px 150px;
 }
 
-#page7 > canvas {
+#page7-top h1{
+  font-size: 3rem;
+  font-family: var(--heading-font);
+  background-image: linear-gradient(to left, #6b34e2,#6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00,#7cfc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 70px;
+}
+#page7-bottom1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+#page7-bottom2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+#page7-bottom3{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+#page7-bottomlast{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; 
+   align-items: center;
+}
+.service-box{
+  position: relative;
+  width: 40%;
+  font-family: var(--text-font);
+  color: white;
+}
+.left-box img{
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  overflow: visible;
+  height: 200px;
+  /* z-index: 9; */
+  animation: animateSphere 50s infinite linear;
+}
+@-webkit-keyframes animateSphere {
+  0% { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
+  50% { transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg); }
+  100% { transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg); }
+}
+ .right-box img{
+  position: absolute;
+  top: -0px;
+  right: -50px;
+  overflow: visible;
+  z-index: 9;
+  /* animation: rotation 10s infinite linear; */
+}
+.service-gap{
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+}
+.service-doc{
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 15px;
+  
+}
+.service-doc h1{
+  font-family: var(--heading-font);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: lawngreen;
+}
+
+.service-doc p{
+  font-family: var(--text-font);
+  font-size: 18px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+/* prev css   */
+/* #page7 > canvas {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -779,7 +892,10 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   text-transform: uppercase;
-}
+} */
+
+
+
 @media (max-width: 1024px) {
   .page-left,
   .page-right {
@@ -839,47 +955,8 @@ body {
   object-fit: cover;
 }
 
-#page16{
-  position: relative;
-  width: 100%;
-  height: auto;
 
-}
-#page16-top h1{
-  font-family: var(--heading-font);
-  background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-#page16-bottom{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 200px;
-  gap: 80px;
-}
-#page16-bottom-left{
-  color: white;
-  font-family: var(--text-font);
-}
-#page16-bottom-left p{
-  font-size: 20px ;
-}
 
-#page16-bottom-left
-#page17 {
-  position: relative;
-  /* height: 100vh; */
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #000;
-  color: white;
-}
 #page17 > h4 {
   font-family: var(--heading-font);
   font-size: 3rem;
@@ -1364,7 +1441,7 @@ button {
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {

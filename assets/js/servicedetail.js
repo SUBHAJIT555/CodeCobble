@@ -668,15 +668,64 @@ ScrollTrigger.create({
   end: `300% top`,
 });
 
-gsap.to("#hero1", {
-  scrollTrigger: {
-    trigger: `#hero1`,
-    start: `top top`,
-    end: `bottom top`,
-    // pin: true,
-    scroller: `#main`,
-  },
-});
+
+  gsap.from("#hero1 #right-text", {
+    x: -400,
+    opacity: 0,
+    stagger: 2,
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#right-text",
+      scroller: "#main",
+      start: "top 80%",
+      end: "top 60%",
+      scrub: 3,
+      
+    },
+  });
+  gsap.from("#hero1 #left-text", {
+    x: 400,
+    opacity: 0,
+    stagger: 2,
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#left-text",
+      scroller: "#main",
+      start: "top 80%",
+      end: "top 60%",
+      scrub: 3,
+      
+    },
+  });
+  gsap.from("#hero2 #text1", {
+    x: -400,
+    opacity: 0,
+    stagger: 2,
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#text1",
+      scroller: "#main",
+      start: "top 80%",
+      end: "top 60%",
+      scrub: 3,
+      
+    },
+  });
+  gsap.from("#hero2 #text2", {
+    x: 400,
+    opacity: 0,
+    stagger: 2,
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#text2",
+      scroller: "#main",
+      start: "top 80%",
+      end: "top 60%",
+      scrub: 3,
+      
+    },
+  });
+
 gsap.to("#hero2", {
   scrollTrigger: {
     trigger: `#hero2`,
@@ -695,6 +744,9 @@ gsap.to("#hero3", {
     scroller: `#main`,
   },
 });
+
+
+
 
 // -------------------------------------
 
