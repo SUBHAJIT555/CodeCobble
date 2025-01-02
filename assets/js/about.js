@@ -13,7 +13,6 @@ function page1() {
     duration: 1,
     stagger: 0.5,
   });
-
 }
 page1();
 
@@ -53,32 +52,32 @@ function locoScroll() {
 }
 locoScroll();
 
-function slick(){
-$(document).ready(function () {
-  $(".client-slider").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 900,
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
+function slick() {
+  $(document).ready(function () {
+    $(".client-slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 900,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
+          },
         },
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3,
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
+          },
         },
-      },
-    ],
+      ],
+    });
   });
-});
 }
 slick();
 

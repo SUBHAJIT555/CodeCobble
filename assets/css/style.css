@@ -78,14 +78,12 @@ body {
   /* background-color: #000; */
 }
 
-
-
-
 /* ---------------------------Hero----------------------------- */
 #hero {
   position: relative;
   height: 100vh;
   padding: 20px;
+  margin-top: 2rem;
   overflow: hidden;
 }
 #hero-video {
@@ -120,14 +118,14 @@ body {
   margin-bottom: 20px;
   text-align: left;
 }
-#hero-heading h1 span{
+#hero-heading h1 span {
   color: transparent;
   background-image: linear-gradient(to left, #000, #000, #000, #000);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.5px white;
-  font-size: 3.5rem
+  font-size: 3.5rem;
 }
 #hero-heading h3 {
   color: white;
@@ -209,7 +207,7 @@ body {
   filter: blur(5px);
 }
 .swiper-slide-active img {
-  transform: rotateY(30deg) scale(1.1); 
+  transform: rotateY(30deg) scale(1.1);
   animation: wobble 1s ease-in-out;
 }
 
@@ -286,7 +284,7 @@ body {
 #third img {
   position: absolute;
   width: 300px;
-  animation: float 5s ease-in-out infinite; 
+  animation: float 5s ease-in-out infinite;
 }
 
 #first img {
@@ -308,14 +306,13 @@ body {
   animation-delay: 4s;
 }
 
-
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
   }
 }
 
@@ -332,12 +329,12 @@ body {
 #cobbles2third img {
   position: absolute;
   width: 200px;
-  animation: float 5s ease-in-out infinite; 
+  animation: float 5s ease-in-out infinite;
 }
 
 #cobbles2first img {
   left: 15%;
-  animation-delay: 0s; 
+  animation-delay: 0s;
 }
 
 #cobbles2second img {
@@ -355,14 +352,13 @@ body {
   animation-delay: 4s;
 }
 
-
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
   }
 }
 
@@ -643,7 +639,7 @@ body {
   background-color: #000;
   padding: 0 270px;
 }
-#page6-top{
+#page6-top {
   position: relative;
   display: flex;
   justify-content: center;
@@ -672,10 +668,10 @@ body {
   color: white;
   text-align: left;
 }
-#page6-top-right{
+#page6-top-right {
   width: 100%;
 }
-#page6-top-right img{
+#page6-top-right img {
   width: 100%;
 }
 #page6-bottom > p {
@@ -696,10 +692,19 @@ body {
   padding: 50px 150px;
 }
 
-#page7-top h1{
+#page7-top h1 {
   font-size: 3rem;
   font-family: var(--heading-font);
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -707,40 +712,40 @@ body {
   padding: 30px;
   margin-bottom: 70px;
 }
-#page7-bottom1{
+#page7-bottom1 {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
   align-items: center;
   justify-content: center;
 }
-#page7-bottom2{
+#page7-bottom2 {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
   align-items: center;
   justify-content: center;
 }
-#page7-bottom3{
+#page7-bottom3 {
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
   align-items: center;
   justify-content: center;
 }
-#page7-bottomlast{
+#page7-bottomlast {
   margin-top: 50px;
   display: flex;
-  justify-content: center; 
-   align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-.service-box{
+.service-box {
   position: relative;
   width: 40%;
   font-family: var(--text-font);
   color: white;
 }
-.left-box img{
+.left-box img {
   position: absolute;
   top: -100px;
   left: -50px;
@@ -750,11 +755,17 @@ body {
   animation: animateSphere 50s infinite linear;
 }
 @-webkit-keyframes animateSphere {
-  0% { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
-  50% { transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg); }
-  100% { transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg); }
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg);
+  }
 }
- .right-box img{
+.right-box img {
   position: absolute;
   top: -0px;
   right: -50px;
@@ -762,12 +773,12 @@ body {
   z-index: 9;
   /* animation: rotation 10s infinite linear; */
 }
-.service-gap{
+.service-gap {
   width: 100%;
   height: 100px;
   background-color: transparent;
 }
-.service-doc{
+.service-doc {
   background: rgba(255, 255, 255, 0.13);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -777,9 +788,8 @@ body {
   overflow: hidden;
   padding: 30px;
   border-radius: 15px;
-  
 }
-.service-doc h1{
+.service-doc h1 {
   font-family: var(--heading-font);
   font-size: 30px;
   text-align: center;
@@ -787,7 +797,7 @@ body {
   color: lawngreen;
 }
 
-.service-doc p{
+.service-doc p {
   font-family: var(--text-font);
   font-size: 18px;
   text-align: justify;
@@ -894,8 +904,6 @@ body {
   text-transform: uppercase;
 } */
 
-
-
 @media (max-width: 1024px) {
   .page-left,
   .page-right {
@@ -954,8 +962,6 @@ body {
   width: 100%;
   object-fit: cover;
 }
-
-
 
 #page17 > h4 {
   font-family: var(--heading-font);
@@ -1106,10 +1112,16 @@ body {
   height: auto;
 }
 
-
 #page23 h1 {
   text-align: center;
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1133,7 +1145,6 @@ button {
   position: relative;
   overflow: hidden;
   border: 3px solid #5d5b5b;
-  
 }
 
 .testimonial-list {
@@ -1170,7 +1181,7 @@ button {
   color: white;
   font-family: var(--heading-font);
 }
-.user-details{
+.user-details {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1183,7 +1194,7 @@ button {
   height: 90px;
   border-radius: 50%;
 }
-.user-info i{
+.user-info i {
   color: yellow;
   font-size: 1.5rem;
 }
@@ -1257,7 +1268,6 @@ button {
   background-color: lawngreen;
 }
 
-
 /* ----------footer css-----------  */
 .footer {
   position: relative;
@@ -1296,12 +1306,11 @@ button {
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
 }
 .cta button a {
   color: #000000;
@@ -1354,7 +1363,7 @@ button {
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -1414,7 +1423,7 @@ button {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -1432,11 +1441,11 @@ button {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
@@ -1465,11 +1474,11 @@ button {
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -1493,7 +1502,6 @@ button {
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -1535,7 +1543,6 @@ button {
     font-size: 24px;
   }
 }
-
 
 .part2 h4 {
   display: none;
@@ -1632,12 +1639,12 @@ svg.squiggle path {
   align-items: center;
 }
 .circle-chart__circle {
-  animation: circle-chart-fill 2s reverse; /* 1 */ 
+  animation: circle-chart-fill 2s reverse; /* 1 */
   transform: rotate(-90deg); /* 2, 3 */
   transform-origin: center; /* 4 */
 }
 .circle-chart__circle--negative {
-  transform: rotate(-90deg) scale(1,-1); /* 1, 2, 3 */
+  transform: rotate(-90deg) scale(1, -1); /* 1, 2, 3 */
 }
 
 .circle-chart__info {
@@ -1647,7 +1654,9 @@ svg.squiggle path {
 }
 
 @keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100; }
+  to {
+    stroke-dasharray: 0 100;
+  }
 }
 
 @keyframes circle-chart-appear {
@@ -2274,11 +2283,3 @@ svg.squiggle path {
     margin-top: 20px;
   }
 }
-
-
-
-
-
-
-
-

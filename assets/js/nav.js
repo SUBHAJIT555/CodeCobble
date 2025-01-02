@@ -37,3 +37,29 @@ opensub.forEach((toggle, index) => {
 });
 
 
+function data() {
+  return {
+    scrollIns: false,
+  };
+}
+function mounted() {
+  this.$nextTick(() => {
+    this.initScroll();
+  });
+}
+function initScroll() {
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    smoothMobile: true,
+    getDirection: true,
+    getSpeed: true,
+  });
+  setTimeout(() => {
+    let target = document.getElementById("main");
+    scroll.scrollTo(target);
+  }, 5000);
+}
+
+data();
+mounted();

@@ -16,7 +16,18 @@
 .mainnav {
   width: 100%;
   z-index: 999;
+  position: fixed !important;
+  top: 0 !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
 }
+
+/* .scrolled {
+  backdrop-filter: blur(5.7px); 
+  -webkit-backdrop-filter: blur(5.7px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) 
+} */
 
 .hamburger {
   width: 100%;
@@ -27,7 +38,10 @@
   padding: 10px 50px;
   z-index: 999;
 }
-.hamburger img{
+
+.hamburger-container {
+}
+.hamburger img {
   padding-top: 10px;
   z-index: 9;
 }
@@ -35,7 +49,7 @@
   width: 150px;
   z-index: 9999;
 }
-.logo-head{
+.logo-head {
   width: 100%;
   height: 100%;
 }
@@ -53,9 +67,7 @@
 #ham .icon {
   width: 100%;
   height: 100%;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 #ham.open .icon {
@@ -83,7 +95,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.listmain li{
+.listmain li {
   list-style: none;
 }
 
@@ -96,7 +108,6 @@
   position: relative;
   text-transform: uppercase;
   transition: all ease 0.5s;
-  
 }
 
 .listmain li a::after {
@@ -155,7 +166,7 @@
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
-  font-family:var(--text-font);
+  font-family: var(--text-font);
   transition: all ease 0.5s;
   text-align: right;
 }
@@ -199,9 +210,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition:
-    max-height 0.5s ease,
-    opacity 0.5s ease;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 .subtoggle {
@@ -219,7 +228,7 @@
   border-radius: 20px;
   transition: all 0.5s ease; /* Smooth rotation */
 }
-.submenu i:hover{
+.submenu i:hover {
   cursor: pointer;
   background-color: lawngreen;
   border: 1px solid black;
@@ -256,12 +265,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-
 /* Responsive Styles */
 @media (max-width: 1024px) {
-  .hamburger img{
-    
+  .hamburger img {
     padding-top: 10px;
   }
   .listmain li a {
@@ -277,12 +283,12 @@
   .navlogoin {
     width: 200px;
   }
-  .hamburger{
+  .hamburger {
     padding: 0px 40px;
   }
 }
 @media (max-width: 768px) {
-  .hamburger img{
+  .hamburger img {
     width: 90px;
     padding-top: 10px;
   }
@@ -292,20 +298,20 @@
   .listmain {
     width: 100%;
   }
-  .hamburger{
+  .hamburger {
     padding: 0px 30px;
   }
-  #ham{
+  #ham {
     width: 30px;
     height: 30px;
   }
 }
 
 @media (max-width: 480px) {
-    .hamburger{
+  .hamburger {
     padding: 0px 20px;
   }
-  .hamburger img{
+  .hamburger img {
     width: 80px;
     padding-top: 10px;
   }
