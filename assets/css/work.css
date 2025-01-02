@@ -692,6 +692,10 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
+.address a{
+  font-family: var(--text-font);
+  font-size: 14px;
+}
 .foot-contact {
   display: flex;
   flex-direction: column;

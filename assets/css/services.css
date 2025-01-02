@@ -723,6 +723,10 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
 .cta button:hover a{
   color:lawngreen;
 }
+.address a{
+  font-family: var(--text-font);
+  font-size: 14px;
+}
 .cta button a {
   color: #000000;
   text-decoration: none;

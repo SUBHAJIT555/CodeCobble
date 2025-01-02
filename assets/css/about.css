@@ -745,6 +745,10 @@ body {
   font-weight: 500;
   line-height: 21px;
 }
+.address a{
+  font-family: var(--text-font);
+  font-size: 14px;
+}
 .mainfooter a{
   text-decoration: none;
 }
