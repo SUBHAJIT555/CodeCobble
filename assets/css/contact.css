@@ -326,6 +326,7 @@ body {
 }
 .cta button:hover a{
   color:lawngreen;
+  text-decoration: none;
 }
 .cta button a {
   color: #000000;
@@ -388,6 +389,7 @@ body {
 }
 .foot-contact a:hover {
   color: #7cfc00;
+  text-decoration: none;
 }
 .footer-cards h2 {
   color: #ffffff;

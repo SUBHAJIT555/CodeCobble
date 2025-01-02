@@ -58,7 +58,10 @@ body {
 }
 #page1-top h1 {
   color: transparent;
-  -webkit-text-stroke: 3px white;
+  background-image: linear-gradient(to left, #6b34e2, #fff, #7cfc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: var(--heading-font);
   text-align: center;
   font-size: 100px;

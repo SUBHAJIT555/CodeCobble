@@ -278,8 +278,9 @@ canvas {
 #hero3 > #text3 {
   position: absolute;
   top: 70%;
-  right: 25%;
-  text-align: end;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 #hero3 > #text3 > h3 {
   font-weight: 400;
@@ -294,6 +295,7 @@ canvas {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: var(--text-font);
+  text-align: center;
 }
 #page2 {
   height: 100vh;
@@ -818,21 +820,23 @@ textarea {
   font-size: 1rem;
 }
 #contact-button button {
-  padding: 0.5vw 1vw;
+  padding: 10px 25px;
   border: none;
   background-color: lawngreen;
   color: #000;
   font-family: var(--text-font);
   font-size: 1.2rem;
-  border: 3px solid #000;
-  border-radius: 50px;
-  box-shadow: 5px 5px #000, 7px 7px lawngreen;
+  border-radius: 10px;
+  border: 0.5px solid black;
   transition: all ease 0.3s;
 }
 #contact-button button:hover {
   box-shadow: none;
   cursor: pointer;
-  transform: translateY(7px);
+  background-color: transparent;
+  color: lawngreen;
+  border: 0.5px solid lawngreen;
+  /* transform: translateY(7px); */
 }
 /* ----------footer css-----------  */
 .footer {
@@ -878,6 +882,7 @@ textarea {
 }
 .cta button:hover a{
   color:lawngreen;
+  text-decoration: none;
 }
 .cta button a {
   color: #000000;
@@ -940,6 +945,7 @@ textarea {
 }
 .foot-contact a:hover {
   color: #7cfc00;
+  text-decoration: none;
 }
 .footer-cards h2 {
   color: #ffffff;

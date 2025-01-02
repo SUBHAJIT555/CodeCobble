@@ -592,6 +592,160 @@ tl2.to("#page4>#center-page4", {
 // }
 // canvas();
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Scene, Camera, Renderer
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.getElementById("three-container").appendChild(renderer.domElement);
+
+  // Lights
+  const ambientLight = new THREE.AmbientLight(0x404040, 1);
+  const pointLight = new THREE.PointLight(0xffa500, 2, 100);
+  pointLight.position.set(0, 0, 0);
+  scene.add(ambientLight, pointLight);
+
+  // Sun
+  const sunGeometry = new THREE.SphereGeometry(5, 32, 32);
+  const sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffa500 });
+  const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+  scene.add(sun);
+
+  // Planets
+  const planets = [];
+  const planetData = [
+    { radius: 8, size: 0.8, color: 0x1e90ff, speed: 0.01 }, // Mercury
+    { radius: 12, size: 1, color: 0xff4500, speed: 0.007 }, // Venus
+    { radius: 16, size: 1.2, color: 0x00ff00, speed: 0.005 }, // Earth
+    { radius: 20, size: 1.1, color: 0xff0000, speed: 0.003 }, // Mars
+  ];
+
+  planetData.forEach((data) => {
+    const planetGeometry = new THREE.SphereGeometry(data.size, 32, 32);
+    const planetMaterial = new THREE.MeshStandardMaterial({ color: data.color });
+    const planet = new THREE.Mesh(planetGeometry, planetMaterial);
+
+    planet.orbitRadius = data.radius;
+    planet.orbitSpeed = data.speed;
+    planet.orbitAngle = Math.random() * Math.PI * 2; // Random starting angle
+    planets.push(planet);
+    scene.add(planet);
+  });
+
+  // Stars
+  const starGeometry = new THREE.BufferGeometry();
+  const starCount = 1000;
+  const starPositions = new Float32Array(starCount * 3);
+
+  for (let i = 0; i < starCount * 3; i++) {
+    starPositions[i] = (Math.random() - 0.5) * 1000;
+  }
+
+  starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+
+  const starMaterial = new THREE.PointsMaterial({
+    color: 0xffffff,
+    size: 1,
+    transparent: true,
+    opacity: 1,
+  });
+
+  const stars = new THREE.Points(starGeometry, starMaterial);
+  scene.add(stars);
+
+  // Camera Controls
+  let mouseX = 0, mouseY = 0;
+  const onMouseMove = (event) => {
+    mouseX = (event.clientX / window.innerWidth) * 3 - 1;
+    mouseY = -(event.clientY / window.innerHeight) * 3 + 1;
+  };
+
+  const onTouchMove = (event) => {
+    if (event.touches.length === 1) {
+      mouseX = (event.touches[0].clientX / window.innerWidth) * 2 - 1;
+      mouseY = -(event.touches[0].clientY / window.innerHeight) * 2 + 1;
+    }
+  };
+
+  document.addEventListener('mousemove', onMouseMove);
+  document.addEventListener('touchmove', onTouchMove);
+
+  // Animation Loop
+  const animate = () => {
+    requestAnimationFrame(animate);
+
+    // Rotate planets
+    planets.forEach((planet) => {
+      planet.orbitAngle += planet.orbitSpeed;
+      planet.position.x = planet.orbitRadius * Math.cos(planet.orbitAngle);
+      planet.position.z = planet.orbitRadius * Math.sin(planet.orbitAngle);
+    });
+
+    // Move camera slightly with mouse
+    camera.position.x += (mouseX * 50 - camera.position.x) * 0.05;
+    camera.position.y += (mouseY * 50 - camera.position.y) * 0.05;
+    camera.lookAt(scene.position);
+
+    renderer.render(scene, camera);
+  };
+
+  animate();
+
+  // Handle Resize
+  window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const progressBars = document.querySelectorAll(".progress-fg");
+
+  // Function to animate progress bars
+  const animateProgress = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const progressBar = entry.target;
+        const percentage = parseInt(progressBar.parentElement.nextElementSibling.innerText, 10);
+
+        // Set progress animation
+        const dashOffset = 565 - (565 * percentage) / 100; // Adjust for new circumference
+        progressBar.style.strokeDashoffset = dashOffset;
+
+        observer.unobserve(progressBar); // Stop observing once animated
+      }
+    });
+  };
+
+  // Intersection Observer
+  const observer = new IntersectionObserver(animateProgress, {
+    threshold: 0.5, // Trigger when 50% of the element is visible
+  });
+
+  progressBars.forEach((bar) => observer.observe(bar));
+});
+
+
+
+
+
+
+
+
+
+
 function page7Animation(){
   gsap.from("#page7-bottom1 .box-left1", {
     x: -400,
@@ -686,6 +840,12 @@ function page7Animation(){
   });
 }
 page7Animation();
+
+
+
+
+
+
 
 
 

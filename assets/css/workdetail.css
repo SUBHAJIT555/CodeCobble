@@ -465,8 +465,8 @@ body {
 }
 #page4-left-content a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen; */
+  color: #fff;
 }
 #page4-right {
   width: 30%;
@@ -523,8 +523,8 @@ body {
 }
 #page4-right-content a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen;  */
+  color: #fff;
 }
 
 /* ----------footer css-----------  */
@@ -571,6 +571,7 @@ body {
 }
 .cta button:hover a{
   color:lawngreen;
+  text-decoration: none;
 }
 .cta button a {
   color: #000000;
@@ -633,6 +634,7 @@ body {
 }
 .foot-contact a:hover {
   color: #7cfc00;
+  text-decoration: none;
 }
 .footer-cards h2 {
   color: #ffffff;

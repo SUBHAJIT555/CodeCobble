@@ -722,6 +722,7 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
 }
 .cta button:hover a{
   color:lawngreen;
+  text-decoration: none;
 }
 .address a{
   font-family: var(--text-font);
@@ -784,6 +785,7 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
 }
 .foot-contact a:hover {
   color: #7cfc00;
+  text-decoration: none;
 }
 .footer-cards h2 {
   color: #ffffff;

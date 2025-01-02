@@ -61,7 +61,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-#gola {
+/* #gola {
   position: fixed;
   width: 30%;
   top: 0;
@@ -70,7 +70,7 @@ body {
   background-color: lawngreen;
   filter: blur(300px);
   z-index: 1;
-}
+} */
 #page {
   position: relative;
   height: 100vh;
@@ -694,6 +694,16 @@ body {
   height: auto;
   width: 100vw;
   padding: 50px 150px;
+  overflow: hidden;
+}
+#three-container {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 200vh;
+  
 }
 
 #page7-top h1{
@@ -740,34 +750,14 @@ body {
   font-family: var(--text-font);
   color: white;
 }
-.left-box img{
-  position: absolute;
-  top: -100px;
-  left: -50px;
-  overflow: visible;
-  height: 200px;
-  /* z-index: 9; */
-  animation: animateSphere 50s infinite linear;
-}
-@-webkit-keyframes animateSphere {
-  0% { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
-  50% { transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg); }
-  100% { transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg); }
-}
- .right-box img{
-  position: absolute;
-  top: -0px;
-  right: -50px;
-  overflow: visible;
-  z-index: 9;
-  /* animation: rotation 10s infinite linear; */
-}
+
 .service-gap{
   width: 100%;
   height: 100px;
   background-color: transparent;
 }
 .service-doc{
+  
   background: rgba(255, 255, 255, 0.13);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -779,6 +769,7 @@ body {
   border-radius: 15px;
   
 }
+
 .service-doc h1{
   font-family: var(--heading-font);
   font-size: 30px;
@@ -794,14 +785,76 @@ body {
   line-height: 25px;
 }
 
+#experience-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Increased gap between bars */
+  flex-wrap: wrap;
+}
+
+.progress-bar {
+  position: relative;
+  width: 250px; /* Larger size */
+  height: 250px; /* Larger size */
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.progress-svg {
+  width: 250px; /* Match container size */
+  height: 250px; /* Match container size */
+  transform: rotate(-90deg);
+}
+
+.progress-bg {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 15;
+}
+
+.progress-fg {
+  fill: none;
+  stroke: #7cfc00; /* Green color for progress */
+  stroke-width: 15;
+  stroke-dasharray: 565; /* Circumference of the circle (2 * PI * r) */
+  stroke-dashoffset: 565; /* Full circle is hidden initially */
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.progress-value {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 40px; /* Larger font size */
+  font-weight: bold;
+}
+
+.progress-bar p {
+  margin-top: 20px; 
+  font-size: 20px; 
+  color: white;
+  font-family: var(--text-font);
+  
+}
+
+
+
+
+
 /* prev css   */
-/* #page7 > canvas {
+ /* #page7 > canvas {
   position: relative;
   height: 100vh;
   width: 100vw;
   z-index: 99;
-}
-.page-left {
+} */
+/* .page-left {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -892,7 +945,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   text-transform: uppercase;
-} */
+} */ 
 
 
 
