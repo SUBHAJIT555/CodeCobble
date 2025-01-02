@@ -809,14 +809,15 @@ body {
 }
 
 #experience-section {
-  padding: 100px 20px;
+  position: relative;
+  padding: 80px;  
   text-align: center;
 }
 
 .progress-container {
   display: flex;
   justify-content: center;
-  gap: 100px; /* Increased gap between bars */
+  gap: 80px; /* Increased gap between bars */
   flex-wrap: wrap;
 }
 
@@ -843,7 +844,7 @@ body {
 .progress-fg {
   fill: none;
   stroke: #7cfc00; /* Green color for progress */
-  stroke-width: 15;
+  stroke-width: 20;
   stroke-dasharray: 565; /* Circumference of the circle (2 * PI * r) */
   stroke-dashoffset: 565; /* Full circle is hidden initially */
   transition: stroke-dashoffset 1s ease-out;
@@ -855,16 +856,19 @@ body {
   left: 40%;
   transform: translate(-50%, -50%);
   font-size: 40px; /* Larger font size */
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: lawngreen;
 }
 
 .progress-bar p {
-  margin-top: 20px; 
-  font-size: 20px; 
+  margin-top: 20px; /* Increased spacing from the circle */
+  font-size: 18px; /* Larger text size */
   color: white;
   font-family: var(--text-font);
-  
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
 
 
 

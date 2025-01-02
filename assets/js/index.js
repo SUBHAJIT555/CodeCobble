@@ -746,6 +746,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
 function page7Animation(){
   gsap.from("#page7-bottom1 .box-left1", {
     x: -400,
