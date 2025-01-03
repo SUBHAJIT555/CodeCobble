@@ -1340,7 +1340,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .cta {
     width: 100%;
     padding: 20px;
@@ -1360,6 +1360,9 @@ body {
   .social-icons-foot i {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 480px) {
   #swiperdiv {
     margin: 10px 0px;
   }

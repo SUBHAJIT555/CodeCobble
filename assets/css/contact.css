@@ -83,6 +83,7 @@ body {
   padding: 40px 60px;
   display: flex;
   gap: 50px;
+  margin-top: 50px;
 }
 
 .form-content {
@@ -490,7 +491,12 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  .balls,
+  .balls1,
+  .balls2 {
+    display: none;
+  }
   .footer-cards form {
     flex-wrap: wrap;
     gap: 10px;
@@ -500,11 +506,12 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .cta {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    gap: 20px;
   }
   .cta h2 {
     font-size: 2rem;
@@ -540,7 +547,22 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #contact-main {
+    padding: 40px 10px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .formsub {
+    margin-top: 0px;
+  }
   .cta {
     width: 100%;
     padding: 20px;
@@ -564,7 +586,7 @@ body {
 
 @media (max-width: 1200px) {
   .cont-des p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .formlogo {
     width: 150px;
@@ -597,7 +619,7 @@ body {
     font-size: 28px;
   }
   .cont-des p {
-    font-size: 12px;
+    font-size: 14px;
   }
   .contact-form h2 {
     font-size: 28px;
@@ -626,7 +648,7 @@ body {
     font-size: 24px;
   }
   .cont-des p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .icon-text i {
     font-size: 12px;
@@ -649,13 +671,5 @@ body {
   }
   .submit-btn input {
     font-size: 16px;
-  }
-}
-@media (max-width: 530px) {
-  #contact-main {
-    margin: 10px;
-  }
-  .contact-form {
-    padding: 10px;
   }
 }

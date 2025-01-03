@@ -1,22 +1,19 @@
 function loco() {
   gsap.registerPlugin(ScrollTrigger);
 
-  
-
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector("#main"),
     smooth: true,
   });
- 
+
   locoScroll.on("scroll", ScrollTrigger.update);
 
- 
   ScrollTrigger.scrollerProxy("#main", {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
         : locoScroll.scroll.instance.scroll.y;
-    }, 
+    },
     getBoundingClientRect() {
       return {
         top: 0,
@@ -25,25 +22,17 @@ function loco() {
         height: window.innerHeight,
       };
     },
-    
+
     pinType: document.querySelector("#main").style.transform
       ? "transform"
       : "fixed",
   });
 
-  
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-  
   ScrollTrigger.refresh();
 }
 loco();
-
-
-
-
-
-
 
 function page1() {
   var tl = gsap.timeline();
@@ -54,14 +43,13 @@ function page1() {
     duration: 1,
     stagger: 3,
   });
-  
+
   tl.from("#hero-heading h3", {
     x: 300,
     opacity: 0,
     duration: 1,
     stagger: 0.5,
   });
-
 }
 page1();
 
@@ -99,8 +87,6 @@ gsap.to("#page-bottom", {
 });
 
 // -------- canvas for video solution -----
-
-
 
 function videosolutionText() {
   var clutter = "";
@@ -566,7 +552,8 @@ tl2.to("#page4>#center-page4", {
 //     var canvas = ctx.canvas;
 //     var hRatio = canvas.width / img.width;
 //     var vRatio = canvas.height / img.height;
-//     var ratio = Math.max(hRatio, vRatio);
+    // var ratio = Math.max(hRatio, vRatio);
+// var ratio = Math.min(hRatio, vRatio);
 //     var centerShift_x = (canvas.width - img.width * ratio) / 2;
 //     var centerShift_y = (canvas.height - img.height * ratio) / 2;
 //     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -595,7 +582,12 @@ tl2.to("#page4>#center-page4", {
 document.addEventListener("DOMContentLoaded", () => {
   // Scene, Camera, Renderer
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -610,27 +602,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sun
   const sunGeometry = new THREE.SphereGeometry(5, 32, 32);
   // Create a canvas for the gradient
-const canvas = document.createElement('canvas');
-canvas.width = 256;
-canvas.height = 256;
+  const canvas = document.createElement("canvas");
+  canvas.width = 256;
+  canvas.height = 256;
 
-const context = canvas.getContext('2d');
+  const context = canvas.getContext("2d");
 
-// Create a radial gradient
-const gradient = context.createRadialGradient(128, 128, 50, 128, 128, 128);
-gradient.addColorStop(0, '#5A3fe1'); // Inner color
-gradient.addColorStop(1, '#2c169d'); // Outer color
+  // Create a radial gradient
+  const gradient = context.createRadialGradient(128, 128, 50, 128, 128, 128);
+  gradient.addColorStop(0, "#5A3fe1"); // Inner color
+  gradient.addColorStop(1, "#2c169d"); // Outer color
 
-context.fillStyle = gradient;
-context.fillRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, canvas.width, canvas.height);
 
-// Create a texture from the canvas
-const gradientTexture = new THREE.CanvasTexture(canvas);
+  // Create a texture from the canvas
+  const gradientTexture = new THREE.CanvasTexture(canvas);
 
-// Apply the gradient texture to the sun material
-const sunMaterial = new THREE.MeshBasicMaterial({
-  map: gradientTexture,
-});
+  // Apply the gradient texture to the sun material
+  const sunMaterial = new THREE.MeshBasicMaterial({
+    map: gradientTexture,
+  });
 
   const sun = new THREE.Mesh(sunGeometry, sunMaterial);
   scene.add(sun);
@@ -646,7 +638,9 @@ const sunMaterial = new THREE.MeshBasicMaterial({
 
   planetData.forEach((data) => {
     const planetGeometry = new THREE.SphereGeometry(data.size, 32, 32);
-    const planetMaterial = new THREE.MeshStandardMaterial({ color: data.color });
+    const planetMaterial = new THREE.MeshStandardMaterial({
+      color: data.color,
+    });
     const planet = new THREE.Mesh(planetGeometry, planetMaterial);
 
     planet.orbitRadius = data.radius;
@@ -665,7 +659,10 @@ const sunMaterial = new THREE.MeshBasicMaterial({
     starPositions[i] = (Math.random() - 0.5) * 1000;
   }
 
-  starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+  starGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(starPositions, 3)
+  );
 
   const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff,
@@ -678,7 +675,8 @@ const sunMaterial = new THREE.MeshBasicMaterial({
   scene.add(stars);
 
   // Camera Controls
-  let mouseX = 0, mouseY = 0;
+  let mouseX = 0,
+    mouseY = 0;
   const onMouseMove = (event) => {
     mouseX = (event.clientX / window.innerWidth) * 3 - 1;
     mouseY = -(event.clientY / window.innerHeight) * 3 + 1;
@@ -691,8 +689,8 @@ const sunMaterial = new THREE.MeshBasicMaterial({
     }
   };
 
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('touchmove', onTouchMove);
+  document.addEventListener("mousemove", onMouseMove);
+  document.addEventListener("touchmove", onTouchMove);
 
   // Animation Loop
   const animate = () => {
@@ -723,15 +721,6 @@ const sunMaterial = new THREE.MeshBasicMaterial({
   });
 });
 
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const progressBars = document.querySelectorAll(".progress-fg");
 
@@ -740,7 +729,10 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const progressBar = entry.target;
-        const percentage = parseInt(progressBar.parentElement.nextElementSibling.innerText, 10);
+        const percentage = parseInt(
+          progressBar.parentElement.nextElementSibling.innerText,
+          10
+        );
 
         // Set progress animation
         const dashOffset = 565 - (565 * percentage) / 100; // Adjust for new circumference
@@ -759,17 +751,7 @@ document.addEventListener("DOMContentLoaded", () => {
   progressBars.forEach((bar) => observer.observe(bar));
 });
 
-
-
-
-
-
-
-
-
-
-
-function page7Animation(){
+function page7Animation() {
   gsap.from("#page7-bottom1 .box-left1", {
     x: -400,
     opacity: 0,
@@ -863,21 +845,6 @@ function page7Animation(){
   });
 }
 page7Animation();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 gsap.to("#page23>img", {
   scrollTrigger: {
@@ -1395,9 +1362,7 @@ elements.map((element) => {
 
 // --------------------------------------------------------------------------
 
-
-
-// testimonial js  
+// testimonial js
 
 const slider = document.querySelector(".testimonial-slider");
 const testimonials = document.querySelectorAll(".testimonial");
@@ -1501,10 +1466,3 @@ document.addEventListener("DOMContentLoaded", function () {
   startAutoSlide();
   initApp();
 });
-
-
-
-
-
-
-

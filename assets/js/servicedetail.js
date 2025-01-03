@@ -643,7 +643,8 @@ function scaleImage(img, ctx) {
   var canvas = ctx.canvas;
   var hRatio = canvas.width / img.width;
   var vRatio = canvas.height / img.height;
-  var ratio = Math.max(hRatio, vRatio);
+  // var ratio = Math.max(hRatio, vRatio);
+  var ratio = Math.min(hRatio, vRatio);
   var centerShift_x = (canvas.width - img.width * ratio) / 2;
   var centerShift_y = (canvas.height - img.height * ratio) / 2;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -668,63 +669,58 @@ ScrollTrigger.create({
   end: `300% top`,
 });
 
-
-  gsap.from("#hero1 #right-text", {
-    x: -400,
-    opacity: 0,
-    stagger: 2,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#right-text",
-      scroller: "#main",
-      start: "top 80%",
-      end: "top 60%",
-      scrub: 3,
-      
-    },
-  });
-  gsap.from("#hero1 #left-text", {
-    x: 400,
-    opacity: 0,
-    stagger: 2,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#left-text",
-      scroller: "#main",
-      start: "top 80%",
-      end: "top 60%",
-      scrub: 3,
-      
-    },
-  });
-  gsap.from("#hero2 #text1", {
-    x: -400,
-    opacity: 0,
-    stagger: 2,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#text1",
-      scroller: "#main",
-      start: "top 80%",
-      end: "top 60%",
-      scrub: 3,
-      
-    },
-  });
-  gsap.from("#hero2 #text2", {
-    x: 400,
-    opacity: 0,
-    stagger: 2,
-    duration: 2,
-    scrollTrigger: {
-      trigger: "#text2",
-      scroller: "#main",
-      start: "top 80%",
-      end: "top 60%",
-      scrub: 3,
-      
-    },
-  });
+gsap.from("#hero1 #right-text", {
+  x: -400,
+  opacity: 0,
+  stagger: 2,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#right-text",
+    scroller: "#main",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 3,
+  },
+});
+gsap.from("#hero1 #left-text", {
+  x: 400,
+  opacity: 0,
+  stagger: 2,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#left-text",
+    scroller: "#main",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 3,
+  },
+});
+gsap.from("#hero2 #text1", {
+  x: -400,
+  opacity: 0,
+  stagger: 2,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#text1",
+    scroller: "#main",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 3,
+  },
+});
+gsap.from("#hero2 #text2", {
+  x: 400,
+  opacity: 0,
+  stagger: 2,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#text2",
+    scroller: "#main",
+    start: "top 80%",
+    end: "top 60%",
+    scrub: 3,
+  },
+});
 
 gsap.to("#hero2", {
   scrollTrigger: {
@@ -745,11 +741,7 @@ gsap.to("#hero3", {
   },
 });
 
-
-
-
 // -------------------------------------
-
 
 // ----- hero section parrallax effect -----
 
@@ -782,7 +774,6 @@ gsap.from(".home__button", {
   y: 30,
 });
 gsap.from(".home__img", { opacity: 0, duration: 1, delay: 1.3, y: 30 });
-
 
 function page2Animation() {
   console.log("in page2Animation");

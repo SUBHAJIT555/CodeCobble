@@ -207,7 +207,6 @@ body {
   filter: blur(5px);
 }
 
-
 .swiper-slide-active {
   filter: blur(0);
   transform: scale(1.1);
@@ -1571,6 +1570,9 @@ button {
 }
 
 @media (max-width: 576px) {
+  .calltoaction {
+    margin: 25px;
+  }
   .cta {
     width: 100%;
     padding: 20px;
