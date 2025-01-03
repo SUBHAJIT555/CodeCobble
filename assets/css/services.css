@@ -9,16 +9,16 @@ body {
   width: 100%;
   background-color: #000;
 }
-  #gola {
-    position: fixed;
-    width: 30%;
-    left: 20%;
-    top: 0;
-    height: 20%;
-    background-color: lawngreen;
-    filter: blur(300px);
-    z-index: 1;
-  }
+#gola {
+  position: fixed;
+  width: 30%;
+  left: 20%;
+  top: 0;
+  height: 20%;
+  background-color: lawngreen;
+  filter: blur(300px);
+  z-index: 1;
+}
 #main {
   position: relative;
   overflow: hidden;
@@ -124,7 +124,12 @@ body {
   padding: 0vw 15vw;
   color: white;
   background: rgb(0, 0, 0);
-background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(33, 33, 34) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 1) 100%
+  );
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   overflow: hidden;
@@ -211,7 +216,6 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   border-bottom: 2px solid;
   border-image: linear-gradient(to right, lawngreen, white, #6b34e2);
   border-image-slice: 1;
-  
 }
 #page4 > h3 > span {
   -webkit-text-stroke: 0.5px white;
@@ -499,11 +503,11 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
 
   gap: 80px;
 }
-#page11-bottom h1{
+#page11-bottom h1 {
   color: lawngreen;
   font-size: 2.5rem;
 }
-#page11-bottom p{
+#page11-bottom p {
   font-size: 2rem;
 }
 .service {
@@ -590,10 +594,8 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   height: auto;
   width: 100vw;
   background-color: #000;
-  
 }
 .page12-inner {
-  
   /* margin: 6rem 0 0; */
   text-align: center;
   margin-left: 10vw;
@@ -716,15 +718,14 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
   text-decoration: none;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -779,7 +780,7 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -840,7 +841,7 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -858,16 +859,16 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {
@@ -891,11 +892,11 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -919,7 +920,6 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -961,7 +961,6 @@ background: linear-gradient(180deg, rgb(33, 33, 34) 0%, rgba(0,0,0,1) 33%, rgba(
     font-size: 24px;
   }
 }
-
 
 @media screen and (max-width: 1024px) {
   .bottom-page1 {

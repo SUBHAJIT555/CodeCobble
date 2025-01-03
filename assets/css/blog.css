@@ -479,12 +479,11 @@ body {
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
 }
 .cta button a {
   color: #000000;
@@ -517,7 +516,7 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -541,7 +540,7 @@ body {
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -601,7 +600,7 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -619,16 +618,16 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {
@@ -652,11 +651,11 @@ body {
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -680,7 +679,6 @@ body {
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -722,7 +720,6 @@ body {
     font-size: 24px;
   }
 }
-
 
 .swiper {
   width: 100%;
@@ -1035,8 +1032,3 @@ body {
     font-size: 5vw;
   }
 }
-
-
-
-
-

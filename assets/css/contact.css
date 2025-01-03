@@ -140,7 +140,6 @@ body {
   transition: all ease 0.3s;
 }
 
-  
 .icon-text a:hover {
   text-decoration: none;
   color: lawngreen;
@@ -170,7 +169,7 @@ body {
   border: 1px solid #5e5dcb;
   transition: all ease 0.5s;
 }
-.social-box i:hover{
+.social-box i:hover {
   background-color: transparent;
   color: lawngreen;
   border: 1px solid lawngreen;
@@ -197,7 +196,6 @@ body {
 .contact-form h2 span {
   font-size: 38px;
   font-weight: 600;
-
 }
 
 .contact-form form {
@@ -276,10 +274,10 @@ body {
   font-weight: 600;
   transition: all ease 0.5s;
 }
-.submit-btn input:hover{
+.submit-btn input:hover {
   background-color: #000;
   color: lawngreen;
-  border:1px solid lawngreen;
+  border: 1px solid lawngreen;
 }
 
 /* ----------footer css-----------  */
@@ -320,12 +318,11 @@ body {
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
   text-decoration: none;
 }
 .cta button a {
@@ -359,7 +356,7 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -383,7 +380,7 @@ body {
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -444,7 +441,7 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -462,16 +459,16 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {
@@ -495,11 +492,11 @@ body {
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -523,7 +520,6 @@ body {
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -565,7 +561,6 @@ body {
     font-size: 24px;
   }
 }
-
 
 @media (max-width: 1200px) {
   .cont-des p {

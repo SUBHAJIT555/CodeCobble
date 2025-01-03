@@ -28,8 +28,6 @@
   z-index: 1;
 }
 
-
-
 #main {
   position: relative;
   overflow: hidden;
@@ -49,25 +47,21 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-
 }
 #hero1 {
   position: relative;
   height: 100vh;
   width: 100vw;
-
 }
 #hero2 {
   position: relative;
   height: 100vh;
   width: 100vw;
-
 }
 #hero3 {
   position: relative;
   height: 100vh;
   width: 100vw;
-
 }
 canvas {
   opacity: 0.5;
@@ -98,22 +92,22 @@ canvas {
   background-color: rgba(0, 0, 0, 0.422);
   z-index: 9;
 }
-#loop>h1:hover,
-#loop2>h1:hover{
+#loop > h1:hover,
+#loop2 > h1:hover {
   color: transparent;
   -webkit-text-stroke: 1px lawngreen;
 }
-#loop img{
+#loop img {
   height: 50px;
 }
 
 #loop > h1 > span {
   color: transparent;
-  -webkit-text-stroke: 1px  lawngreen;
+  -webkit-text-stroke: 1px lawngreen;
   font-weight: 500;
 }
 #loop > h1 > span:hover,
-#loop > h1 > span:hover{
+#loop > h1 > span:hover {
   color: lawngreen;
   -webkit-text-stroke: 0px black;
 }
@@ -147,15 +141,13 @@ canvas {
   color: lawngreen;
   background-color: rgba(0, 0, 0, 0.472);
   z-index: 9;
-
 }
 
 #loop2 > h1 > span {
   color: transparent;
-  -webkit-text-stroke: 1px  lawngreen;
+  -webkit-text-stroke: 1px lawngreen;
   font-weight: 500;
 }
-
 
 @keyframes anim2 {
   0% {
@@ -165,24 +157,21 @@ canvas {
     transform: translateX(0%);
   }
 }
-#hero1{
+#hero1 {
   z-index: 999;
   background-color: transparent;
 }
-#hero2{
+#hero2 {
   z-index: 999;
   background-color: transparent;
 }
-#hero3{
+#hero3 {
   z-index: 999;
   background-color: transparent;
 }
-#hero1 > #right-text{
-  
+#hero1 > #right-text {
   padding: 20px;
   border-radius: 10px;
-  
-  
 }
 #hero > h3 {
   position: absolute;
@@ -191,7 +180,6 @@ canvas {
   font-weight: 400;
   color: white;
   left: 5%;
-  
 }
 #hero > h4 {
   position: absolute;
@@ -206,12 +194,10 @@ canvas {
   top: 25%;
   left: 10%;
   color: white;
-  
-  
 }
 #hero1 > #right-text > h3 {
   font-weight: 400;
-  
+
   font-family: var(--heading-font);
   margin-bottom: 6px;
 }
@@ -273,7 +259,6 @@ canvas {
   font-weight: 600;
   line-height: 1.7rem;
   font-family: var(--text-font);
-  
 }
 #hero3 > #text3 {
   position: absolute;
@@ -344,20 +329,20 @@ canvas {
   border: 2px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button button a{
+.button button a {
   text-decoration: none;
   color: black;
 }
-.button button a:hover{
+.button button a:hover {
   text-decoration: none;
   color: lawngreen;
 }
-.button button:hover a{
+.button button:hover a {
   text-decoration: none;
-  color: lawngreen; 
+  color: lawngreen;
 }
 
-.button button:hover{
+.button button:hover {
   background-color: transparent;
   color: lawngreen;
   border: 2px solid lawngreen;
@@ -632,7 +617,7 @@ canvas {
   font-size: 2rem;
   transition: all ease 0.5s;
 }
-.service-heading a i:hover{
+.service-heading a i:hover {
   background-color: lawngreen;
   color: #000;
   border-radius: 50%;
@@ -876,12 +861,11 @@ textarea {
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
   text-decoration: none;
 }
 .cta button a {
@@ -915,7 +899,7 @@ textarea {
   font-size: 14px;
   font-weight: 400;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -939,7 +923,7 @@ textarea {
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -1000,7 +984,7 @@ textarea {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -1018,16 +1002,16 @@ textarea {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {
@@ -1051,11 +1035,11 @@ textarea {
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -1079,7 +1063,6 @@ textarea {
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -1121,17 +1104,3 @@ textarea {
     font-size: 24px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

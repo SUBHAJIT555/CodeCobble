@@ -41,7 +41,7 @@ body {
   filter: blur(300px);
   z-index: 1;
 }
-#main{
+#main {
   position: relative;
 }
 #page1 {
@@ -166,35 +166,32 @@ body {
 }
 
 /*navigation part end*/
-#page1{
+#page1 {
   position: relative;
 }
 
 #page1 .bgvideo {
   position: absolute;
   opacity: 0.6;
-
 }
 
 #page1 p {
   position: absolute;
-  top:20%;
+  top: 20%;
   text-align: center;
   font-family: var(--heading-font);
   font-weight: 900;
   font-size: 4vw;
   transition: all ease 0.5s;
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff , #7CFC00 ); 
-    background-clip: text; 
-     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, #6b34e2, #6b34e2, #fff, #7cfc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 9;
 }
-#page1 p span{
+#page1 p span {
   text-transform: uppercase;
-
 }
-
 
 #page1-something {
   display: flex;
@@ -207,7 +204,6 @@ body {
   text-decoration: none;
 }
 #page1-something h4 {
-  
   font-weight: 300;
   font-size: 1vw;
   font-family: var(--text-font);
@@ -278,7 +274,6 @@ body {
 #moving-div .move img {
   height: 1.8rem;
   margin: 0 1.5rem;
-  
 }
 
 @keyframes mobe {
@@ -505,7 +500,7 @@ body {
 
 .sec-left p {
   color: white;
-  margin-top: 10vh;  
+  margin-top: 10vh;
   font-size: 20px;
   /* width: 80%; */
   font-family: var(--text-font);
@@ -516,16 +511,15 @@ body {
 .sec-left a {
   text-decoration: none;
   color: lawngreen;
-
 }
-.sec-left i{
+.sec-left i {
   color: lawngreen;
   background-color: black;
   padding: 2px;
   border-radius: 50%;
   transition: all ease 0.5s;
 }
-.sec-left i:hover{
+.sec-left i:hover {
   color: black;
   background-color: lawngreen;
 }
@@ -586,7 +580,7 @@ body {
   letter-spacing: 1px;
   transition: all ease 0.5s;
 }
-#page5 button a{
+#page5 button a {
   text-decoration: none;
   color: black;
 }
@@ -613,8 +607,6 @@ body {
 }
 
 /*  */
-
-
 
 /* ----------footer css-----------  */
 .footer {
@@ -654,12 +646,11 @@ body {
   cursor: pointer;
   transition: all ease 0.5s;
 }
-.cta button:hover{
+.cta button:hover {
   background-color: #262525;
-  
 }
-.cta button:hover a{
-  color:lawngreen;
+.cta button:hover a {
+  color: lawngreen;
 }
 .cta button a {
   color: #000000;
@@ -692,7 +683,7 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -716,7 +707,7 @@ body {
   font-weight: 500;
   line-height: 21px;
 }
-.address a{
+.address a {
   font-family: var(--text-font);
   font-size: 14px;
 }
@@ -776,7 +767,7 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.button-foot:hover{
+.button-foot:hover {
   background: #262525;
   color: lawngreen;
   cursor: pointer;
@@ -794,16 +785,16 @@ body {
   border: 0.5px solid lawngreen;
   transition: all ease 0.5s;
 }
-.social-icons-foot a:hover{
+.social-icons-foot a:hover {
   background-color: lawngreen;
   text-decoration: none;
 }
-.social-icons-foot a:hover i{
+.social-icons-foot a:hover i {
   color: #000;
 }
 .social-icons-foot i {
   color: lawngreen;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
 }
 .copyright {
@@ -827,11 +818,11 @@ body {
 
 @media (max-width: 1200px) {
   .footer-cards form {
-      flex-wrap: wrap;
-      gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .button-foot {
-      padding: 20px;
+    padding: 20px;
   }
 }
 
@@ -855,7 +846,6 @@ body {
   .footer-cards ul li a {
     font-size: 16px;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -897,7 +887,6 @@ body {
     font-size: 24px;
   }
 }
-
 
 @media (max-width: 600px) {
   #page1 p {
