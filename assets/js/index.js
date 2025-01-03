@@ -609,7 +609,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Sun
   const sunGeometry = new THREE.SphereGeometry(5, 32, 32);
-  const sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffa500 });
+  // Create a canvas for the gradient
+const canvas = document.createElement('canvas');
+canvas.width = 256;
+canvas.height = 256;
+
+const context = canvas.getContext('2d');
+
+// Create a radial gradient
+const gradient = context.createRadialGradient(128, 128, 50, 128, 128, 128);
+gradient.addColorStop(0, '#5A3fe1'); // Inner color
+gradient.addColorStop(1, '#2c169d'); // Outer color
+
+context.fillStyle = gradient;
+context.fillRect(0, 0, canvas.width, canvas.height);
+
+// Create a texture from the canvas
+const gradientTexture = new THREE.CanvasTexture(canvas);
+
+// Apply the gradient texture to the sun material
+const sunMaterial = new THREE.MeshBasicMaterial({
+  map: gradientTexture,
+});
+
   const sun = new THREE.Mesh(sunGeometry, sunMaterial);
   scene.add(sun);
 
