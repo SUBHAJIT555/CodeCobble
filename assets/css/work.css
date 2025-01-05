@@ -917,6 +917,12 @@ body {
   .section {
     padding: 8vh 10vw 0;
   }
+  #page1-something {
+    flex-wrap: wrap;
+  }
+  #page1-something h4 {
+    font-size: 0.8rem;
+  }
 
   #page5 {
     width: 80%;
