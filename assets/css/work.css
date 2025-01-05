@@ -952,6 +952,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
+  }
   .cta {
     width: 100%;
     padding: 20px;
