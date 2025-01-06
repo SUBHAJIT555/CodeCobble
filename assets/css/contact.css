@@ -530,10 +530,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .calltoaction {
-    margin: 0 auto;
-    width: 90%;
-  }
   #contact-main {
     padding: 40px 10px;
   }
@@ -544,6 +540,11 @@ body {
 
   .formsub {
     margin-top: 0px;
+  }
+
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
   }
   .cta {
     width: 100%;
