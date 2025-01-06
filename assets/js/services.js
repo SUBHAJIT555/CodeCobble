@@ -664,25 +664,53 @@ function canvas() {
 
   function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
-    var hRatio = canvas.width / img.width;
-    var vRatio = canvas.height / img.height;
-    // var ratio = Math.max(hRatio, vRatio);
-    var ratio = Math.min(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
-    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+
+    // Calculate the ratio to scale the image to fit the canvas width
+    var ratio = canvas.width / img.width;
+
+    // Calculate the new height based on the ratio
+    var newHeight = img.height * ratio;
+
+    // Calculate the vertical shift to center the image vertically
+    var centerShift_y = (canvas.height - newHeight) / 2;
+
+    // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the image scaled to the canvas width and centered vertically
     ctx.drawImage(
       img,
       0,
       0,
       img.width,
       img.height,
-      centerShift_x,
-      centerShift_y,
-      img.width * ratio,
-      img.height * ratio
+      0, // x-coordinate (start from the left edge)
+      centerShift_y, // y-coordinate (centered vertically)
+      canvas.width, // scaled width (full canvas width)
+      newHeight // scaled height (maintain aspect ratio)
     );
   }
+  // function scaleImage(img, ctx) {
+  //   var canvas = ctx.canvas;
+  //   var hRatio = canvas.width / img.width;
+  //   var vRatio = canvas.height / img.height;
+  //   // var ratio = Math.max(hRatio, vRatio);
+  //   var ratio = Math.min(hRatio, vRatio);
+  //   var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  //   var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  //   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //   ctx.drawImage(
+  //     img,
+  //     0,
+  //     0,
+  //     img.width,
+  //     img.height,
+  //     centerShift_x,
+  //     centerShift_y,
+  //     img.width * ratio,
+  //     img.height * ratio
+  //   );
+  // }
   ScrollTrigger.create({
     trigger: "#page3",
     pin: true,
@@ -1008,25 +1036,53 @@ function canvas1() {
 
   function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
-    var hRatio = canvas.width / img.width;
-    var vRatio = canvas.height / img.height;
-    // var ratio = Math.max(hRatio, vRatio);
-    var ratio = Math.min(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
-    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+
+    // Calculate the ratio to scale the image to fit the canvas width
+    var ratio = canvas.width / img.width;
+
+    // Calculate the new height based on the ratio
+    var newHeight = img.height * ratio;
+
+    // Calculate the vertical shift to center the image vertically
+    var centerShift_y = (canvas.height - newHeight) / 2;
+
+    // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the image scaled to the canvas width and centered vertically
     ctx.drawImage(
       img,
       0,
       0,
       img.width,
       img.height,
-      centerShift_x,
-      centerShift_y,
-      img.width * ratio,
-      img.height * ratio
+      0, // x-coordinate (start from the left edge)
+      centerShift_y, // y-coordinate (centered vertically)
+      canvas.width, // scaled width (full canvas width)
+      newHeight // scaled height (maintain aspect ratio)
     );
   }
+  // function scaleImage(img, ctx) {
+  //   var canvas = ctx.canvas;
+  //   var hRatio = canvas.width / img.width;
+  //   var vRatio = canvas.height / img.height;
+  //   // var ratio = Math.max(hRatio, vRatio);
+  //   var ratio = Math.min(hRatio, vRatio);
+  //   var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  //   var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  //   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //   ctx.drawImage(
+  //     img,
+  //     0,
+  //     0,
+  //     img.width,
+  //     img.height,
+  //     centerShift_x,
+  //     centerShift_y,
+  //     img.width * ratio,
+  //     img.height * ratio
+  //   );
+  // }
   ScrollTrigger.create({
     trigger: "#page5",
     pin: true,
@@ -1383,25 +1439,53 @@ function canvas2() {
 
   function scaleImage(img, ctx) {
     var canvas = ctx.canvas;
-    var hRatio = canvas.width / img.width;
-    var vRatio = canvas.height / img.height;
-    // var ratio = Math.max(hRatio, vRatio);
-    var ratio = Math.min(hRatio, vRatio);
-    var centerShift_x = (canvas.width - img.width * ratio) / 2;
-    var centerShift_y = (canvas.height - img.height * ratio) / 2;
+
+    // Calculate the ratio to scale the image to fit the canvas width
+    var ratio = canvas.width / img.width;
+
+    // Calculate the new height based on the ratio
+    var newHeight = img.height * ratio;
+
+    // Calculate the vertical shift to center the image vertically
+    var centerShift_y = (canvas.height - newHeight) / 2;
+
+    // Clear the canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the image scaled to the canvas width and centered vertically
     ctx.drawImage(
       img,
       0,
       0,
       img.width,
       img.height,
-      centerShift_x,
-      centerShift_y,
-      img.width * ratio,
-      img.height * ratio
+      0, // x-coordinate (start from the left edge)
+      centerShift_y, // y-coordinate (centered vertically)
+      canvas.width, // scaled width (full canvas width)
+      newHeight // scaled height (maintain aspect ratio)
     );
   }
+  // function scaleImage(img, ctx) {
+  //   var canvas = ctx.canvas;
+  //   var hRatio = canvas.width / img.width;
+  //   var vRatio = canvas.height / img.height;
+  //   // var ratio = Math.max(hRatio, vRatio);
+  //   var ratio = Math.min(hRatio, vRatio);
+  //   var centerShift_x = (canvas.width - img.width * ratio) / 2;
+  //   var centerShift_y = (canvas.height - img.height * ratio) / 2;
+  //   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  //   ctx.drawImage(
+  //     img,
+  //     0,
+  //     0,
+  //     img.width,
+  //     img.height,
+  //     centerShift_x,
+  //     centerShift_y,
+  //     img.width * ratio,
+  //     img.height * ratio
+  //   );
+  // }
   ScrollTrigger.create({
     trigger: "#page7",
     pin: true,
