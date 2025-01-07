@@ -1466,3 +1466,36 @@ document.addEventListener("DOMContentLoaded", function () {
   startAutoSlide();
   initApp();
 });
+
+
+
+
+function customCursor(){
+  document.addEventListener("DOMContentLoaded", () => {
+    const cursor = document.getElementById("custom-cursor");
+  
+    // Move the cursor
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  
+    // Add hover effect for text elements
+    const interactiveElements = document.querySelectorAll("a, button, .btn");
+    interactiveElements.forEach((el) => {
+      el.addEventListener("mouseenter", () => cursor.classList.add("hover-effect"));
+      el.addEventListener("mouseleave", () => cursor.classList.remove("hover-effect"));
+    });
+  
+    // Add click effect
+    document.addEventListener("mousedown", () => cursor.classList.add("click-effect"));
+    document.addEventListener("mouseup", () => cursor.classList.remove("click-effect"));
+  });
+}
+customCursor();
+
+
+
+
+
+

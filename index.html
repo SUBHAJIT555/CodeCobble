@@ -37,8 +37,13 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
   </head>
 
   <body>
+    
+    <div id="custom-cursor"></div>
+
     <div id="gola"></div>
     <div id="main">
+
+      
       <!-- <div id="page"> -->
       <!-- ---------------------- nav menu start ---------------------  -->
 
@@ -923,6 +928,7 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
           </p>
         </div>
       </section>
+    
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
@@ -967,12 +973,12 @@ https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
-        grabCursor: true,
+        grabCursor: false,
         centeredSlides: true,
         loop: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 6,
+          rotate: 7,
           stretch: 2,
           depth: 300,
           modifier: 2.5,
