@@ -126,6 +126,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 100%;
   padding: 3px;
   font-size: 25px;
@@ -144,6 +145,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 100%;
   padding: 3px;
   font-size: 25px;
@@ -161,6 +163,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 100%;
   padding: 3px;
   font-size: 25px;
@@ -239,6 +242,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 16%;
   font-size: 25px;
   padding: 3px;
@@ -248,8 +252,8 @@ body {
 }
 #page2-left-content a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen; */
+  color: #fff;
 }
 #page2-right {
   width: 30%;
@@ -297,6 +301,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 16%;
   padding: 3px;
   border-radius: 10px;
@@ -306,8 +311,8 @@ body {
 }
 #page2-right-content a:hover {
   text-decoration: none;
-  background-color: lawngreen;
-  color: #000;
+  /* background-color: lawngreen; */
+  color: #fff;
 }
 
 #page1 a {
@@ -377,6 +382,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 20%;
   padding: 3px;
   font-size: 25px;
@@ -456,6 +462,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 20%;
   font-size: 25px;
   padding: 3px;
@@ -514,6 +521,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   background-color: transparent;
+  font-family: var(--text-font);
   width: 20%;
   font-size: 25px;
   padding: 3px;
