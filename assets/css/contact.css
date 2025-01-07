@@ -298,8 +298,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 63%;
-  padding: 40px;
+  width: 70%;
+  padding: 35px;
   border-radius: 10px;
   background-color: #26252524;
   border: 0.3px solid #262525;
@@ -514,7 +514,7 @@ body {
     gap: 20px;
   }
   .cta h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
   .cta button {
@@ -522,36 +522,14 @@ body {
     text-align: center;
   }
   .footer-cards h2 {
-    font-size: 24px;
-  }
-  .footer-cards ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cta h2 {
-    font-size: 1.8rem;
-  }
-  .footer-cards h2 {
     font-size: 20px;
   }
   .footer-cards ul li a {
     font-size: 14px;
   }
-  .social-icons-foot i {
-    font-size: 30px;
-  }
-  .cta button {
-    padding: 15px;
-  }
 }
 
 @media screen and (max-width: 576px) {
-  .calltoaction {
-    margin: 0 auto;
-    width: 90%;
-  }
   #contact-main {
     padding: 40px 10px;
   }
@@ -562,6 +540,11 @@ body {
 
   .formsub {
     margin-top: 0px;
+  }
+
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
   }
   .cta {
     width: 100%;

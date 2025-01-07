@@ -170,6 +170,18 @@ body {
 
 #right h1 {
   font-family: var(--heading-font);
+  font-size: 12rem;
+  text-align: right;
+  line-height: 9rem;
+  letter-spacing: -13px;
+  font-weight: 900;
+  padding-right: 2vw;
+  color: lawngreen;
+  transition: all ease 0.5s;
+}
+
+/* 
+  font-family: var(--heading-font);
   font-size: 10vw;
   text-align: right;
   line-height: 7.5vw;
@@ -177,8 +189,7 @@ body {
   font-weight: 900;
   padding-right: 2vw;
   color: lawngreen;
-  transition: all ease 0.5s;
-}
+  transition: all ease 0.5s; */
 
 #page1 video {
   position: relative;
@@ -649,13 +660,51 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  #left h3 {
+    width: 50%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  #right h1 {
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+
   .footer-cards form {
     flex-wrap: wrap;
     gap: 10px;
   }
   .button-foot {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #center {
+    margin-top: 80px;
+    height: auto;
+    gap: 40px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  #left h3 {
+    width: 75%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  #right h1 {
+    font-size: 6rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #center {
+    margin-top: 40px;
   }
 }
 
@@ -791,10 +840,9 @@ body {
     padding-left: 10vw;
   }
 
-  #center {
+  /* #center {
     height: 62vh;
     width: 100%;
-    /* background-color: orange; */
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -804,7 +852,7 @@ body {
     flex-direction: column-reverse;
     position: relative;
     z-index: 9;
-  }
+  } */
   #center #right h1 {
     width: 100%;
     letter-spacing: -7px;
@@ -843,7 +891,6 @@ body {
   #page2 {
     min-height: 100vh;
     width: 100%;
-    background-color: #efeae3;
     padding: 8vw 0;
     position: relative;
   }
