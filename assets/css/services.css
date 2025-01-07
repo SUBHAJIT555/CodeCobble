@@ -50,7 +50,7 @@ body {
 }
 
 #page1 > video {
-  height: 90%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   opacity: 0.5;
@@ -579,7 +579,6 @@ body {
   text-decoration: none;
   font-family: var(--text-font);
   font-size: 1.3rem;
-  /* margin-left: 87%; */
   border: 1px solid white;
   padding: 5px 10px;
   border-radius: 50px;
@@ -943,6 +942,7 @@ body {
   #page4 > h3,
   #page6 > h3,
   #page10-top > h1,
+  .page12-inner > h1,
   #page11-top > h1 {
     font-size: 3rem;
   }
@@ -950,7 +950,8 @@ body {
   #page2 > h1,
   #page4 > h1,
   #page6 > h1,
-  .right10-inner > p {
+  .right10-inner > p,
+  .page12-inner > p {
     font-size: 2.2rem;
   }
 
@@ -965,7 +966,7 @@ body {
   }
 
   .service-detail > p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: normal;
   }
 
@@ -990,6 +991,7 @@ body {
   #page4 > h3,
   #page6 > h3,
   #page10-top > h1,
+  #page11-top > h1,
   #page11-top > h1 {
     font-size: 2rem;
   }
@@ -997,13 +999,22 @@ body {
   #page2 > h1,
   #page4 > h1,
   #page6 > h1,
-  .right10-inner > p {
+  .right10-inner > p,
+  .page12-inner > p {
     font-size: 1.8rem;
     text-align: center;
   }
 
   .right10-inner > p {
     line-height: normal;
+  }
+
+  #page11-bottom h1 {
+    font-size: 1.8rem;
+  }
+
+  .service-detail > p {
+    font-size: 1.6rem;
   }
 
   #page4 {
@@ -1013,10 +1024,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  #page1 {
+    height: 80vh;
+  }
+
   .bottom-page1 {
-    bottom: 0;
+    bottom: 40%;
     width: 70%;
-    top: 30%;
+    /* top: 30%; */
   }
 
   .bottom-page1 > h1 {
@@ -1032,6 +1047,8 @@ body {
   #page4 > h3,
   #page6 > h3,
   #page10-top > h1,
+  #page11-top > h1,
+  .bottom-page1 > h1,
   #page11-top > h1 {
     font-size: 1.5rem;
   }
@@ -1039,8 +1056,21 @@ body {
   #page2 > h1,
   #page4 > h1,
   #page6 > h1,
-  .right10-inner > p {
+  .right10-inner > p,
+  .page12-inner > p {
     font-size: 1.2rem;
+  }
+
+  #page11-bottom h1 {
+    font-size: 1.4rem;
+  }
+
+  .service-detail {
+    width: 85%;
+  }
+
+  .service-detail > p {
+    font-size: 1.3rem;
   }
 
   .cta h2 {
@@ -1073,6 +1103,7 @@ body {
   #page4 > h3,
   #page6 > h3,
   #page10-top > h1,
+  #page11-top > h1,
   #page11-top > h1 {
     font-size: 1.2rem;
   }
@@ -1080,12 +1111,29 @@ body {
   #page2 > h1,
   #page4 > h1,
   #page6 > h1,
-  .right10-inner > p {
+  .right10-inner > p,
+  .page12-inner > p {
     font-size: 1rem;
+  }
+
+  #page11-bottom h1 {
+    font-size: 1rem;
+  }
+
+  .service-detail {
+    width: 100%;
+  }
+
+  .service-detail > p {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 576px) {
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
+  }
   .cta {
     width: 100%;
     padding: 20px;
@@ -1142,22 +1190,20 @@ body {
 
   .service {
     flex-direction: column;
+    gap: 20px;
   }
   .service-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 85%;
   }
   .service-detail > h1 {
-    font-size: 2.5rem;
     text-align: center;
   }
 
-  .service-detail > p {
-    line-height: normal;
-    font-size: 2rem;
+  .services-even .service-detail p {
+    margin-bottom: 0px;
   }
 
   .service .service-detail a {
@@ -1172,14 +1218,10 @@ body {
     margin-top: 5rem;
   }
 
-  .page12-inner > h1 {
-    font-size: 3.5rem;
-  }
-
   .page12-inner > p {
     margin-top: 2rem;
-    line-height: 2.8rem;
-    font-size: 2.2rem;
+    /* line-height: 2.8rem; */
+    /* font-size: 2.2rem; */
   }
 
   #page14 {
@@ -1209,19 +1251,12 @@ body {
     font-size: 3rem; 
   } */
 
-  .service-detail > h1 {
-    font-size: 2.2rem; /* Reduced from 2.5rem */
-  }
-  .service-detail > p {
-    font-size: 1.8rem; /* Reduced from 2rem */
-  }
-
-  .page12-inner > h1 {
-    font-size: 3rem; /* Reduced from 3.5rem */
+  /* .page12-inner > h1 {
+    font-size: 3rem; 
   }
   .page12-inner > p {
-    font-size: 2rem; /* Reduced from 2.2rem */
-  }
+    font-size: 2rem; 
+  } */
 
   #footer-top h1 {
     font-size: 2rem;
@@ -1253,29 +1288,6 @@ body {
   /* .bottom-page1 > h1 {
     font-size: 2.5rem;
   } */
-
-  #page2 {
-    margin-top: 30px;
-  }
-
-  .service-detail > h1 {
-    font-size: 1.8rem;
-  }
-  .service-detail > p {
-    line-height: 2rem;
-    font-size: 1.5rem;
-  }
-
-  .service .service-detail a {
-    font-size: 1.5rem;
-  }
-
-  .page12-inner > h1 {
-    font-size: 2.5rem;
-  }
-  .page12-inner > p {
-    font-size: 1.8rem;
-  }
 
   #footer-top {
     margin: 50px 20px;
@@ -1325,20 +1337,6 @@ body {
 
   #page2 {
     margin-top: 20px;
-  }
-
-  .service-detail > h1 {
-    font-size: 1.7rem; /* Reduced from 1.8rem */
-  }
-  .service-detail > p {
-    font-size: 1.3rem; /* Reduced from 1.5rem */
-  }
-
-  .page12-inner > h1 {
-    font-size: 2.2rem; /* Reduced from 2.5rem */
-  }
-  .page12-inner > p {
-    font-size: 1.7rem; /* Reduced from 1.8rem */
   }
 
   #footer-top {
