@@ -1552,7 +1552,7 @@ gsap.from("#page11 .service", {
   scrollTrigger: {
     trigger: ".service",
     scroller: "#main",
-    start: "top 80%",
+    start: "top 50%",
     end: "top -10%",
     scrub: 3,
   },

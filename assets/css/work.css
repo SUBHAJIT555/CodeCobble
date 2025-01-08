@@ -55,6 +55,8 @@ body {
   position: relative;
 }
 
+
+
 /* --------------- nav part -----------  */
 .logo {
   padding: 2rem;
@@ -564,7 +566,7 @@ body {
   top: 30%;
 }
 
-#page5 button {
+/* #page5 button {
   background-color: lawngreen;
   padding: 1.2rem 3rem;
   font-weight: 600;
@@ -577,7 +579,7 @@ body {
   color: #000;
   letter-spacing: 1px;
   transition: all ease 0.5s;
-}
+} */
 #page5 button a {
   text-decoration: none;
   color: black;
@@ -588,13 +590,16 @@ body {
 
 #page5-right {
   width: 70%;
+  margin: auto;
 }
 
 #page5-right > p {
   font-size: 1.5rem;
+  line-height: 1.9rem;
   font-family: var(--text-font);
   z-index: 9;
   color: white;
+  text-align: justify;
 }
 
 #page5-right > p span {
