@@ -269,6 +269,10 @@ canvas {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 #hero3 > #text3 > h3 {
   font-weight: 400;
@@ -1072,18 +1076,32 @@ textarea {
     font-size: 2rem;
   }
 
-  .page3-heading h1 {
+  #left .heading {
     font-size: 1.6rem;
   }
 
-  #left .heading {
-    font-size: 1.6rem;
+  .page3-heading h1 {
+    font-size: 3rem;
+  }
+
+  #page3-section2 .presence h1 {
+    font-size: 2rem;
+  }
+
+  #page3-section2 p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  #page4 {
+    height: auto;
   }
 
   .footer-cards form {
     flex-wrap: wrap;
     gap: 10px;
   }
+
   .button-foot {
     padding: 20px;
   }
@@ -1107,7 +1125,8 @@ textarea {
   #hero1 > #left-text > h3,
   #hero2 > #text1 > h3,
   #hero2 > #text2 > p,
-  #hero3 > #text3 > h3 {
+  #hero3 > #text3 > h3,
+  #left .heading {
     font-size: 1.15rem;
   }
 
@@ -1116,6 +1135,18 @@ textarea {
   #hero2 > #text1 > h1,
   #hero3 > #text3 > h1 {
     font-size: 1.8rem;
+  }
+
+  .page3-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  #page3-section2 .presence h1 {
+    font-size: 1.8rem;
+  }
+
+  #page3-section2 p {
+    font-size: 1rem;
   }
 }
 
@@ -1155,7 +1186,8 @@ textarea {
     left: 5%;
   }
 
-  #hero1 > #left-text {
+  #hero1 > #left-text,
+  #hero2 > #text2 {
     right: 5%;
   }
 
@@ -1175,6 +1207,52 @@ textarea {
   #hero2 > #text1 > h1,
   #hero3 > #text3 > h1 {
     font-size: 1.5rem;
+  }
+
+  #hero2 > #text2 > p > br {
+    display: none;
+  }
+  #hero2 > #text2 {
+    width: 80%;
+  }
+  #page2 {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  #left .heading {
+    font-size: 1.1rem;
+  }
+
+  #right,
+  #left {
+    width: 90%;
+  }
+
+  #right img {
+    height: auto;
+  }
+
+  #page3-section1 {
+    padding-bottom: 30px;
+  }
+
+  #page3-section2 .presence {
+    width: 280px;
+    height: 200px;
+    padding: 0 0 2.5rem;
+  }
+
+  #page3-section2 .presence h1 {
+    font-size: 1.6rem;
+  }
+
+  #page3-section2 p {
+    font-size: 0.9rem;
+  }
+
+  .page3-heading h1 {
+    font-size: 2rem;
   }
 
   .cta h2 {
@@ -1227,5 +1305,49 @@ textarea {
   #loop h1,
   #loop2 h1 {
     font-size: 2rem;
+  }
+
+  #hero1 > #right-text > h3,
+  #hero1 > #left-text > h3,
+  #hero2 > #text1 > h3,
+  #hero3 > #text3 > h3 {
+    font-size: 0.8rem;
+  }
+
+  #hero2 > #text2 > p {
+    font-size: 0.7rem;
+  }
+
+  #hero1 > #right-text > h1,
+  #hero1 > #left-text > h1,
+  #hero2 > #text1 > h1,
+  #hero3 > #text3 > h1 {
+    font-size: 1.1rem;
+  }
+
+  #left .heading {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  #left .sub-heading {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  #page3-section2 p {
+    line-height: 1.7;
+  }
+
+  #page3-section2 .presence {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 3rem;
+  }
+
+  .page3-heading h1 {
+    font-size: 1.9rem;
+    text-align: center;
   }
 }
