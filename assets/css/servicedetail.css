@@ -440,17 +440,17 @@ canvas {
   width: 50%;
   display: flex;
   flex-direction: column;
-  
 }
-.page4image{
+.page4image {
   animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 #page4 #left #page4-heading h1 {
@@ -499,7 +499,7 @@ canvas {
 #page5-section2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 4vw;
   justify-content: space-between;
   width: 100%;
   padding: 0 5vw;
@@ -545,7 +545,7 @@ canvas {
 #page6-section2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2rem;
   justify-content: space-between;
   width: 100%;
   padding: 0 5vw;
@@ -797,8 +797,8 @@ input {
   background-color: #000;
   border: 0.5px solid #dadada;
   padding: 20px;
-  border-radius: 50px;
-  width: 20vw;
+  border-radius: 25px;
+  width: 25vw;
   font-family: var(--text-font);
   color: white;
   font-size: 1rem;
@@ -818,7 +818,7 @@ textarea {
   border: 0.5px solid #dadada;
   padding: 20px;
   border-radius: 20px;
-  width: 42vw;
+  width: 52vw;
   height: 25vh;
   color: white;
   font-family: var(--text-font);
@@ -1076,20 +1076,42 @@ textarea {
     font-size: 2rem;
   }
 
-  #left .heading {
-    font-size: 1.6rem;
+  #left .heading h1,
+  #page4 #left #page4-heading h1,
+  #page6-section1 .page6-heading h1 {
+    font-size: 3rem;
   }
 
-  .page3-heading h1 {
+  #page5-section1 {
+    padding-bottom: 30px;
+  }
+
+  .page3-heading h1,
+  #page5-section1 .page5-heading h1,
+  #page-otherservices .otherservices-heading h1,
+  #page8-heading h1,
+  #page7-section1 #page7-heading h1 {
     font-size: 3rem;
+  }
+
+  #page5-section1 .page5-heading {
+    padding-left: 0;
   }
 
   #page3-section2 .presence h1 {
     font-size: 2rem;
   }
 
-  #page3-section2 p {
+  #page3-section2 p,
+  .topic p {
     font-size: 1.1rem;
+  }
+
+  .topic p {
+    line-height: 1.5;
+  }
+
+  #page3-section2 p {
     line-height: 1.3;
   }
 
@@ -1104,6 +1126,9 @@ textarea {
 
   .button-foot {
     padding: 20px;
+  }
+  #page8 {
+    height: auto;
   }
 }
 
@@ -1125,8 +1150,7 @@ textarea {
   #hero1 > #left-text > h3,
   #hero2 > #text1 > h3,
   #hero2 > #text2 > p,
-  #hero3 > #text3 > h3,
-  #left .heading {
+  #hero3 > #text3 > h3 {
     font-size: 1.15rem;
   }
 
@@ -1137,22 +1161,28 @@ textarea {
     font-size: 1.8rem;
   }
 
-  .page3-heading h1 {
+  #left .heading h1,
+  #page4 #left #page4-heading h1,
+  #page6-section1 .page6-heading h1 {
+    font-size: 2rem;
+  }
+
+  .page3-heading h1,
+  #page5-section1 .page5-heading h1,
+  #page-otherservices .otherservices-heading h1,
+  #page8-heading h1,
+  #page7-section1 #page7-heading h1 {
     font-size: 2.5rem;
   }
 
-  #page3-section2 .presence h1 {
+  #page3-section2 .presence h1,
+  .topic h1 {
     font-size: 1.8rem;
   }
 
-  #page3-section2 p {
+  #page3-section2 p,
+  .topic p {
     font-size: 1rem;
-  }
-  #page5 p{
-    line-height: 1.5rem;
-  }
-  .service p{
-    line-height: 1.5rem;
   }
 }
 
@@ -1215,6 +1245,12 @@ textarea {
     font-size: 1.5rem;
   }
 
+  #left .heading h1,
+  #page4 #left #page4-heading h1,
+  #page6-section1 .page6-heading h1 {
+    font-size: 1.8rem;
+  }
+
   #hero2 > #text2 > p > br {
     display: none;
   }
@@ -1249,16 +1285,52 @@ textarea {
     padding: 0 0 2.5rem;
   }
 
-  #page3-section2 .presence h1 {
+  #page3-section2 .presence h1,
+  .topic h1 {
     font-size: 1.6rem;
   }
 
-  #page3-section2 p {
+  .topic {
+    width: 45%;
+  }
+
+  #page3-section2 p,
+  .topic p {
     font-size: 0.9rem;
   }
 
-  .page3-heading h1 {
+  .page3-heading h1,
+  #page5-section1 .page5-heading h1,
+  #page-otherservices .otherservices-heading h1,
+  #page8-heading h1,
+  #page7-section1 #page7-heading h1 {
+    text-align: center;
     font-size: 2rem;
+  }
+
+  #page4 {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  #page4 #left {
+    width: 90%;
+  }
+
+  .topic h1 {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  #page5-section2 .topic {
+    width: 45%;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  #page6-section2 .technology {
+    width: 45%;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
   .cta h2 {
@@ -1279,6 +1351,10 @@ textarea {
 }
 
 @media (max-width: 576px) {
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
+  }
   .cta {
     width: 100%;
     padding: 20px;
@@ -1299,7 +1375,6 @@ textarea {
     font-size: 24px;
   }
 }
-
 @media screen and (max-width: 480px) {
   #loop {
     height: 29%;
@@ -1345,6 +1420,12 @@ textarea {
     line-height: 1.7;
   }
 
+  #page5-section2 .topic {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+  }
+
   #page3-section2 .presence {
     width: 90%;
     height: auto;
@@ -1355,5 +1436,19 @@ textarea {
   .page3-heading h1 {
     font-size: 1.9rem;
     text-align: center;
+  }
+
+  #page6-section2 .technology h1 {
+    font-size: 1.5rem;
+  }
+
+  #left .heading h1,
+  #page4 #left #page4-heading h1,
+  #page6-section1 .page6-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  #page4 #left #page4-subheading {
+    font-size: 0.9rem;
   }
 }
