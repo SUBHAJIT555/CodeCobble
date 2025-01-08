@@ -34,9 +34,9 @@
   align-items: center;
   padding: 10px 50px;
   z-index: 1000;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.7px);
-  -webkit-backdrop-filter: blur(5.7px);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(5.7px); */
+  /* -webkit-backdrop-filter: blur(5.7px); */
   position: sticky;
 }
 
