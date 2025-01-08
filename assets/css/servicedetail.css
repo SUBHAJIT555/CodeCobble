@@ -1176,13 +1176,23 @@ textarea {
   }
 
   #page3-section2 .presence h1,
-  .topic h1 {
+  .topic h1,
+  #otherservices-section2 .service h1 {
     font-size: 1.8rem;
   }
 
   #page3-section2 p,
   .topic p {
     font-size: 1rem;
+  }
+
+  .service p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  #otherservices-section2 .service {
+    width: 45%;
   }
 
   #page-otherservices {
@@ -1212,7 +1222,7 @@ textarea {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #loop {
     top: 31.7%;
   }
@@ -1290,7 +1300,8 @@ textarea {
   }
 
   #page3-section2 .presence h1,
-  .topic h1 {
+  .topic h1,
+  .service .service-heading h1 {
     font-size: 1.6rem;
   }
 
@@ -1335,6 +1346,27 @@ textarea {
     width: 45%;
     padding-bottom: 2.5rem;
     margin-bottom: 0;
+  }
+
+  input {
+    width: 35vw;
+  }
+
+  textarea {
+    width: 72vw;
+  }
+
+  #page7-section2 {
+    gap: 1rem;
+    width: 90%;
+  }
+
+  #faq h2 {
+    font-size: 1.1rem;
+  }
+
+  .paragraphfaq p {
+    font-size: 0.9rem;
   }
 
   .cta h2 {
@@ -1399,6 +1431,11 @@ textarea {
     font-size: 0.8rem;
   }
 
+  .button button {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+
   #hero2 > #text2 > p {
     font-size: 0.7rem;
   }
@@ -1420,14 +1457,19 @@ textarea {
     line-height: 1.6;
   }
 
+  #page7-section2 {
+    width: 100%;
+  }
+
   #page3-section2 p {
     line-height: 1.7;
   }
 
-  #page5-section2 .topic {
-    width: 90%;
+  #page5-section2 .topic,
+  #otherservices-section2 .service {
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
 
   #page3-section2 .presence {
@@ -1446,13 +1488,46 @@ textarea {
     font-size: 1.5rem;
   }
 
+  .page3-heading h1,
+  #page5-section1 .page5-heading h1,
+  #page-otherservices .otherservices-heading h1,
+  #page8-heading h1,
+  #page7-section1 #page7-heading h1,
   #left .heading h1,
   #page4 #left #page4-heading h1,
   #page6-section1 .page6-heading h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   #page4 #left #page4-subheading {
     font-size: 0.9rem;
+  }
+
+  #page8-contact {
+    margin-top: 2rem;
+    gap: 20px;
+  }
+
+  #faq {
+    padding: 1rem;
+  }
+
+  #faq h2 {
+    font-size: 1rem;
+  }
+
+  .paragraphfaq p {
+    font-size: 0.8rem;
+  }
+
+  input,
+  textarea {
+    width: 90vw;
+  }
+
+  #contact-part1,
+  #contact-part2 {
+    flex-direction: column;
+    gap: 20px;
   }
 }
