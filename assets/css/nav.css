@@ -34,9 +34,11 @@
   align-items: center;
   padding: 10px 50px;
   z-index: 1000;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-  /* backdrop-filter: blur(5.7px); */
-  /* -webkit-backdrop-filter: blur(5.7px); */
+  background-color: rgba(0, 0, 0, 0.767);
+  box-shadow: 0 4px 30px rgba(110, 108, 108, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.31); */
   position: sticky;
 }
 
@@ -46,8 +48,9 @@
   z-index: 9;
 }
 #icon {
-  width: 150px;
+  width: 120px;
   z-index: 9999;
+  margin-left: 15px;
 }
 .logo-head {
   width: 100%;
@@ -63,6 +66,7 @@
   justify-content: center;
   transition: transform 0.5s ease;
   z-index: 99999;
+  margin-right: 15px;
 }
 
 #ham .icon {
