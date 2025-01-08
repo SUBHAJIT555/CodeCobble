@@ -1148,6 +1148,12 @@ textarea {
   #page3-section2 p {
     font-size: 1rem;
   }
+  #page5 p{
+    line-height: 1.5rem;
+  }
+  .service p{
+    line-height: 1.5rem;
+  }
 }
 
 @media (max-width: 992px) {
