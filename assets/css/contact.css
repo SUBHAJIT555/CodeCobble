@@ -77,9 +77,13 @@ body {
   width: 100%;
   max-width: 1400px;
   height: 100%;
-  background-color: #11111180;
-  border-radius: 50px;
-  backdrop-filter: blur(260px);
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  overflow: hidden;
   padding: 40px 60px;
   display: flex;
   gap: 50px;
@@ -180,7 +184,7 @@ body {
   width: 60%;
   background-color: #5f5dcb7a;
   backdrop-filter: blur(50%);
-  border-radius: 30px;
+  border-radius: 16px;
   overflow: hidden;
   padding: 30px 50px;
   height: 100%;

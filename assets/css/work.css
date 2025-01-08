@@ -305,7 +305,7 @@ body {
 }
 
 #page2 {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #000;
   position: relative;
@@ -321,8 +321,9 @@ body {
   width: 40%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
+  gap: 20px;
   padding: 3vw 0;
   font-family: var(--text-font);
 }
@@ -337,23 +338,38 @@ body {
   font-weight: 500;
   transition: all ease 0.5s;
   z-index: 9;
-  color: white;
+  background-image: linear-gradient(to left, #6b34e2, #6b34e2, #fff, #7cfc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: var(--heading-font);
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
 }
-
+#page2-left p img{
+  width: 30px;
+  animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #page2-left h5 {
-  width: 75%;
+  width: 100%;
   font-weight: 400;
-  font-size: 1.5vw;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 300;
   transition: all ease 0.5s;
   z-index: 9;
   font-family: var(--text-font);
-  margin-bottom: 7rem;
+  text-align: justify;
+  /* margin-bottom: 7rem; */
   color: white;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
+  
 }
 
 #page2-right {
@@ -364,8 +380,11 @@ body {
 .right-elem {
   position: relative;
   padding-top: 2vw;
-  padding-bottom: 5vw;
-  border-bottom: 1px solid #999;
+  padding-bottom: 2vw;
+  border: 0;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, lawngreen, white, #6b34e2);
+  border-image-slice: 1;
 }
 
 .right-elem h2 {
@@ -377,6 +396,10 @@ body {
 }
 .right-elem h2:hover {
   transform: translateY(50%);
+  background-image: linear-gradient(to left, #6b34e2, #6b34e2, #fff, #7cfc00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .right-elem img {

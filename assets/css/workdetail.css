@@ -21,6 +21,12 @@ body {
   height: 100vh;
   background-color: #000;
 }
+#page1 i,
+#page2 i,
+#page3 i,
+#page4 i{
+  font-size: 30px;
+}
 :root {
   --heading-font: Croparo;
   --text-font: Orion Sans;
@@ -133,6 +139,13 @@ body {
   border-radius: 10px;
   border: 0.5px solid transparent;
   transition: all ease 0.5s;
+}
+.box-title i{
+  color: lawngreen;
+  transition: all ease o.3s;
+}
+.box-title a i:hover{
+  color: white;
 }
 .box-title a:hover {
   text-decoration: none;
@@ -250,6 +263,7 @@ body {
   border: 0.5px solid transparent;
   transition: all ease 0.5s;
 }
+
 #page2-left-content a:hover {
   text-decoration: none;
   /* background-color: lawngreen; */
