@@ -197,7 +197,7 @@ canvas {
 }
 #hero1 > #right-text > h3 {
   font-weight: 400;
-
+  font-size: 1.4rem;
   font-family: var(--heading-font);
   margin-bottom: 6px;
 }
@@ -227,6 +227,7 @@ canvas {
 }
 #hero1 > #left-text > h3 {
   font-weight: 400;
+  font-size: 1.4rem;
   color: white;
   font-family: var(--heading-font);
 }
@@ -237,6 +238,7 @@ canvas {
 }
 #hero2 > #text1 > h3 {
   font-weight: 400;
+  font-size: 1.4rem;
   color: white;
   font-family: var(--heading-font);
 }
@@ -258,6 +260,7 @@ canvas {
   color: white;
   font-weight: 600;
   line-height: 1.7rem;
+  font-size: 1.3rem;
   font-family: var(--text-font);
 }
 #hero3 > #text3 {
@@ -272,6 +275,7 @@ canvas {
   color: white;
   font-family: var(--heading-font);
   text-align: center;
+  font-size: 1.4rem;
 }
 #hero3 > #text3 > h1 {
   font-size: 40px;
@@ -1033,13 +1037,73 @@ textarea {
   font-weight: 600;
 }
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
+  #loop {
+    top: 26%;
+  }
+
+  #loop h1,
+  #loop2 h1 {
+    font-size: 7.5rem;
+  }
+
+  #page2 {
+    height: auto;
+  }
+
+  #hero1 > #right-text > h3,
+  #hero2 > #text2 > p {
+    font-size: 1.2rem;
+  }
+
+  #hero1 > #right-text > h1 {
+    font-size: 2rem;
+  }
+
+  .page3-heading h1 {
+    font-size: 1.6rem;
+  }
+
+  #left .heading {
+    font-size: 1.6rem;
+  }
+
   .footer-cards form {
     flex-wrap: wrap;
     gap: 10px;
   }
   .button-foot {
     padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #loop {
+    top: 27.4%;
+  }
+
+  #loop2 {
+    top: 38%;
+  }
+
+  #loop h1,
+  #loop2 h1 {
+    font-size: 6rem;
+  }
+
+  #hero1 > #right-text > h3,
+  #hero1 > #left-text > h3,
+  #hero2 > #text1 > h3,
+  #hero2 > #text2 > p,
+  #hero3 > #text3 > h3 {
+    font-size: 1.15rem;
+  }
+
+  #hero1 > #right-text > h1,
+  #hero1 > #left-text > h1,
+  #hero2 > #text1 > h1,
+  #hero3 > #text3 > h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -1066,6 +1130,41 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  #loop {
+    top: 31.7%;
+  }
+
+  #loop h1,
+  #loop2 h1 {
+    font-size: 4rem;
+  }
+
+  #hero1 > #right-text {
+    left: 5%;
+  }
+
+  #hero1 > #left-text {
+    right: 5%;
+  }
+
+  #hero1 > #right-text > h3,
+  #hero1 > #left-text > h3,
+  #hero2 > #text1 > h3,
+  #hero3 > #text3 > h3 {
+    font-size: 1rem;
+  }
+
+  #hero2 > #text2 > p {
+    font-size: 0.9rem;
+  }
+
+  #hero1 > #right-text > h1,
+  #hero1 > #left-text > h1,
+  #hero2 > #text1 > h1,
+  #hero3 > #text3 > h1 {
+    font-size: 1.5rem;
+  }
+
   .cta h2 {
     font-size: 1.8rem;
   }
@@ -1102,5 +1201,19 @@ textarea {
   }
   .social-icons-foot i {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #loop {
+    height: 29%;
+    top: 25.4%;
+  }
+  #loop2 {
+    top: 32%;
+  }
+  #loop h1,
+  #loop2 h1 {
+    font-size: 2rem;
   }
 }

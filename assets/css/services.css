@@ -1029,9 +1029,8 @@ body {
   }
 
   .bottom-page1 {
-    bottom: 40%;
+    bottom: 25%;
     width: 70%;
-    /* top: 30%; */
   }
 
   .bottom-page1 > h1 {
