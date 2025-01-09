@@ -361,10 +361,11 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left1",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
+      // markers: true,
     },
   });
   gsap.from("#page7-bottom1 .box-right1", {
@@ -375,8 +376,9 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right1",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
+      // markers: true,
       end: "top 60%",
       scrub: 3,
     },
@@ -389,10 +391,11 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-left2",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
+      // markers: true,
     },
   });
   gsap.from("#page7-bottom2 .box-right2", {
@@ -403,8 +406,9 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right2",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
+      // markers: true,
       end: "top 60%",
       scrub: 3,
     },
@@ -417,10 +421,11 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-left3",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
+      // markers: true,
     },
   });
   gsap.from("#page7-bottom3 .box-right3", {
@@ -431,10 +436,11 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right3",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
+      // markers: true,
     },
   });
   gsap.from("#page7-bottomlast .box-last", {
@@ -445,10 +451,11 @@ function page7Animation() {
     ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-last",
-      // scroller: "#main",
+      scroller: "#main",
       start: "top 100%",
       end: "top 90%",
       scrub: 2,
+      // markers: true,
     },
   });
 }
