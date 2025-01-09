@@ -351,23 +351,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function page7Animation() {
-  const isMobile = window.innerWidth <= 768;
+  // const isMobile = window.innerWidth <= 768;
 
-  gsap.from("#page7-bottom1 > .box-left1", {
-    x: isMobile ? -200 : -400,
+  gsap.from("#page7-bottom1 .box-left1", {
+    x: -400,
     opacity: 0,
-    stagger: isMobile ? 1 : 2,
-    duration: isMobile ? 2 : 4,
+    stagger: 2,
+    duration: 4,
     scrollTrigger: {
       trigger: ".box-left1",
       scroller: "#main",
-      start: isMobile ? "top 90%" : "top 80%",
-      end: isMobile ? "top 50%" : "top 60%",
+      start: "top 80%",
+      end: "top 60%",
       scrub: 3,
     },
   });
   gsap.from("#page7-bottom1 .box-right1", {
-    x: isMobile ? 200 : 400,
+    x: 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -380,7 +380,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom2 .box-left2", {
-    x: isMobile ? -200 : -400,
+    x: -400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -393,7 +393,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom2 .box-right2", {
-    x: isMobile ? 200 : 400,
+    x: 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -406,7 +406,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom3 .box-left3", {
-    x: isMobile ? -200 : -400,
+    x: -400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -419,7 +419,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom3 .box-right3", {
-    x: isMobile ? 200 : 400,
+    x: 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -432,7 +432,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottomlast .box-last", {
-    x: isMobile ? 200 : 400,
+    x: 400,
     opacity: 0,
     stagger: 2,
     duration: 1,
@@ -445,7 +445,7 @@ function page7Animation() {
     },
   });
 }
-// page7Animation();
+page7Animation();
 
 gsap.to("#page23>img", {
   scrollTrigger: {
