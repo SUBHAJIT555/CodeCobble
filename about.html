@@ -70,14 +70,14 @@
   <body>
     <!-- <div id="gola"></div> -->
     <!-- style="position: fixed; right: 0;" -->
-    <div id="main">
+    <div id="main" data-scroll-container>
       <section
         class="mainnav"
         data-scroll
         data-scroll-sticky
         data-scroll-target="#main"
       >
-        <section class="hamburger">
+        <section class="hamburger" id="hamburger">
           <div id="icon">
             <a href="index.html"
               ><img
@@ -187,8 +187,13 @@
       </section>
 
       <div id="page1">
-        <video src="/assets/homepageassets/about_video.webm" autoplay loop muted></video>
-      
+        <video
+          src="/assets/homepageassets/about_video.webm"
+          autoplay
+          loop
+          muted
+        ></video>
+
         <div id="page1-top">
           <h1>ABOUT US</h1>
           <h3>CodeCobble - Where Digital Innovation Meets Excellence</h3>
@@ -199,7 +204,8 @@
             At <strong>CodeCobble</strong>, we transform ideas into impactful
             digital experiences. Based in Dubai, we specialize in a diverse
             range of services, including <strong>Website Development</strong>,
-            <strong>App Development</strong>, <strong>Interactive Game Development</strong>,
+            <strong>App Development</strong>,
+            <strong>Interactive Game Development</strong>,
             <strong>2D Graphics</strong>, <strong>3D & Video Solutions</strong>,
             <strong>Digital Marketing</strong>, and
             <strong>UI/UX Design</strong>. <br />
@@ -255,7 +261,12 @@
             <div class="mvcon">
               <div class="mvwrapimg leftimg">
                 <div class="mvimg">
-                  <video autoplay loop muted src="/assets/clints/vision_1.webm"></video>
+                  <video
+                    autoplay
+                    loop
+                    muted
+                    src="/assets/clints/vision_1.webm"
+                  ></video>
                 </div>
               </div>
               <div class="mvtext">
@@ -911,7 +922,9 @@
               <li><a href="contact.html">Contact Us</a></li>
               <!-- <li><a href="blog.html">Blogs</a></li> -->
               <li><a href="privacy-policy.html">Privacy & Policy</a></li>
-              <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+              <li>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </li>
             </ul>
           </div>
           <div class="footer-cards">
@@ -1078,10 +1091,6 @@
       //     },
       //   },
       // });
-
-
-
     </script>
-    
   </body>
 </html>

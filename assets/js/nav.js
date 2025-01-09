@@ -1,8 +1,3 @@
-
-
-
-
-
 const ham = document.getElementById("ham");
 const svgContainer = document.getElementById("hamburger-icon");
 const nav = document.getElementById("nav");
@@ -41,33 +36,70 @@ opensub.forEach((toggle, index) => {
   });
 });
 
-
 function data() {
   return {
     scrollIns: false,
   };
 }
 function mounted() {
-  this.$nextTick(() => {
-    this.initScroll();
+  document.addEventListener("DOMContentLoaded", () => {
+    initScroll();
   });
+
+  //   $nextTick(() => {
+  //     initScroll();
+  //   });
 }
+
 function initScroll() {
+  const scrollContainer = document.querySelector("[data-scroll-container]");
+  if (!scrollContainer) {
+    console.error("Scroll container not found");
+    return;
+  }
+
+  const hamburger = document.getElementById("hamburger");
   const scroll = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
+    el: scrollContainer,
     smooth: true,
     smoothMobile: true,
     getDirection: true,
     getSpeed: true,
   });
+
+  scroll.on("scroll", (args) => {
+    if (Math.round(args.scroll.y) > 0) {
+      hamburger.classList.add("navbar-scrolled");
+      // this.scrollIns = true;
+    } else {
+      // this.scrollIns = false;
+      hamburger.classList.remove("navbar-scrolled");
+    }
+  });
+
   setTimeout(() => {
     let target = document.getElementById("main");
-    scroll.scrollTo(target);
+    if (target) {
+      scroll.scrollTo(target);
+    }
   }, 5000);
 }
 
 data();
 mounted();
 
-
-
+function scroll() {
+  console.log(hamburger);
+  console.log("scrolling" + window.scrollY);
+  // Add an event listener for the scroll event
+  window.addEventListener("scroll", () => {
+    console.log("scrolling" + window.scrollY);
+    // Check if the page has been scrolled from the top
+    if (window.scrollY > 0) {
+      // Add the 'scrolled' class
+    } else {
+      // Remove the 'scrolled' class
+    }
+  });
+}
+scroll();
