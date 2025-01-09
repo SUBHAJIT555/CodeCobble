@@ -32,6 +32,21 @@ body {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.937);
 }
+.leftinfo .navmin a,
+.leftinfo .navmin i {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  font-family: var(--text-font);
+  transition: all ease 0.5s;
+  text-align: right;
+}
+
+.navsocial a:hover{
+  text-decoration: none;
+  color: lawngreen;
+}
 #page1 {
   width: 100vw;
   height: auto;
