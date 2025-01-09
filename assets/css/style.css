@@ -79,10 +79,9 @@ body {
   border-radius: 50%;
   pointer-events: none;
   z-index: 1000;
-  transition: transform 0.1s ease, background-color 0.3s ease, opacity 0.3s ease, border 0.3s ease;
+  transition: transform 0.1s ease, background-color 0.3s ease, opacity 0.3s ease,
+    border 0.3s ease;
 }
-
-
 
 .hover-effect {
   /* background-color: var(--secondary-color); */
@@ -212,11 +211,12 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 .text-content {
@@ -1164,7 +1164,6 @@ body {
 #center-page20 > h1 {
   margin-bottom: 2rem;
   font-family: var(--heading-font);
-  
 }
 #center-page20 > p {
   font-family: var(--text-font);
@@ -1819,7 +1818,187 @@ svg.squiggle path {
 }
 
 /* Responsive Styles */
+@media screen and (max-width: 1280px) {
+  #hero-heading h1,
+  #videosolution-content > h2,
+  #hero-heading h1 span {
+    font-size: 3rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .text-content p {
+    font-size: 1.063rem;
+  }
+
+  #fourth img {
+    width: 180px;
+  }
+
+  #videosolution-content {
+    height: auto;
+  }
+
+  #page6 {
+    margin: 50px auto 0;
+    height: auto;
+    padding: 0;
+    width: 70%;
+  }
+
+  #page7 {
+    padding: 0;
+  }
+
+  #page7-bottom1,
+  #page7-bottom2,
+  #page7-bottom3 {
+    gap: 50px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  #hero-heading h1,
+  #videosolution-content > h2,
+  #hero-heading h1 span,
+  #page6-top-left > h3 {
+    font-size: 2rem;
+  }
+
+  .text-content h3,
+  #page6-top-left > h1 {
+    font-size: 1.6rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  #videosolution-content > h1,
+  #page6-bottom > p {
+    font-size: 1.3rem;
+  }
+
+  #fourth img {
+    top: 20%;
+    width: 130px;
+  }
+
+  .service-doc h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-doc p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero-heading h1,
+  #videosolution-content > h2,
+  #hero-heading h1 span,
+  #page6-top-left > h3 {
+    font-size: 1.5rem;
+  }
+  #page7-bottom1 {
+    flex-direction: column;
+  }
+  #hero-heading {
+    padding: 1rem 1.2rem;
+  }
+
+  #videosolution-content > h1,
+  #page6-bottom > p {
+    font-size: 1.2rem;
+  }
+
+  #page6-top {
+    flex-direction: column-reverse;
+  }
+
+  .collection {
+    padding-top: 20px;
+  }
+
+  #page7-bottom2 {
+    margin: 50px 0;
+  }
+
+  .collection .content {
+    padding: 25px 0;
+    height: 450px;
+    width: 80%;
+  }
+
+  #videosolution-content {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    height: auto;
+  }
+  .service-gap {
+    display: none;
+  }
+  .service-box {
+    width: 80%;
+  }
+  .text-content h3,
+  #page6-top-left > h1 {
+    font-size: 1.3rem;
+  }
+
+  .text-content p {
+    font-size: 0.9rem;
+  }
+
+  #fourth img {
+    top: 25%;
+    left: 10%;
+    width: 100px;
+  }
+
+  .service-doc p {
+    display: none;
+  }
+  .box-left1 {
+    border-top: 2px solid red;
+    border-bottom: 2px solid saddlebrown;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hero-heading h1,
+  #videosolution-content > h2,
+  #hero-heading h1 span {
+    font-size: 1.4rem;
+  }
+
+  .collection .content {
+    width: 90%;
+    padding: 20px 25px 10px;
+  }
+
+  .text-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .text-content p {
+    font-size: 0.8rem;
+  }
+
+  #videosolution-content > h1 {
+    font-size: 1.1rem;
+  }
+
+  #videosolution-content > h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
   #hero-heading h1 {
     font-size: 2.5rem;
   }
@@ -2138,7 +2317,7 @@ svg.squiggle path {
 
   #page18 > canvas {
     max-width: 100vw;
-    /* max-height: 70vw; */
+
   }
 
   #page19 > h1 {
@@ -2193,7 +2372,6 @@ svg.squiggle path {
     right: 0;
     width: 50%;
     flex-direction: column;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.856),rgb(0, 0, 0)); */
     background: radial-gradient(
       circle at -1.9% 0.1%,
       rgb(255, 124, 0) 0%,
@@ -2229,7 +2407,6 @@ svg.squiggle path {
   }
   #navLinks ul li a:hover {
     letter-spacing: 0.2vw;
-    /* text-decoration: underline; */
     color: white;
   }
   #circular-bar-section {
@@ -2334,8 +2511,6 @@ svg.squiggle path {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  /* #page7, */
   #page9,
   #page10,
   #page11,
@@ -2406,13 +2581,4 @@ svg.squiggle path {
   #footer-end {
     margin-top: 20px;
   }
-}
-
-
-
-
-
-
-
-
-
+} */

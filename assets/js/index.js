@@ -552,7 +552,7 @@ tl2.to("#page4>#center-page4", {
 //     var canvas = ctx.canvas;
 //     var hRatio = canvas.width / img.width;
 //     var vRatio = canvas.height / img.height;
-    // var ratio = Math.max(hRatio, vRatio);
+// var ratio = Math.max(hRatio, vRatio);
 // var ratio = Math.min(hRatio, vRatio);
 //     var centerShift_x = (canvas.width - img.width * ratio) / 2;
 //     var centerShift_y = (canvas.height - img.height * ratio) / 2;
@@ -752,21 +752,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function page7Animation() {
+  const isMobile = window.innerWidth <= 768;
+
   gsap.from("#page7-bottom1 .box-left1", {
-    x: -400,
+    x: isMobile ? -200 : -400,
     opacity: 0,
-    stagger: 2,
-    duration: 4,
+    stagger: isMobile ? 1 : 2,
+    duration: isMobile ? 2 : 4,
     scrollTrigger: {
       trigger: ".box-left1",
       scroller: "#main",
-      start: "top 80%",
-      end: "top 60%",
+      start: isMobile ? "top 90%" : "top 80%",
+      end: isMobile ? "top 50%" : "top 60%",
       scrub: 3,
     },
   });
   gsap.from("#page7-bottom1 .box-right1", {
-    x: 400,
+    x: isMobile ? 200 : 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -779,7 +781,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom2 .box-left2", {
-    x: -400,
+    x: isMobile ? -200 : -400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -792,7 +794,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom2 .box-right2", {
-    x: 400,
+    x: isMobile ? 200 : 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -805,7 +807,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom3 .box-left3", {
-    x: -400,
+    x: isMobile ? -200 : -400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -818,7 +820,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottom3 .box-right3", {
-    x: 400,
+    x: isMobile ? 200 : 400,
     opacity: 0,
     stagger: 2,
     duration: 4,
@@ -831,7 +833,7 @@ function page7Animation() {
     },
   });
   gsap.from("#page7-bottomlast .box-last", {
-    y: 400,
+    x: isMobile ? 200 : 400,
     opacity: 0,
     stagger: 2,
     duration: 1,
@@ -845,6 +847,11 @@ function page7Animation() {
   });
 }
 page7Animation();
+
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+  page7Animation();
+});
 
 gsap.to("#page23>img", {
   scrollTrigger: {
@@ -1467,39 +1474,34 @@ document.addEventListener("DOMContentLoaded", function () {
   initApp();
 });
 
-
-
-
-function customCursor(){
+function customCursor() {
   document.addEventListener("DOMContentLoaded", () => {
     const cursor = document.getElementById("custom-cursor");
-  
+
     // Move the cursor
     document.addEventListener("mousemove", (e) => {
       cursor.style.left = `${e.clientX}px`;
       cursor.style.top = `${e.clientY}px`;
     });
-  
+
     // Add hover effect for text elements
     const interactiveElements = document.querySelectorAll("a, button, .btn");
     interactiveElements.forEach((el) => {
-      el.addEventListener("mouseenter", () => cursor.classList.add("hover-effect"));
-      el.addEventListener("mouseleave", () => cursor.classList.remove("hover-effect"));
+      el.addEventListener("mouseenter", () =>
+        cursor.classList.add("hover-effect")
+      );
+      el.addEventListener("mouseleave", () =>
+        cursor.classList.remove("hover-effect")
+      );
     });
-  
+
     // Add click effect
-    document.addEventListener("mousedown", () => cursor.classList.add("click-effect"));
-    document.addEventListener("mouseup", () => cursor.classList.remove("click-effect"));
+    document.addEventListener("mousedown", () =>
+      cursor.classList.add("click-effect")
+    );
+    document.addEventListener("mouseup", () =>
+      cursor.classList.remove("click-effect")
+    );
   });
 }
 customCursor();
-
-
-
-
-
-
-
-
-
-
