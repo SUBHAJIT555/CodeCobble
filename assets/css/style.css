@@ -1960,13 +1960,13 @@ svg.squiggle path {
     width: 100px;
   }
 
-  .service-doc p {
+  /* .service-doc p {
     display: none;
   }
   .box-left1 {
     border-top: 2px solid red;
     border-bottom: 2px solid saddlebrown;
-  }
+  } */
 }
 
 @media screen and (max-width: 480px) {

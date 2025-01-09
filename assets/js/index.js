@@ -156,428 +156,10 @@ tl2.to("#page4>#center-page4", {
   top: `-50%`,
 });
 
-// -------------- canvas for hero section -----
 
-// function canvas() {
-//   const canvas = document.querySelector("#page7>canvas");
-//   const context = canvas.getContext("2d");
 
-//   canvas.width = window.innerWidth;
-//   canvas.height = window.innerHeight;
 
-//   window.addEventListener("resize", function () {
-//     canvas.width = window.innerWidth;
-//     canvas.height = window.innerHeight;
-//     render();
-//   });
-
-//   function files(index) {
-//     var data = `
-//           /assets/canvas-asstes/home/About_video_00021.webp
-// /assets/canvas-asstes/home/About_video_00022.webp
-// /assets/canvas-asstes/home/About_video_00023.webp
-// /assets/canvas-asstes/home/About_video_00024.webp
-// /assets/canvas-asstes/home/About_video_00025.webp
-// /assets/canvas-asstes/home/About_video_00026.webp
-// /assets/canvas-asstes/home/About_video_00027.webp
-// /assets/canvas-asstes/home/About_video_00028.webp
-// /assets/canvas-asstes/home/About_video_00029.webp
-// /assets/canvas-asstes/home/About_video_00030.webp
-// /assets/canvas-asstes/home/About_video_00031.webp
-// /assets/canvas-asstes/home/About_video_00032.webp
-// /assets/canvas-asstes/home/About_video_00033.webp
-// /assets/canvas-asstes/home/About_video_00034.webp
-// /assets/canvas-asstes/home/About_video_00035.webp
-// /assets/canvas-asstes/home/About_video_00036.webp
-// /assets/canvas-asstes/home/About_video_00037.webp
-// /assets/canvas-asstes/home/About_video_00038.webp
-// /assets/canvas-asstes/home/About_video_00039.webp
-// /assets/canvas-asstes/home/About_video_00040.webp
-// /assets/canvas-asstes/home/About_video_00041.webp
-// /assets/canvas-asstes/home/About_video_00042.webp
-// /assets/canvas-asstes/home/About_video_00043.webp
-// /assets/canvas-asstes/home/About_video_00044.webp
-// /assets/canvas-asstes/home/About_video_00045.webp
-// /assets/canvas-asstes/home/About_video_00046.webp
-// /assets/canvas-asstes/home/About_video_00047.webp
-// /assets/canvas-asstes/home/About_video_00048.webp
-// /assets/canvas-asstes/home/About_video_00049.webp
-// /assets/canvas-asstes/home/About_video_00050.webp
-// /assets/canvas-asstes/home/About_video_00051.webp
-// /assets/canvas-asstes/home/About_video_00052.webp
-// /assets/canvas-asstes/home/About_video_00053.webp
-// /assets/canvas-asstes/home/About_video_00054.webp
-// /assets/canvas-asstes/home/About_video_00055.webp
-// /assets/canvas-asstes/home/About_video_00056.webp
-// /assets/canvas-asstes/home/About_video_00057.webp
-// /assets/canvas-asstes/home/About_video_00058.webp
-// /assets/canvas-asstes/home/About_video_00059.webp
-// /assets/canvas-asstes/home/About_video_00060.webp
-// /assets/canvas-asstes/home/About_video_00061.webp
-// /assets/canvas-asstes/home/About_video_00062.webp
-// /assets/canvas-asstes/home/About_video_00063.webp
-// /assets/canvas-asstes/home/About_video_00064.webp
-// /assets/canvas-asstes/home/About_video_00065.webp
-// /assets/canvas-asstes/home/About_video_00066.webp
-// /assets/canvas-asstes/home/About_video_00067.webp
-// /assets/canvas-asstes/home/About_video_00068.webp
-// /assets/canvas-asstes/home/About_video_00069.webp
-// /assets/canvas-asstes/home/About_video_00070.webp
-// /assets/canvas-asstes/home/About_video_00071.webp
-// /assets/canvas-asstes/home/About_video_00072.webp
-// /assets/canvas-asstes/home/About_video_00073.webp
-// /assets/canvas-asstes/home/About_video_00074.webp
-// /assets/canvas-asstes/home/About_video_00075.webp
-// /assets/canvas-asstes/home/About_video_00076.webp
-// /assets/canvas-asstes/home/About_video_00077.webp
-// /assets/canvas-asstes/home/About_video_00078.webp
-// /assets/canvas-asstes/home/About_video_00079.webp
-// /assets/canvas-asstes/home/About_video_00080.webp
-// /assets/canvas-asstes/home/About_video_00081.webp
-// /assets/canvas-asstes/home/About_video_00082.webp
-// /assets/canvas-asstes/home/About_video_00083.webp
-// /assets/canvas-asstes/home/About_video_00084.webp
-// /assets/canvas-asstes/home/About_video_00085.webp
-// /assets/canvas-asstes/home/About_video_00086.webp
-// /assets/canvas-asstes/home/About_video_00087.webp
-// /assets/canvas-asstes/home/About_video_00088.webp
-// /assets/canvas-asstes/home/About_video_00089.webp
-// /assets/canvas-asstes/home/About_video_00090.webp
-// /assets/canvas-asstes/home/About_video_00091.webp
-// /assets/canvas-asstes/home/About_video_00092.webp
-// /assets/canvas-asstes/home/About_video_00093.webp
-// /assets/canvas-asstes/home/About_video_00094.webp
-// /assets/canvas-asstes/home/About_video_00095.webp
-// /assets/canvas-asstes/home/About_video_00096.webp
-// /assets/canvas-asstes/home/About_video_00097.webp
-// /assets/canvas-asstes/home/About_video_00098.webp
-// /assets/canvas-asstes/home/About_video_00099.webp
-// /assets/canvas-asstes/home/About_video_00100.webp
-// /assets/canvas-asstes/home/About_video_00101.webp
-// /assets/canvas-asstes/home/About_video_00102.webp
-// /assets/canvas-asstes/home/About_video_00103.webp
-// /assets/canvas-asstes/home/About_video_00104.webp
-// /assets/canvas-asstes/home/About_video_00105.webp
-// /assets/canvas-asstes/home/About_video_00106.webp
-// /assets/canvas-asstes/home/About_video_00107.webp
-// /assets/canvas-asstes/home/About_video_00108.webp
-// /assets/canvas-asstes/home/About_video_00109.webp
-// /assets/canvas-asstes/home/About_video_00110.webp
-// /assets/canvas-asstes/home/About_video_00111.webp
-// /assets/canvas-asstes/home/About_video_00112.webp
-// /assets/canvas-asstes/home/About_video_00113.webp
-// /assets/canvas-asstes/home/About_video_00114.webp
-// /assets/canvas-asstes/home/About_video_00115.webp
-// /assets/canvas-asstes/home/About_video_00116.webp
-// /assets/canvas-asstes/home/About_video_00117.webp
-// /assets/canvas-asstes/home/About_video_00118.webp
-// /assets/canvas-asstes/home/About_video_00119.webp
-// /assets/canvas-asstes/home/About_video_00120.webp
-// /assets/canvas-asstes/home/About_video_00121.webp
-// /assets/canvas-asstes/home/About_video_00122.webp
-// /assets/canvas-asstes/home/About_video_00123.webp
-// /assets/canvas-asstes/home/About_video_00124.webp
-// /assets/canvas-asstes/home/About_video_00125.webp
-// /assets/canvas-asstes/home/About_video_00126.webp
-// /assets/canvas-asstes/home/About_video_00127.webp
-// /assets/canvas-asstes/home/About_video_00128.webp
-// /assets/canvas-asstes/home/About_video_00129.webp
-// /assets/canvas-asstes/home/About_video_00130.webp
-// /assets/canvas-asstes/home/About_video_00131.webp
-// /assets/canvas-asstes/home/About_video_00132.webp
-// /assets/canvas-asstes/home/About_video_00133.webp
-// /assets/canvas-asstes/home/About_video_00134.webp
-// /assets/canvas-asstes/home/About_video_00135.webp
-// /assets/canvas-asstes/home/About_video_00136.webp
-// /assets/canvas-asstes/home/About_video_00137.webp
-// /assets/canvas-asstes/home/About_video_00138.webp
-// /assets/canvas-asstes/home/About_video_00139.webp
-// /assets/canvas-asstes/home/About_video_00140.webp
-// /assets/canvas-asstes/home/About_video_00141.webp
-// /assets/canvas-asstes/home/About_video_00142.webp
-// /assets/canvas-asstes/home/About_video_00143.webp
-// /assets/canvas-asstes/home/About_video_00144.webp
-// /assets/canvas-asstes/home/About_video_00145.webp
-// /assets/canvas-asstes/home/About_video_00146.webp
-// /assets/canvas-asstes/home/About_video_00147.webp
-// /assets/canvas-asstes/home/About_video_00148.webp
-// /assets/canvas-asstes/home/About_video_00149.webp
-// /assets/canvas-asstes/home/About_video_00150.webp
-// /assets/canvas-asstes/home/About_video_00151.webp
-// /assets/canvas-asstes/home/About_video_00152.webp
-// /assets/canvas-asstes/home/About_video_00153.webp
-// /assets/canvas-asstes/home/About_video_00154.webp
-// /assets/canvas-asstes/home/About_video_00155.webp
-// /assets/canvas-asstes/home/About_video_00156.webp
-// /assets/canvas-asstes/home/About_video_00157.webp
-// /assets/canvas-asstes/home/About_video_00158.webp
-// /assets/canvas-asstes/home/About_video_00159.webp
-// /assets/canvas-asstes/home/About_video_00160.webp
-// /assets/canvas-asstes/home/About_video_00161.webp
-// /assets/canvas-asstes/home/About_video_00162.webp
-// /assets/canvas-asstes/home/About_video_00163.webp
-// /assets/canvas-asstes/home/About_video_00164.webp
-// /assets/canvas-asstes/home/About_video_00165.webp
-// /assets/canvas-asstes/home/About_video_00166.webp
-// /assets/canvas-asstes/home/About_video_00167.webp
-// /assets/canvas-asstes/home/About_video_00168.webp
-// /assets/canvas-asstes/home/About_video_00169.webp
-// /assets/canvas-asstes/home/About_video_00170.webp
-// /assets/canvas-asstes/home/About_video_00171.webp
-// /assets/canvas-asstes/home/About_video_00172.webp
-// /assets/canvas-asstes/home/About_video_00173.webp
-// /assets/canvas-asstes/home/About_video_00174.webp
-// /assets/canvas-asstes/home/About_video_00175.webp
-// /assets/canvas-asstes/home/About_video_00176.webp
-// /assets/canvas-asstes/home/About_video_00177.webp
-// /assets/canvas-asstes/home/About_video_00178.webp
-// /assets/canvas-asstes/home/About_video_00179.webp
-// /assets/canvas-asstes/home/About_video_00180.webp
-// /assets/canvas-asstes/home/About_video_00181.webp
-// /assets/canvas-asstes/home/About_video_00182.webp
-// /assets/canvas-asstes/home/About_video_00183.webp
-// /assets/canvas-asstes/home/About_video_00184.webp
-// /assets/canvas-asstes/home/About_video_00185.webp
-// /assets/canvas-asstes/home/About_video_00186.webp
-// /assets/canvas-asstes/home/About_video_00187.webp
-// /assets/canvas-asstes/home/About_video_00188.webp
-// /assets/canvas-asstes/home/About_video_00189.webp
-// /assets/canvas-asstes/home/About_video_00190.webp
-// /assets/canvas-asstes/home/About_video_00191.webp
-// /assets/canvas-asstes/home/About_video_00192.webp
-// /assets/canvas-asstes/home/About_video_00193.webp
-// /assets/canvas-asstes/home/About_video_00194.webp
-// /assets/canvas-asstes/home/About_video_00195.webp
-// /assets/canvas-asstes/home/About_video_00196.webp
-// /assets/canvas-asstes/home/About_video_00197.webp
-// /assets/canvas-asstes/home/About_video_00198.webp
-// /assets/canvas-asstes/home/About_video_00199.webp
-// /assets/canvas-asstes/home/About_video_00200.webp
-// /assets/canvas-asstes/home/About_video_00201.webp
-// /assets/canvas-asstes/home/About_video_00202.webp
-// /assets/canvas-asstes/home/About_video_00203.webp
-// /assets/canvas-asstes/home/About_video_00204.webp
-// /assets/canvas-asstes/home/About_video_00205.webp
-// /assets/canvas-asstes/home/About_video_00206.webp
-// /assets/canvas-asstes/home/About_video_00207.webp
-// /assets/canvas-asstes/home/About_video_00208.webp
-// /assets/canvas-asstes/home/About_video_00209.webp
-// /assets/canvas-asstes/home/About_video_00210.webp
-// /assets/canvas-asstes/home/About_video_00211.webp
-// /assets/canvas-asstes/home/About_video_00212.webp
-// /assets/canvas-asstes/home/About_video_00213.webp
-// /assets/canvas-asstes/home/About_video_00214.webp
-// /assets/canvas-asstes/home/About_video_00215.webp
-// /assets/canvas-asstes/home/About_video_00216.webp
-// /assets/canvas-asstes/home/About_video_00217.webp
-// /assets/canvas-asstes/home/About_video_00218.webp
-// /assets/canvas-asstes/home/About_video_00219.webp
-// /assets/canvas-asstes/home/About_video_00220.webp
-// /assets/canvas-asstes/home/About_video_00221.webp
-// /assets/canvas-asstes/home/About_video_00222.webp
-// /assets/canvas-asstes/home/About_video_00223.webp
-// /assets/canvas-asstes/home/About_video_00224.webp
-// /assets/canvas-asstes/home/About_video_00225.webp
-// /assets/canvas-asstes/home/About_video_00226.webp
-// /assets/canvas-asstes/home/About_video_00227.webp
-// /assets/canvas-asstes/home/About_video_00228.webp
-// /assets/canvas-asstes/home/About_video_00229.webp
-// /assets/canvas-asstes/home/About_video_00230.webp
-// /assets/canvas-asstes/home/About_video_00231.webp
-// /assets/canvas-asstes/home/About_video_00232.webp
-// /assets/canvas-asstes/home/About_video_00233.webp
-// /assets/canvas-asstes/home/About_video_00234.webp
-// /assets/canvas-asstes/home/About_video_00235.webp
-// /assets/canvas-asstes/home/About_video_00236.webp
-// /assets/canvas-asstes/home/About_video_00237.webp
-// /assets/canvas-asstes/home/About_video_00238.webp
-// /assets/canvas-asstes/home/About_video_00239.webp
-// /assets/canvas-asstes/home/About_video_00240.webp
-// /assets/canvas-asstes/home/About_video_00241.webp
-// /assets/canvas-asstes/home/About_video_00242.webp
-// /assets/canvas-asstes/home/About_video_00243.webp
-// /assets/canvas-asstes/home/About_video_00244.webp
-// /assets/canvas-asstes/home/About_video_00245.webp
-// /assets/canvas-asstes/home/About_video_00246.webp
-// /assets/canvas-asstes/home/About_video_00247.webp
-// /assets/canvas-asstes/home/About_video_00248.webp
-// /assets/canvas-asstes/home/About_video_00249.webp
-// /assets/canvas-asstes/home/About_video_00250.webp
-// /assets/canvas-asstes/home/About_video_00251.webp
-// /assets/canvas-asstes/home/About_video_00252.webp
-// /assets/canvas-asstes/home/About_video_00253.webp
-// /assets/canvas-asstes/home/About_video_00254.webp
-// /assets/canvas-asstes/home/About_video_00255.webp
-// /assets/canvas-asstes/home/About_video_00256.webp
-// /assets/canvas-asstes/home/About_video_00257.webp
-// /assets/canvas-asstes/home/About_video_00258.webp
-// /assets/canvas-asstes/home/About_video_00259.webp
-// /assets/canvas-asstes/home/About_video_00260.webp
-// /assets/canvas-asstes/home/About_video_00261.webp
-// /assets/canvas-asstes/home/About_video_00262.webp
-// /assets/canvas-asstes/home/About_video_00263.webp
-// /assets/canvas-asstes/home/About_video_00264.webp
-// /assets/canvas-asstes/home/About_video_00265.webp
-// /assets/canvas-asstes/home/About_video_00266.webp
-// /assets/canvas-asstes/home/About_video_00267.webp
-// /assets/canvas-asstes/home/About_video_00268.webp
-// /assets/canvas-asstes/home/About_video_00269.webp
-// /assets/canvas-asstes/home/About_video_00270.webp
-// /assets/canvas-asstes/home/About_video_00271.webp
-// /assets/canvas-asstes/home/About_video_00272.webp
-// /assets/canvas-asstes/home/About_video_00273.webp
-// /assets/canvas-asstes/home/About_video_00274.webp
-// /assets/canvas-asstes/home/About_video_00275.webp
-// /assets/canvas-asstes/home/About_video_00276.webp
-// /assets/canvas-asstes/home/About_video_00277.webp
-// /assets/canvas-asstes/home/About_video_00278.webp
-// /assets/canvas-asstes/home/About_video_00279.webp
-// /assets/canvas-asstes/home/About_video_00280.webp
-// /assets/canvas-asstes/home/About_video_00281.webp
-// /assets/canvas-asstes/home/About_video_00282.webp
-// /assets/canvas-asstes/home/About_video_00283.webp
-// /assets/canvas-asstes/home/About_video_00284.webp
-// /assets/canvas-asstes/home/About_video_00285.webp
-// /assets/canvas-asstes/home/About_video_00286.webp
-// /assets/canvas-asstes/home/About_video_00287.webp
-// /assets/canvas-asstes/home/About_video_00288.webp
-// /assets/canvas-asstes/home/About_video_00289.webp
-// /assets/canvas-asstes/home/About_video_00290.webp
-// /assets/canvas-asstes/home/About_video_00291.webp
-// /assets/canvas-asstes/home/About_video_00292.webp
-// /assets/canvas-asstes/home/About_video_00293.webp
-// /assets/canvas-asstes/home/About_video_00294.webp
-// /assets/canvas-asstes/home/About_video_00295.webp
-// /assets/canvas-asstes/home/About_video_00296.webp
-// /assets/canvas-asstes/home/About_video_00297.webp
-// /assets/canvas-asstes/home/About_video_00298.webp
-// /assets/canvas-asstes/home/About_video_00299.webp
-// /assets/canvas-asstes/home/About_video_00300.webp
-// /assets/canvas-asstes/home/About_video_00301.webp
-// /assets/canvas-asstes/home/About_video_00302.webp
-// /assets/canvas-asstes/home/About_video_00303.webp
-// /assets/canvas-asstes/home/About_video_00304.webp
-// /assets/canvas-asstes/home/About_video_00305.webp
-// /assets/canvas-asstes/home/About_video_00306.webp
-// /assets/canvas-asstes/home/About_video_00307.webp
-// /assets/canvas-asstes/home/About_video_00308.webp
-// /assets/canvas-asstes/home/About_video_00309.webp
-// /assets/canvas-asstes/home/About_video_00310.webp
-// /assets/canvas-asstes/home/About_video_00311.webp
-// /assets/canvas-asstes/home/About_video_00312.webp
-// /assets/canvas-asstes/home/About_video_00313.webp
-// /assets/canvas-asstes/home/About_video_00314.webp
-// /assets/canvas-asstes/home/About_video_00315.webp
-// /assets/canvas-asstes/home/About_video_00316.webp
-// /assets/canvas-asstes/home/About_video_00317.webp
-// /assets/canvas-asstes/home/About_video_00318.webp
-// /assets/canvas-asstes/home/About_video_00319.webp
-// /assets/canvas-asstes/home/About_video_00320.webp
-// /assets/canvas-asstes/home/About_video_00321.webp
-// /assets/canvas-asstes/home/About_video_00322.webp
-// /assets/canvas-asstes/home/About_video_00323.webp
-// /assets/canvas-asstes/home/About_video_00324.webp
-// /assets/canvas-asstes/home/About_video_00325.webp
-// /assets/canvas-asstes/home/About_video_00326.webp
-// /assets/canvas-asstes/home/About_video_00327.webp
-// /assets/canvas-asstes/home/About_video_00328.webp
-// /assets/canvas-asstes/home/About_video_00329.webp
-// /assets/canvas-asstes/home/About_video_00330.webp
-// /assets/canvas-asstes/home/About_video_00331.webp
-// /assets/canvas-asstes/home/About_video_00332.webp
-// /assets/canvas-asstes/home/About_video_00333.webp
-// /assets/canvas-asstes/home/About_video_00334.webp
-// /assets/canvas-asstes/home/About_video_00335.webp
-// /assets/canvas-asstes/home/About_video_00336.webp
-// /assets/canvas-asstes/home/About_video_00337.webp
-// /assets/canvas-asstes/home/About_video_00338.webp
-// /assets/canvas-asstes/home/About_video_00339.webp
-// /assets/canvas-asstes/home/About_video_00340.webp
-// /assets/canvas-asstes/home/About_video_00341.webp
-// /assets/canvas-asstes/home/About_video_00342.webp
-// /assets/canvas-asstes/home/About_video_00343.webp
-// /assets/canvas-asstes/home/About_video_00344.webp
-// /assets/canvas-asstes/home/About_video_00345.webp
-// /assets/canvas-asstes/home/About_video_00346.webp
-// /assets/canvas-asstes/home/About_video_00347.webp
-// /assets/canvas-asstes/home/About_video_00348.webp
-// /assets/canvas-asstes/home/About_video_00349.webp
-// /assets/canvas-asstes/home/About_video_00350.webp
-// /assets/canvas-asstes/home/About_video_00351.webp
-// /assets/canvas-asstes/home/About_video_00352.webp
-// /assets/canvas-asstes/home/About_video_00353.webp
-// /assets/canvas-asstes/home/About_video_00354.webp
-// /assets/canvas-asstes/home/About_video_00355.webp
-// /assets/canvas-asstes/home/About_video_00356.webp
-// /assets/canvas-asstes/home/About_video_00357.webp
-// /assets/canvas-asstes/home/About_video_00358.webp
-// /assets/canvas-asstes/home/About_video_00359.webp
-//  `;
-//     return data.split("\n")[index];
-//   }
-//   const frameCount = 339;
-
-//   const images = [];
-//   const imageSeq = {
-//     frame: 1,
-//   };
-
-//   for (let i = 0; i < frameCount; i++) {
-//     const img = new Image();
-//     img.src = files(i);
-//     images.push(img);
-//   }
-
-//   gsap.to(imageSeq, {
-//     frame: frameCount - 1,
-//     snap: "frame",
-//     ease: `none`,
-//     scrollTrigger: {
-//       scrub: 0.5,
-//       trigger: `#page7`,
-//       start: `top top`,
-//       end: `700% top`,
-//       scroller: `#main`,
-//     },
-//     onUpdate: render,
-//   });
-
-//   images[1].onload = render;
-
-//   function render() {
-//     scaleImage(images[imageSeq.frame], context);
-//   }
-
-//   function scaleImage(img, ctx) {
-//     var canvas = ctx.canvas;
-//     var hRatio = canvas.width / img.width;
-//     var vRatio = canvas.height / img.height;
-// var ratio = Math.max(hRatio, vRatio);
-// var ratio = Math.min(hRatio, vRatio);
-//     var centerShift_x = (canvas.width - img.width * ratio) / 2;
-//     var centerShift_y = (canvas.height - img.height * ratio) / 2;
-//     ctx.clearRect(0, 0, canvas.width, canvas.height);
-//     ctx.drawImage(
-//       img,
-//       0,
-//       0,
-//       img.width,
-//       img.height,
-//       centerShift_x,
-//       centerShift_y,
-//       img.width * ratio,
-//       img.height * ratio
-//     );
-//   }
-//   ScrollTrigger.create({
-//     trigger: "#page7>canvas",
-//     pin: true,
-//     scroller: `#main`,
-//     start: `top top`,
-//     end: `700% top`,
-//   });
-// }
-// canvas();
+// Three Js Solar system 
 
 document.addEventListener("DOMContentLoaded", () => {
   // Scene, Camera, Renderer
@@ -610,8 +192,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create a radial gradient
   const gradient = context.createRadialGradient(128, 128, 50, 128, 128, 128);
-  gradient.addColorStop(0, "#5A3fe1"); // Inner color
-  gradient.addColorStop(1, "#2c169d"); // Outer color
+  gradient.addColorStop(0, "#666666"); // Inner color
+  gradient.addColorStop(1, "#333333"); // Outer color
 
   context.fillStyle = gradient;
   context.fillRect(0, 0, canvas.width, canvas.height);
@@ -664,11 +246,33 @@ document.addEventListener("DOMContentLoaded", () => {
     new THREE.BufferAttribute(starPositions, 3)
   );
 
+
+
+  // Create a circular texture programmatically
+function createCircularTexture() {
+  const size = 128; // Size of the canvas
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+
+  const context = canvas.getContext('2d');
+  const radius = size / 2;
+
+  // Draw a circle
+  context.beginPath();
+  context.arc(radius, radius, radius, 0, Math.PI * 2);
+  context.fillStyle = 'white';
+  context.fill();
+
+  return new THREE.CanvasTexture(canvas);
+}
   const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff,
     size: 1,
     transparent: true,
     opacity: 1,
+    map: createCircularTexture(), // Use the generated circular texture
+    sizeAttenuation: true,
   });
 
   const stars = new THREE.Points(starGeometry, starMaterial);

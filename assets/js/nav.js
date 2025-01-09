@@ -1,3 +1,8 @@
+
+
+
+
+
 const ham = document.getElementById("ham");
 const svgContainer = document.getElementById("hamburger-icon");
 const nav = document.getElementById("nav");
@@ -63,5 +68,6 @@ function initScroll() {
 
 data();
 mounted();
+
 
 
