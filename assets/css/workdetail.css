@@ -40,7 +40,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 80px;
+  padding: 150px 0px 80px 80px;
   background-color: #000;
 }
 #breadcrumb-heading h3 {
