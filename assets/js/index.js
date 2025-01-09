@@ -360,7 +360,7 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left1",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
@@ -373,7 +373,7 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-right1",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
@@ -386,7 +386,7 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left2",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
@@ -399,7 +399,7 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-right2",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
@@ -412,7 +412,7 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left3",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
@@ -425,20 +425,20 @@ function page7Animation() {
     duration: 4,
     scrollTrigger: {
       trigger: ".box-right3",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
     },
   });
   gsap.from("#page7-bottomlast .box-last", {
-    x: 400,
+    x: -400,
     opacity: 0,
     stagger: 2,
     duration: 1,
     scrollTrigger: {
       trigger: ".box-last",
-      scroller: "#main",
+      // scroller: "#main",
       start: "top 100%",
       end: "top 90%",
       scrub: 2,
