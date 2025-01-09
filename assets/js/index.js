@@ -579,6 +579,10 @@ tl2.to("#page4>#center-page4", {
 // }
 // canvas();
 
+
+
+// Three Js Solar system 
+
 document.addEventListener("DOMContentLoaded", () => {
   // Scene, Camera, Renderer
   const scene = new THREE.Scene();
@@ -664,11 +668,33 @@ document.addEventListener("DOMContentLoaded", () => {
     new THREE.BufferAttribute(starPositions, 3)
   );
 
+
+
+  // Create a circular texture programmatically
+function createCircularTexture() {
+  const size = 128; // Size of the canvas
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+
+  const context = canvas.getContext('2d');
+  const radius = size / 2;
+
+  // Draw a circle
+  context.beginPath();
+  context.arc(radius, radius, radius, 0, Math.PI * 2);
+  context.fillStyle = 'white';
+  context.fill();
+
+  return new THREE.CanvasTexture(canvas);
+}
   const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff,
     size: 1,
     transparent: true,
     opacity: 1,
+    map: createCircularTexture(), // Use the generated circular texture
+    sizeAttenuation: true,
   });
 
   const stars = new THREE.Points(starGeometry, starMaterial);
