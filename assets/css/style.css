@@ -1444,7 +1444,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 20px;
+  padding: 0px 30px;
   /* background-color: #262525; */
   /* border: 0.3px solid #262525; */
   border-radius: 10px;
@@ -1474,6 +1474,16 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 21px;
+}
+.address a {
+  font-family: var(--text-font);
+  font-size: 14px;
+}
+.mainfooter a {
+  text-decoration: none;
+}
+.mainfooter a:hover {
+  text-decoration: none;
 }
 .address a {
   font-family: var(--text-font);
@@ -1631,31 +1641,6 @@ button {
   }
   .cta button {
     padding: 15px;
-  }
-}
-
-@media (max-width: 576px) {
-  .calltoaction {
-    margin: 25px;
-  }
-  .cta {
-    width: 100%;
-    padding: 20px;
-  }
-  .cta h2 {
-    font-size: 1.5rem;
-  }
-  .footer-cards {
-    padding: 10px;
-  }
-  .footer-cards h2 {
-    font-size: 18px;
-  }
-  .footer-cards ul li a {
-    font-size: 12px;
-  }
-  .social-icons-foot i {
-    font-size: 24px;
   }
 }
 
@@ -1857,13 +1842,24 @@ svg.squiggle path {
   #page7-bottom3 {
     gap: 50px;
   }
+
+  #center-page20 > h1 {
+    margin-bottom: 1.8rem;
+    font-size: 1.8rem;
+  }
+
+  #center-page20 > p {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   #hero-heading h1,
   #videosolution-content > h2,
   #hero-heading h1 span,
-  #page6-top-left > h3 {
+  #page6-top-left > h3,
+  #page7-top h1,
+  #page23 h1 {
     font-size: 2rem;
   }
 
@@ -1890,9 +1886,22 @@ svg.squiggle path {
     font-size: 1.5rem;
   }
 
+  /* #page7-bottomlast .service-box {
+    width: 60%;
+  } */
+
   .service-doc p {
     font-size: 1rem;
     line-height: 1.3;
+  }
+
+  #center-page20 > h1 {
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+  }
+
+  #center-page20 > p {
+    font-size: 1rem;
   }
 }
 
@@ -1900,7 +1909,9 @@ svg.squiggle path {
   #hero-heading h1,
   #videosolution-content > h2,
   #hero-heading h1 span,
-  #page6-top-left > h3 {
+  #page6-top-left > h3,
+  #page7-top h1,
+  #page23 h1 {
     font-size: 1.5rem;
   }
   #page7-bottom1 {
@@ -1927,6 +1938,10 @@ svg.squiggle path {
     margin: 50px 0;
   }
 
+  #page7-bottomlast {
+    margin-top: 50px;
+  }
+
   .collection .content {
     padding: 25px 0;
     height: 450px;
@@ -1942,6 +1957,7 @@ svg.squiggle path {
   .service-gap {
     display: none;
   }
+  #page7-bottomlast .service-box,
   .service-box {
     width: 80%;
   }
@@ -1960,19 +1976,73 @@ svg.squiggle path {
     width: 100px;
   }
 
-  /* .service-doc p {
-    display: none;
+  #center-page20 > h1 {
+    font-size: 1.5rem;
   }
-  .box-left1 {
-    border-top: 2px solid red;
-    border-bottom: 2px solid saddlebrown;
-  } */
+
+  #center-page20 {
+    width: 90%;
+  }
+
+  .testimonial blockquote {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+  }
+  .cta h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .cta button {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-cards h2 {
+    font-size: 20px;
+  }
+  .footer-cards ul li a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .calltoaction {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .cta {
+    width: 100%;
+    padding: 20px;
+  }
+  .cta h2 {
+    font-size: 1.5rem;
+  }
+  .footer-cards {
+    padding: 10px;
+  }
+  .footer-cards h2 {
+    font-size: 18px;
+  }
+  .footer-cards ul li a {
+    font-size: 12px;
+  }
+  .social-icons-foot i {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   #hero-heading h1,
   #videosolution-content > h2,
-  #hero-heading h1 span {
+  #hero-heading h1 span,
+  #page7-top h1,
+  #page23 h1 {
     font-size: 1.4rem;
   }
 
@@ -1995,6 +2065,39 @@ svg.squiggle path {
 
   #videosolution-content > h2 {
     padding-bottom: 2rem;
+  }
+
+  .testimonial-slider {
+    padding: 25px;
+  }
+
+  .user-info img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user-details .name {
+    font-size: 1rem;
+  }
+
+  .user-details .company {
+    font-size: 0.8rem;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+  .footer-cards h2 {
+    font-size: 20px;
+  }
+  .footer-cards ul li a {
+    font-size: 14px;
+  }
+  .social-icons-foot i {
+    font-size: 30px;
+  }
+  .cta button {
+    padding: 15px;
   }
 }
 

@@ -156,10 +156,7 @@ tl2.to("#page4>#center-page4", {
   top: `-50%`,
 });
 
-
-
-
-// Three Js Solar system 
+// Three Js Solar system
 
 document.addEventListener("DOMContentLoaded", () => {
   // Scene, Camera, Renderer
@@ -246,26 +243,24 @@ document.addEventListener("DOMContentLoaded", () => {
     new THREE.BufferAttribute(starPositions, 3)
   );
 
-
-
   // Create a circular texture programmatically
-function createCircularTexture() {
-  const size = 128; // Size of the canvas
-  const canvas = document.createElement('canvas');
-  canvas.width = size;
-  canvas.height = size;
+  function createCircularTexture() {
+    const size = 128; // Size of the canvas
+    const canvas = document.createElement("canvas");
+    canvas.width = size;
+    canvas.height = size;
 
-  const context = canvas.getContext('2d');
-  const radius = size / 2;
+    const context = canvas.getContext("2d");
+    const radius = size / 2;
 
-  // Draw a circle
-  context.beginPath();
-  context.arc(radius, radius, radius, 0, Math.PI * 2);
-  context.fillStyle = 'white';
-  context.fill();
+    // Draw a circle
+    context.beginPath();
+    context.arc(radius, radius, radius, 0, Math.PI * 2);
+    context.fillStyle = "white";
+    context.fill();
 
-  return new THREE.CanvasTexture(canvas);
-}
+    return new THREE.CanvasTexture(canvas);
+  }
   const starMaterial = new THREE.PointsMaterial({
     color: 0xffffff,
     size: 1,
@@ -358,7 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function page7Animation() {
   const isMobile = window.innerWidth <= 768;
 
-  gsap.from("#page7-bottom1 .box-left1", {
+  gsap.from("#page7-bottom1 > .box-left1", {
     x: isMobile ? -200 : -400,
     opacity: 0,
     stagger: isMobile ? 1 : 2,
@@ -450,12 +445,7 @@ function page7Animation() {
     },
   });
 }
-page7Animation();
-
-window.addEventListener("resize", () => {
-  ScrollTrigger.refresh();
-  page7Animation();
-});
+// page7Animation();
 
 gsap.to("#page23>img", {
   scrollTrigger: {
