@@ -610,8 +610,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create a radial gradient
   const gradient = context.createRadialGradient(128, 128, 50, 128, 128, 128);
-  gradient.addColorStop(0, "#5A3fe1"); // Inner color
-  gradient.addColorStop(1, "#2c169d"); // Outer color
+  gradient.addColorStop(0, "#666666"); // Inner color
+  gradient.addColorStop(1, "#333333"); // Outer color
 
   context.fillStyle = gradient;
   context.fillRect(0, 0, canvas.width, canvas.height);
