@@ -351,21 +351,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function page7Animation() {
-  // const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 768;
 
   gsap.from("#page7-bottom1 .box-left1", {
-    x: -400,
+    x: -100,
     opacity: 0,
     stagger: 2,
     ease: "power2.out",
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left1",
-      scroller: "#main",
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
-      // markers: true,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottom1 .box-right1", {
@@ -378,9 +378,10 @@ function page7Animation() {
       trigger: ".box-right1",
       scroller: "#main",
       start: "top 80%",
-      // markers: true,
       end: "top 60%",
       scrub: 3,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottom2 .box-left2", {
@@ -395,7 +396,8 @@ function page7Animation() {
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
-      // markers: true,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottom2 .box-right2", {
@@ -408,9 +410,10 @@ function page7Animation() {
       trigger: ".box-right2",
       scroller: "#main",
       start: "top 80%",
-      // markers: true,
       end: "top 60%",
       scrub: 3,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottom3 .box-left3", {
@@ -425,7 +428,8 @@ function page7Animation() {
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
-      // markers: true,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottom3 .box-right3", {
@@ -440,7 +444,8 @@ function page7Animation() {
       start: "top 80%",
       end: "top 60%",
       scrub: 3,
-      // markers: true,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
   gsap.from("#page7-bottomlast .box-last", {
@@ -455,7 +460,8 @@ function page7Animation() {
       start: "top 100%",
       end: "top 90%",
       scrub: 2,
-      // markers: true,
+      scroller: isMobile ? "" : "#main",
+      invalidateOnRefresh: true,
     },
   });
 }

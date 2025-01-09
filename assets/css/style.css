@@ -64,6 +64,7 @@ body {
 #main {
   position: relative;
   overflow: hidden;
+  /* height: 100vh; */
 }
 
 /* Custom Cursor */
@@ -2046,6 +2047,10 @@ svg.squiggle path {
     font-size: 1.4rem;
   }
 
+  #page7-top h1 {
+    margin-bottom: 20px;
+  }
+
   .collection .content {
     width: 90%;
     padding: 20px 25px 10px;
@@ -2065,6 +2070,12 @@ svg.squiggle path {
 
   #videosolution-content > h2 {
     padding-bottom: 2rem;
+  }
+  .service-doc h1 {
+    font-size: 1.2rem;
+  }
+  #page6 {
+    width: 80%;
   }
 
   .testimonial-slider {
