@@ -357,6 +357,7 @@ function page7Animation() {
     x: -400,
     opacity: 0,
     stagger: 2,
+    ease: "power2.out",
     duration: 4,
     scrollTrigger: {
       trigger: ".box-left1",
@@ -371,6 +372,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 4,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right1",
       // scroller: "#main",
@@ -384,6 +386,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 4,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-left2",
       // scroller: "#main",
@@ -397,6 +400,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 4,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right2",
       // scroller: "#main",
@@ -410,6 +414,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 4,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-left3",
       // scroller: "#main",
@@ -423,6 +428,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 4,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-right3",
       // scroller: "#main",
@@ -436,6 +442,7 @@ function page7Animation() {
     opacity: 0,
     stagger: 2,
     duration: 1,
+    ease: "power2.out",
     scrollTrigger: {
       trigger: ".box-last",
       // scroller: "#main",
