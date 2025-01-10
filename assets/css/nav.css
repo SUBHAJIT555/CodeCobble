@@ -34,6 +34,10 @@
   align-items: center;
   padding: 10px 50px;
   z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.767);
+  box-shadow: 0 4px 30px rgba(110, 108, 108, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.31); */
   position: sticky;
 }

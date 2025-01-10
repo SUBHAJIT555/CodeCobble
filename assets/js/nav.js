@@ -67,22 +67,22 @@ function initScroll() {
     getSpeed: true,
   });
 
-  scroll.on("scroll", (args) => {
-    if (Math.round(args.scroll.y) > 0) {
-      hamburger.classList.add("navbar-scrolled");
-      // this.scrollIns = true;
-    } else {
-      // this.scrollIns = false;
-      hamburger.classList.remove("navbar-scrolled");
-    }
-  });
+  // scroll.on("scroll", (args) => {
+  //   if (Math.round(args.scroll.y) > 0) {
+  //     hamburger.classList.add("navbar-scrolled");
+  //     // this.scrollIns = true;
+  //   } else {
+  //     // this.scrollIns = false;
+  //     hamburger.classList.remove("navbar-scrolled");
+  //   }
+  // });
 
-  setTimeout(() => {
-    let target = document.getElementById("main");
-    if (target) {
-      scroll.scrollTo(target);
-    }
-  }, 5000);
+  // setTimeout(() => {
+  //   let target = document.getElementById("main");
+  //   if (target) {
+  //     scroll.scrollTo(target);
+  //   }
+  // }, 5000);
 }
 
 data();

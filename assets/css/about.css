@@ -43,7 +43,7 @@ body {
   text-align: right;
 }
 
-.navsocial a:hover{
+.navsocial a:hover {
   text-decoration: none;
   color: lawngreen;
 }
@@ -99,7 +99,7 @@ body {
   color: white;
   font-family: var(--text-font);
   font-size: 25px;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 #page1-bottom {
   margin: 0 400px;
@@ -132,7 +132,7 @@ body {
   font-weight: 200;
   text-align: justify;
 }
-#page1-bottom p strong{
+#page1-bottom p strong {
   font-weight: 500;
 }
 #page2 {
@@ -142,7 +142,7 @@ body {
 }
 
 #page2-top h1 {
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00);
+  background-image: linear-gradient(to left, #6b34e2, #6b34e2, #fff, #7cfc00);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -278,7 +278,14 @@ body {
   background-size: cover;
 }
 #page3-top h1 {
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -346,7 +353,15 @@ body {
   /* background-color: #000; */
 }
 #page4-top h1 {
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -414,7 +429,14 @@ body {
   text-align: center;
 }
 #page5-top h1 {
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -479,10 +501,17 @@ body {
   border-radius: 16px;
 }
 #page6-top h1 {
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   font-size: 50px;
   font-family: var(--heading-font);
   text-align: center;
@@ -543,7 +572,14 @@ body {
 #page7-top h1 {
   font-family: var(--heading-font);
   font-size: 50px;
-  background-image: linear-gradient(to left, #6b34e2,#6b34e2, #fff, #7cfc00,#7cfc00);
+  background-image: linear-gradient(
+    to left,
+    #6b34e2,
+    #6b34e2,
+    #fff,
+    #7cfc00,
+    #7cfc00
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -655,7 +691,7 @@ body {
 #page8-top h1 {
   font-family: var(--heading-font);
   font-size: 50px;
-  background-image: linear-gradient(to top, #6b34e2,#fff, #7cfc00);
+  background-image: linear-gradient(to top, #6b34e2, #fff, #7cfc00);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1474,6 +1510,13 @@ body {
   #page6-bottom #process {
     width: 100%;
     height: auto;
+  }
+
+  #page1-top h1 {
+    font-size: 2.2rem;
+  }
+  #page1-top h3 {
+    font-size: 1.6rem;
   }
 
   .cta h2 {
